@@ -1,6 +1,9 @@
 **# 微信Hook
 支持PC微信3.6.0.18版本
 
+qq交流群：927825838
+
+
 Support PC WeChat 3.6.0.18 Version
 
 Function List:

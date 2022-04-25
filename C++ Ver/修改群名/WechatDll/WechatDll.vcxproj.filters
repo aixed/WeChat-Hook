@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="通用标头">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="通用函数">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="发送消息">
+      <UniqueIdentifier>{b1463ca2-6055-4c67-8c42-6319a6171dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="发送消息\发送图片">
+      <UniqueIdentifier>{b22823ee-f629-4e0a-8358-da017f0e5c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="发送消息\发送文本">
+      <UniqueIdentifier>{912e6334-b078-4ba6-813c-66d0de3ee123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="发送消息\发送文件">
+      <UniqueIdentifier>{069b8c09-e473-4bba-a49e-571f35f2efef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="自动功能">
+      <UniqueIdentifier>{25f77de8-b12c-4f2b-a3ac-0260b6a16897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="好友相关">
+      <UniqueIdentifier>{8ad1ff87-550b-4942-8ebd-afbe1cfaddc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="好友相关\好友列表">
+      <UniqueIdentifier>{24dc11dd-cb6a-4c63-bf21-35823cd389ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="好友相关\好友信息">
+      <UniqueIdentifier>{564cc9ef-a939-4bfd-a420-a08b3072d198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="个人信息">
+      <UniqueIdentifier>{722c02ee-dda5-4a6a-9443-f1ed3c112709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="发送消息\发送名片">
+      <UniqueIdentifier>{fc747a68-6314-4f23-92de-a1e55275a01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="好友相关\好友状态">
+      <UniqueIdentifier>{5a6d7d8b-a126-4da1-b540-09c79886ffef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="微信日志">
+      <UniqueIdentifier>{54c9691e-786d-4279-874d-b1e35673a666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="发送消息\发送艾特">
+      <UniqueIdentifier>{d4d33d20-a613-4baa-aea2-ff531b05d391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="发送消息\发送XML">
+      <UniqueIdentifier>{edd6e39f-235b-4db5-aea1-ec2c8d0072c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="工具">
+      <UniqueIdentifier>{6eed3dca-663f-4574-881b-5563d8e46c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="群管理">
+      <UniqueIdentifier>{a84caa0d-9898-449e-9ee6-fedb8b173b73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="群管理\修改群名">
+      <UniqueIdentifier>{4008104e-bbfe-43b9-9c19-a1c408f14ef6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>通用标头</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>通用标头</Filter>
+    </ClInclude>
+    <ClInclude Include="SendImage.h">
+      <Filter>发送消息\发送图片</Filter>
+    </ClInclude>
+    <ClInclude Include="SendText.h">
+      <Filter>发送消息\发送文本</Filter>
+    </ClInclude>
+    <ClInclude Include="SendFile.h">
+      <Filter>发送消息\发送文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendList.h">
+      <Filter>好友相关\好友列表</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfo.h">
+      <Filter>好友相关\好友信息</Filter>
+    </ClInclude>
+    <ClInclude Include="SelfInfo.h">
+      <Filter>个人信息</Filter>
+    </ClInclude>
+    <ClInclude Include="SendArticle.h">
+      <Filter>发送消息\发送XML</Filter>
+    </ClInclude>
+    <ClInclude Include="SendCard.h">
+      <Filter>发送消息\发送名片</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckFriendStatus.h">
+      <Filter>好友相关\好友状态</Filter>
+    </ClInclude>
+    <ClInclude Include="LogMsgInfo.h">
+      <Filter>微信日志</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>通用标头</Filter>
+    </ClInclude>
+    <ClInclude Include="SendTextAt.h">
+      <Filter>发送消息\发送艾特</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>工具</Filter>
+    </ClInclude>
+    <ClInclude Include="EditGroupName.h">
+      <Filter>群管理\修改群名</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>通用函数</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>通用函数</Filter>
+    </ClCompile>
+    <ClCompile Include="SendImage.cpp">
+      <Filter>发送消息\发送图片</Filter>
+    </ClCompile>
+    <ClCompile Include="SendText.cpp">
+      <Filter>发送消息\发送文本</Filter>
+    </ClCompile>
+    <ClCompile Include="SendFile.cpp">
+      <Filter>发送消息\发送文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendList.cpp">
+      <Filter>好友相关\好友列表</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInfo.cpp">
+      <Filter>好友相关\好友信息</Filter>
+    </ClCompile>
+    <ClCompile Include="SelfInfo.cpp">
+      <Filter>个人信息</Filter>
+    </ClCompile>
+    <ClCompile Include="SendArticle.cpp">
+      <Filter>发送消息\发送XML</Filter>
+    </ClCompile>
+    <ClCompile Include="SendCard.cpp">
+      <Filter>发送消息\发送名片</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckFriendStatus.cpp">
+      <Filter>好友相关\好友状态</Filter>
+    </ClCompile>
+    <ClCompile Include="LogMsgInfo.cpp">
+      <Filter>微信日志</Filter>
+    </ClCompile>
+    <ClCompile Include="SendTextAt.cpp">
+      <Filter>发送消息\发送艾特</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>工具</Filter>
+    </ClCompile>
+    <ClCompile Include="EditGroupName.cpp">
+      <Filter>群管理\修改群名</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WechatDll.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

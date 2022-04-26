@@ -49,13 +49,13 @@ Function List:
 
 19.Agree New Friend Request
 
-20.Net Get Info By Tel or QQ or Wx Number
+20.Get Infomation from network by Tel or QQ or Wx Number
 
-21.Anit Message Recall
+21.undo Message Recall
 
 22.Invite ChatRoom Member
 
-23.Send ChatRoom Message of at type
+23.Send Chat Room Message of at type
 
 
 

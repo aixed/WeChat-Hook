@@ -1,13 +1,22 @@
-**# 
-微信Hook
-支持PC微信3.6.0.18版本
 
+# 微信Hook
+
+## 支持PC微信3.6.0.18版本
+Support PC WeChat 3.6.0.18 Version
+
+# qq群:927825838
 qq group number：927825838
 
 
-Support PC WeChat 3.6.0.18 Version
+# 微信下载地址：
+Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 
-Function List:
+# 如何下载历史版本微信
+How to download history wechat version
+后面的版本号输入你想要下载的版本号即可
+https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
+
+# Function List:
 
 0.Forward Any XML Message
 
@@ -58,5 +67,3 @@ Function List:
 23.Send Chat Room Message of at type
 
 
-
-**

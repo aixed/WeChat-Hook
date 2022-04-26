@@ -13,7 +13,9 @@ Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 
 # 如何下载历史版本微信
 How to download history wechat version
+
 后面的版本号输入你想要下载的版本号即可
+
 https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
 
 # Function List:

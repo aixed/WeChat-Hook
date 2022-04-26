@@ -20,7 +20,7 @@ Function List:
 
 5.Get Self Info
 
-6.Get All Contract
+6.Get All Contact
 
 7.Add New Friend
 

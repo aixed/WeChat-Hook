@@ -37,15 +37,15 @@ Function List:
 
 13.Get Friend Info by Wxid
 
-14.Edit Friend Des By WXID
+14.Edit Friend Describe By WXID
 
-15.Get Member Info by GroupID
+15.Get Member Info by Group ID
 
-16.Query Group Info By GroupID
+16.Query Group Info By Group ID
 
-17.Edit Group Des ByGID
+17.Edit Group Describe By Group ID
 
-18.Edit Group Name By GID
+18.Edit Group Name By Group ID
 
 19.Agree New Friend Request
 

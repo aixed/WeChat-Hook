@@ -1,20 +1,21 @@
-**# 微信Hook
+**# 
+微信Hook
 支持PC微信3.6.0.18版本
 
-qq交流群：927825838
+qq group number：927825838
 
 
 Support PC WeChat 3.6.0.18 Version
 
 Function List:
 
-0.Forward Any XML Msg
+0.Forward Any XML Message
 
 1.Send Message(text,xml,pic,file ...)  
 
-2.Bak DataBase
+2.BackUp DataBase
 
-3.Get DBHandle
+3.Get DB Handle
 
 4.Create ChatRoom
 
@@ -24,37 +25,37 @@ Function List:
 
 7.Add New Friend
 
-8.Get All ChatMsg
+8.Get All Chat Message
 
 9.Delete Friend
 
-10.GetWechatDebugMsg
+10.Get Wechat Debug Message
 
-11.AddChatRoomMember
+11.Add ChatRoom Member
 
-12.CallInlineBrowser
+12.Call Inline Browser
 
-13.WxidGetFriendInfo
+13.Get Friend Info by Wxid
 
-14.EditFriendDesByWXID
+14.Edit Friend Des By WXID
 
-15.GroupidGetMemberInfo
+15.Get Member Info by GroupID
 
-16.QueryGroupInfoByGroupID
+16.Query Group Info By GroupID
 
-17.EditGroupDesByGID
+17.Edit Group Des ByGID
 
-18.EditGroupNameByGID
+18.Edit Group Name By GID
 
-19.AgreeNewFriendRequest
+19.Agree New Friend Request
 
-20.NetGetInfoByTel_QQ_Wx
+20.Net Get Info By Tel or QQ or Wx Number
 
-21.AnitMessageRecall
+21.Anit Message Recall
 
-22.InviteChatRoomMember
+22.Invite ChatRoom Member
 
-23.SendChatRoomAtMsg
+23.Send ChatRoom Message of at type
 
 
 

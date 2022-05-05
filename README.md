@@ -22,7 +22,7 @@ https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
 How to start
 
 下载E语言5.8版本。打开编译即可。
-
+download E5.8.exe install and bulid this *.e file.
 
 
 # Function List:
@@ -74,5 +74,16 @@ How to start
 22.Invite ChatRoom Member
 
 23.Send Chat Room Message of at type
+
+24.remote call getA8key function get ticket=[xx] & exportkey=[xx] & pass_ticket=[xx] parameter info
+
+25.Bypass time limit for download pictures  
+
+26.Automatic call collection funtion
+## =========================================
+# End
+PS: added array of bytes scan tool & technology code
+
+
 
 

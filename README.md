@@ -80,9 +80,7 @@ download E5.8.exe install and bulid this *.e file.
 25.Bypass time limit for download pictures  
 
 26.Automatic call collection funtion
-## =========================================
-# End
-PS: added array of bytes scan tool & technology code
+
 
 
 # 致谢 & 参考
@@ -100,5 +98,7 @@ https://github.com/wechaty/wechaty
 
 
 
-
+## =========================================
+# End
+PS: added array of bytes scan tool & technology code
 

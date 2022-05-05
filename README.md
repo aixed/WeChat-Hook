@@ -4,7 +4,7 @@
 ## 支持PC微信3.6.0.18版本
 Support PC WeChat 3.6.0.18 Version
 
-# qq群:927825838
+# QQ群:927825838
 qq group number：927825838
 
 
@@ -83,6 +83,17 @@ download E5.8.exe install and bulid this *.e file.
 ## =========================================
 # End
 PS: added array of bytes scan tool & technology code
+
+
+# 致谢 & 参考
+提供了微信call寻找思路与教程：https://github.com/hedada-hc/pc_wechat_hook
+数据库备份部分代码引用了 zmrbak 老师的代码，在此表示感谢：https://github.com/zmrbak/PcWeChatHooK
+
+
+# 致敬
+https://github.com/littlecodersh/ItChat
+https://github.com/wechaty/wechaty
+
 
 
 

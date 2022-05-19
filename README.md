@@ -85,10 +85,16 @@ download E5.8.exe install and bulid this *.e file.
 
 # 致谢 & 参考
 
-提供了微信call寻找思路与教程：https://github.com/hedada-hc/pc_wechat_hook
+提供了微信call寻找思路与教程：
+https://github.com/hedada-hc/pc_wechat_hook
 
-数据库备份部分代码引用了 zmrbak 老师的代码，在此表示感谢：https://github.com/zmrbak/PcWeChatHooK
+数据库备份部分代码引用了 zmrbak 老师的代码，在此表示感谢：
+https://github.com/zmrbak/PcWeChatHooK
 
+Web微信协议的部分根据这个视频思路写的，感谢乐易论坛的讲师 揰掵佲 做的教程:  
+https://www.bilibili.com/video/BV1WJ411i7Bb?spm_id_from=333.337.search-card.all.click
+
+还有那些在我找call过程中给我提供思路、源码、偏移的所有人，诚挚感谢你们的支持与帮助！
 
 # 致敬
 

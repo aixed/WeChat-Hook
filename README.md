@@ -1,16 +1,18 @@
 
 # PC微信3.7.0.29接口
+# 3.7.0.29 QQ群 887615198
+# 3.3.0.29 qq group number：887615198
 
-# 下载地址
+# 下载地址/Download
 https://wws.lanzoum.com/b02ja029i
 
-密码:1234
+密码/Password:1234
 
-全部功能支持PC微信版本 3.7.0.29
+全部功能支持PC微信版本/All Function Support Version 3.7.0.29
 
-部分功能支持PC微信版本 3.6.0.18
+部分功能支持PC微信版本/Some Function Support Version 3.6.0.18
 
-# 使用方法：
+# 使用方法/How to use：
 下载msimg32.dll后将dll当道微信安装目录下。比如我这里是
 
 D:\Program Files (x86)\WeChat3.7.0.29
@@ -18,15 +20,15 @@ D:\Program Files (x86)\WeChat3.7.0.29
 重启微信后使用json方式调用即可。
 
 
-# 新版本 接口 使用文档：
+# 新版本 接口 使用文档/Docs：
 https://www.showdoc.com.cn/1967579757595791/8929096202824749
 
 
 ## 老版本支持PC微信3.6.0.18版本
 Support PC WeChat 3.6.0.18 Version
 
-# QQ群:927825838
-qq group number：927825838
+# 3.6.0.18 QQ群:927825838
+# 3.6.0.18 qq group number：927825838
 
 
 # 微信下载地址：

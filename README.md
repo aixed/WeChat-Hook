@@ -22,7 +22,7 @@ D:\Program Files (x86)\WeChat3.7.0.29
 https://www.showdoc.com.cn/1967579757595791/8929096202824749
 
 
-## 支持PC微信3.6.0.18版本
+## 老版本支持PC微信3.6.0.18版本
 Support PC WeChat 3.6.0.18 Version
 
 # QQ群:927825838

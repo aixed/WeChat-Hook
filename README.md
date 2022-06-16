@@ -1,5 +1,5 @@
 
-# PC微信3.7.0.29接口
+# PC微信3.7.0.29接口/New Current
 # 3.7.0.29 QQ群/QQ Group 887615198
 
 # 下载地址/Download
@@ -23,17 +23,16 @@ D:\Program Files (x86)\WeChat3.7.0.29
 https://www.showdoc.com.cn/1967579757595791/8929096202824749
 
 
-## 老版本支持PC微信3.6.0.18版本
+## 老版本支持PC微信3.6.0.18版本/History
 Support PC WeChat 3.6.0.18 Version
 
-# 3.6.0.18 QQ群:927825838
-# 3.6.0.18 qq group number：927825838
+# 3.6.0.18 QQ群/QQ Group:927825838
 
 
-# 微信下载地址：
+# 微信下载地址/Download：
 Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 
-# 如何下载历史版本微信
+# 如何下载历史版本微信/How to use
 How to download history wechat version
 
 后面的 3.3.0.104 版本号输入你想要下载的版本号即可

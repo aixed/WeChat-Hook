@@ -22,6 +22,9 @@ D:\Program Files (x86)\WeChat3.7.0.29
 ## 新版本 接口 使用文档/Docs：
 https://www.showdoc.com.cn/1967579757595791/8929096202824749
 
+
+
+
 # 历史版本/History
 ## 老版本支持PC微信3.6.0.18版本/Support Vertion 3.6.0.18
 Support PC WeChat 3.6.0.18 Version

@@ -7,12 +7,16 @@ https://wws.lanzoum.com/b02ja029i
 密码:1234
 
 全部功能支持PC微信版本 3.7.0.29
+
 部分功能支持PC微信版本 3.6.0.18
 
 # 使用方法：
 下载msimg32.dll后将dll当道微信安装目录下。比如我这里是
+
 D:\Program Files (x86)\WeChat3.7.0.29
+
 重启微信后使用json方式调用即可。
+
 
 # 新版本 接口 使用文档：
 https://www.showdoc.com.cn/1967579757595791/8929096202824749

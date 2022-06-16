@@ -1,7 +1,6 @@
 
 # PC微信3.7.0.29接口
-# 3.7.0.29 QQ群 887615198
-# 3.3.0.29 qq group number：887615198
+# 3.7.0.29 QQ群/QQ Group 887615198
 
 # 下载地址/Download
 https://wws.lanzoum.com/b02ja029i

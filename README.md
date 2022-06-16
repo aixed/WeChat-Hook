@@ -1,8 +1,8 @@
 
 # PC微信3.7.0.29接口/New Current
-# 3.7.0.29 QQ群/QQ Group 887615198
+## 3.7.0.29 QQ群/QQ Group 887615198
 
-# 下载地址/Download
+## 下载地址/Download
 https://wws.lanzoum.com/b02ja029i
 
 密码/Password:1234
@@ -11,7 +11,7 @@ https://wws.lanzoum.com/b02ja029i
 
 部分功能支持PC微信版本/Some Function Support Version 3.6.0.18
 
-# 使用方法/How to use：
+## 使用方法/How to use：
 下载msimg32.dll后将dll当道微信安装目录下。比如我这里是
 
 D:\Program Files (x86)\WeChat3.7.0.29
@@ -19,34 +19,33 @@ D:\Program Files (x86)\WeChat3.7.0.29
 重启微信后使用json方式调用即可。
 
 
-# 新版本 接口 使用文档/Docs：
+## 新版本 接口 使用文档/Docs：
 https://www.showdoc.com.cn/1967579757595791/8929096202824749
 
-
-## 老版本支持PC微信3.6.0.18版本/History
+# 历史版本/History
+## 老版本支持PC微信3.6.0.18版本/Support Vertion 3.6.0.18
 Support PC WeChat 3.6.0.18 Version
 
-# 3.6.0.18 QQ群/QQ Group:927825838
+## 3.6.0.18 QQ群/QQ Group:927825838
 
 
-# 微信下载地址/Download：
+## 微信下载地址/Download：
 Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 
-# 如何下载历史版本微信/How to use
-How to download history wechat version
+## 如何下载历史版本微信/How to download history wechat version
 
 后面的 3.3.0.104 版本号输入你想要下载的版本号即可
 
-https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
+URL:https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
 
-# 如何使用
+## 如何使用/How to use
 How to start
 
 下载E语言5.8版本。打开编译即可。
 download E5.8.exe install and bulid this *.e file.
 
 
-# Function List:
+## 功能清单/Function List:
 
 0.Forward Any XML Message
 

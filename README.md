@@ -1,11 +1,4 @@
-
 # PC微信3.7.0.29接口/New Current
-## 3.7.0.29 QQ群/QQ Group 887615198
-
-## 下载地址/Download
-https://wws.lanzoum.com/b02ja029i
-
-密码/Password:1234
 
 全部功能支持PC微信版本/All Function Support Version 3.7.0.29
 
@@ -25,12 +18,11 @@ https://www.showdoc.com.cn/1967579757595791/8929096202824749
 </br>
 </br>
 
+# QQ:364831018
+
 # 历史版本/History
 ## 老版本支持PC微信3.6.0.18版本/Support Vertion 3.6.0.18
 Support PC WeChat 3.6.0.18 Version
-
-## 3.6.0.18 QQ群/QQ Group:927825838
-
 
 ## 微信下载地址/Download：
 Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/

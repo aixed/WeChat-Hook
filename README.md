@@ -5,6 +5,8 @@ D:\Program Files (x86)\WeChat
 
 重启微信后使用json方式调用即可。
 
+# QQ:364831018
+
 
 # PC微信3.7.5.31接口/New Current
 
@@ -15,27 +17,6 @@ https://www.showdoc.com.cn/PCWXInterface37531/9241659839175224
 
 # 历史版本/History
 
-
-# PC微信3.7.0.29接口
-
-全部功能支持PC微信版本/All Function Support Version 3.7.0.29
-
-部分功能支持PC微信版本/Some Function Support Version 3.6.0.18
-
-
-
-##  接口 使用文档/Docs：
-https://www.showdoc.com.cn/1967579757595791/8929096202824749
-</br>
-</br>
-</br>
-
-# QQ:364831018
-
-
-## PC微信3.6.0.18接口/Support Vertion 3.6.0.18
-Support PC WeChat 3.6.0.18 Version
-
 ## 微信下载地址/Download：
 Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 
@@ -44,6 +25,25 @@ Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 后面的 3.3.0.104 版本号输入你想要下载的版本号即可
 
 URL:https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
+
+
+# PC微信3.7.0.29接口
+
+全部功能支持PC微信版本/All Function Support Version 3.7.0.29
+
+
+##  接口 使用文档/Docs：
+https://www.showdoc.com.cn/1967579757595791/8929096202824749
+</br>
+</br>
+</br>
+
+
+
+
+## PC微信3.6.0.18接口/Support Vertion 3.6.0.18
+Support PC WeChat 3.6.0.18 Version
+
 
 ## 如何使用/How to use
 How to start

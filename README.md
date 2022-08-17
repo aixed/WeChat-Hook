@@ -1,5 +1,14 @@
+## 使用方法/How to use：
+下载msimg32.dll后将dll当道微信安装目录下。比如我这里是
+
+D:\Program Files (x86)\WeChat3.7.0.29
+
+重启微信后使用json方式调用即可。
+
+
 # PC微信3.7.5.31接口/New Current
 
+## 接口 使用文档/Docs：
 https://www.showdoc.com.cn/PCWXInterface37531/9241659839175224
 
 支持PC微信版本3.7.5.31
@@ -10,15 +19,9 @@ https://www.showdoc.com.cn/PCWXInterface37531/9241659839175224
 
 部分功能支持PC微信版本/Some Function Support Version 3.6.0.18
 
-## 使用方法/How to use：
-下载msimg32.dll后将dll当道微信安装目录下。比如我这里是
-
-D:\Program Files (x86)\WeChat3.7.0.29
-
-重启微信后使用json方式调用即可。
 
 
-## 新版本 接口 使用文档/Docs：
+##  接口 使用文档/Docs：
 https://www.showdoc.com.cn/1967579757595791/8929096202824749
 </br>
 </br>

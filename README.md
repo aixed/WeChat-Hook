@@ -1,7 +1,7 @@
 ## 使用方法/How to use：
 下载msimg32.dll后将dll当道微信安装目录下。比如我这里是
 
-D:\Program Files (x86)\WeChat3.7.0.29
+D:\Program Files (x86)\WeChat
 
 重启微信后使用json方式调用即可。
 

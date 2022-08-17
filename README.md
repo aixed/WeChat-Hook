@@ -13,6 +13,9 @@ https://www.showdoc.com.cn/PCWXInterface37531/9241659839175224
 
 支持PC微信版本3.7.5.31
 
+# 历史版本/History
+
+
 # PC微信3.7.0.29接口
 
 全部功能支持PC微信版本/All Function Support Version 3.7.0.29
@@ -29,8 +32,8 @@ https://www.showdoc.com.cn/1967579757595791/8929096202824749
 
 # QQ:364831018
 
-# 历史版本/History
-## 老版本支持PC微信3.6.0.18版本/Support Vertion 3.6.0.18
+
+## PC微信3.6.0.18接口/Support Vertion 3.6.0.18
 Support PC WeChat 3.6.0.18 Version
 
 ## 微信下载地址/Download：

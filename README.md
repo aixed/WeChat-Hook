@@ -8,12 +8,11 @@ D:\Program Files (x86)\WeChat
 # QQ:364831018
 
 
-# PC微信3.7.5.31接口/New Current
+# PC微信3.7.6.29接口/New Current
 
 ## 接口 使用文档/Docs：
-https://www.showdoc.com.cn/PCWXInterface37531/9241659839175224
+https://www.showdoc.com.cn/aixed/8929096202824749
 
-支持PC微信版本3.7.5.31
 
 # 历史版本/History
 

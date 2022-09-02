@@ -6,12 +6,12 @@ D:\Program Files (x86)\WeChat
 重启微信后使用json方式调用即可。
 
 # QQ:364831018
-
-
-# PC微信3.7.6.29接口/New Current
+# PC微信3.7.6.44接口/New Current
 
 ## 接口 使用文档/Docs：
-https://www.showdoc.com.cn/aixed/8929096202824749
+https://www.showdoc.com.cn/wechatproject
+
+
 
 
 # 历史版本/History
@@ -26,13 +26,12 @@ Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 URL:https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
 
 
+# PC微信3.7.6.29接口
+https://www.showdoc.com.cn/aixed/8929096202824749
+
 # PC微信3.7.0.29接口
+https://www.showdoc.com.cn/aixed/8929096202824749
 
-全部功能支持PC微信版本/All Function Support Version 3.7.0.29
-
-
-##  接口 使用文档/Docs：
-https://www.showdoc.com.cn/1967579757595791/8929096202824749
 </br>
 </br>
 </br>

@@ -5,7 +5,7 @@ D:\Program Files (x86)\WeChat
 
 重启微信后使用json方式调用即可。
 
-# QQ:364831018
+# QQ:850040076
 # PC微信3.7.6.44接口/New Current
 
 ## 接口 使用文档/Docs：

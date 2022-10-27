@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem> 
+  	<VerticalLayout width="218" height="94">	
+		<HorizontalLayout name="topLayout" width="218" height="70" >		      
+			<VerticalLayout width ="150">		
+				<Text name="title" maxheight="40" endellipsis="true" font="2" maxwidth="140" padding="12,8,0,0"  textcolor="#FF000000"/>	
+				<HorizontalLayout width ="150" height="16" padding="0,6,0,0">
+					<Label name="description" height="16" width="58" font="0" padding="12,0,0,0" textcolor="#FF999999" visible="true"/>
+					<!--<HorizontalLayout name="progressBar" padding="15,10,5,0" height="4" bkcolor="#FFc8c8c8" width="100" visible="false">
+						<Control name="progress" width="1" height="4" bkcolor="#ff4ec520"/>
+					</HorizontalLayout>-->
+					<Label name="msgTips" height="16" width="90" font="0" endellipsis="true"  textcolor="#FF999999" visible="false"/>
+					<!--<Label name="speed" height="15" font="10" endellipsis="true" padding="40,0,0,0" textcolor="#FFb2b2b2" visible="false"/>-->				
+				</HorizontalLayout>					
+			</VerticalLayout>
+			<Container width="40" height="40"  padding="10,15,12,0">
+				<Picture name="icon" width="40" height="40" bkimage="chat\filetype\fileicon_unkown.png" bordercolor="FFC1C1C1" />
+				<Control name="iconMask" bkimage="plugins\FileListMgr\imgs\file_mask.png" visible="false" />
+				<Control name="statuIcon" bkimage="plugins\FileListMgr\imgs\file_download.png" visible="false" />
+				<FrameAnimation visible="false" name="loadingAni" width="40" height="40" interval="50" animationList="chat\DownloadLoadingAni.xml" play="true" />
+				<ArcProgress name="progressBar" width="40" height="40" distance="10" startAngle="270" percent="0"  ellipseColor="#FFFFFFFF"  visible="false" />
+			</Container>
+		</HorizontalLayout>	
+		<HorizontalLayout name="appTip" height="24" bordersize="0,1,0,0" bordercolor="#fff7f7f7" visible="false">
+			<MMHttpImage name="appIcon" enabled="false" padding="12,4,0,-4" height="16" width="16"  visible="false"/>
+			<Label name="appName" font="10" padding="12,4,4,4" height="16" width="50" textcolor="#ffb2b2b2" />
+		</HorizontalLayout>	
+	</VerticalLayout>
+</ChatItem>   

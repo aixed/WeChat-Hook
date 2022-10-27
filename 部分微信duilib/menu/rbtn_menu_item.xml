@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window roundcorner="2,2">
+	<MenuElement height="27" >
+		<HorizontalLayout >
+		  <Label name="icon" width="18" height="18" padding="3,4,0,0" mouse="false" visible="true"/>
+		  <UIListLabel name="text" padding="3,0,22,0" mouse="false" textcolor="#FF000000" endellipsis="true" />
+		</HorizontalLayout>
+	</MenuElement>
+</Window>

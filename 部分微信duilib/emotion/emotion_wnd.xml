@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="438,403"><!--原来是261-->
+    <Font name="微软雅黑" size="12" bold="false" italic="false" default="true" />
+    <Font name="微软雅黑" size="12" bold="true" italic="false" />
+	<Font name="微软雅黑" size="16" bold="false" italic="false" />
+	<Font name="微软雅黑" size="12" bold="false" italic="false" default="true" />
+	<Default name="VScrollBar" value="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;11&quot; scrollbarfloat=&quot;false&quot; thumbnormalimage=&quot;file='Main\scrollbar_right_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_right_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_right_hover.png'  corner='0,4,0,4'&quot;"/>
+	<VerticalLayout name="emotion_layout" inset="13,13,2,25" bkimage="emotion\emo_popover.png">
+        <HorizontalLayout height="17" padding="20,24,20,8" name="store_emotion_layout" >
+		  <Label text=""  width="wrap_content" textcolor="#FF333333" name="store_emotion_name" />
+		  <Control />
+		  <Picture  visible="false" height="16" width="16" name="store_emotion_icon" />
+          <Label text="" visible="false" width="wrap_content" textcolor="#FFA6A6A6" name="store_emotion_artist_name" />
+		</HorizontalLayout>
+
+		<TabLayout name="tabs" inset="0,0,0,0">
+			<EmoitonPlane name="smily_emoji" padding="6,24,12,0" columns="8" vscrollbar="true" emotion_flag="addRecent|addAll" itemsize="48,48" itemhotbkcolor="#00000000" itemhotimage="file='emotion\emotion_hover.png' dest='4,4,44,44'"  itempushedbkimage="file='emotion\emotion_click.png' dest='4,4,44,44'" itemselectedbkcolor="#00000000" itemselectedimage="file='emotion\emotion_click.png' dest='4,4,44,44'" />
+			<VerticalLayout padding="12,24,12,0">
+			    <mmLabel  visible="false" text="@str:IDS_Emoiton_Add_Single_Picture" name="custom_list_label" height="wrap_content" padding="5,0,0,8" width="wrap_content"  textcolor="#FF333333" />
+			    <CustomList  visible="false"  name="customlist" vscrollbar="true" itemsize="72,72"  menu="true" bkcolor="#FFFFFFFF" itembkcolor="#FFFFFFFF" itemhotbkcolor="#FFFFFFFF" enablescrollcache="true" />
+			    <RelativeLayout  name="custom_list_empty_layout" padding="0,0,11,0">
+	              <mmLabel text="@str:IDS_Emoiton_No_Single_Picture" layout_gravity="hcenter|vcenter" height="wrap_content"  width="wrap_content"  textcolor="#FFA6A6A6" />
+                </RelativeLayout>
+			</VerticalLayout >
+
+			<EmotionLayoutContainer name="error" height="200"  padding="18,24,18,0"> <!-- 加载失败 -->
+				<Control />
+					<HorizontalLayout height="25">
+						<Control />
+						<Label name="emotionDownloadError" text="@str:IDS_Emotion_Download_Error:3460" textcolor="#FF000000" align="center" font="0"/>
+						<Button name="reloadEmotionPackage" text="@str:IDS_Reload_StoreEmotionPackage:3393" font="0" textcolor="#FF5695E3" hottextcolor="#FF3675a3" align="center"/>
+						<Control />
+					</HorizontalLayout>
+				<Control />
+			</EmotionLayoutContainer>
+			
+			<EmotionLayoutContainer name="downloading" height="200"  bkcolor="#FFffffff" padding="18,24,18,0">  <!-- 正在加载 -->
+				<Control />
+				<VerticalLayout height="84 ">
+					<Picture name="downloadingIcon" height="64" width="64" padding="140,0,0,0"/>
+					<Label name="downloadingLabel" text="正在加载..." padding="140,0,0,0" width="64"  textcolor="#FFA7A6AA"  font="0" align="center"/>
+				</VerticalLayout>
+				<Control />
+			</EmotionLayoutContainer>
+			<!-- 动态添加表情Layout于此处 -->
+			
+        </TabLayout>
+		<Control height="1px" bkcolor="#fff2f2f2" padding="0,0,11,0" />
+		<HorizontalLayout height="52">
+			<EmotionOptionLayout name="optionLayout"  width="336" padding="14,0,0,0" groupchild="true">
+				<SystemEmotionOption name="smilyEmojiBtn" width="36" height="36"  padding="6,8,6,8"  group="EMO_OPTION"  foreimage="emotion\icon_sticker.png" hotimage="emotion\emotion_hover.png"  pushedimage="emotion\click.png" tooltip="@str:IDS_All_Emotion"/>
+				<SystemEmotionOption name="customBtn" width="36" height="36" padding="6,8,6,8" group="EMO_OPTION" foreimage="emotion\icon_like.png" hotimage="emotion\emotion_hover.png"  pushedimage="emotion\click.png" tooltip="@str:IDS_Emoiton_Add_Single_Picture"/>			
+				<!-- 动态添加表情option于此处 -->
+				<Control name="blankSpace" width="200" />
+			</EmotionOptionLayout>
+			<Container name="optionScrollLeftContainer" pos="20,8,56,44" bkcolor="#FFFFFFFF" float="true" visible="false">
+                <Button name="optionScrollLeft" width="36" height="36" hotimage="emotion\emotion_hover.png" foreimage="file='emotion\icon_left.png' dest='4,4,32,32'"  pushedimage="emotion\click.png" tooltip="@str:IDS_PREVIEW_IMG_PRE_PAGE"/>
+			</Container>
+			<Container width="36" height="36" padding="6,8,25,8" >
+			    <Button name="optionScrollRight" width="36" height="36"   foreimage="file='emotion\icon_right.png' dest='4,4,32,32'" hotimage="emotion\emotion_hover.png"  pushedimage="emotion\click.png" tooltip="@str:IDS_PREVIEW_IMG_NEXT_PAGE"/>
+			</Container>
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

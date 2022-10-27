@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="222,114" caption="0,0,0,0" roundcorner="2,2">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Default name="VScrollBar" value="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;9&quot; scrollbarfloat=&quot;true&quot; button1normalimage=&quot;file='common\scrollbar.png' source='0,28,9,37'&quot; button1hotimage=&quot;file='common\scrollbar.png' source='0,28,9,37'&quot; button1pushedimage=&quot;file='common\scrollbar.png' source='0,28,9,37'&quot; button2normalimage=&quot;file='common\scrollbar.png' source='0,37,9,46'&quot; button2hotimage=&quot;file='common\scrollbar.png' source='0,37,9,46'&quot; button2pushedimage=&quot;file='common\scrollbar.png' source='0,37,9,46'&quot; thumbnormalimage=&quot;file='common\scrollbar.png' source='0,0,9,6' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='common\scrollbar.png' source='9,0,18,6' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='common\scrollbar.png' source='18,0,27,6' corner='0,2,0,2'&quot; bknormalimage=&quot;file='common\scrollbar.png' source='27,0,36,28' corner='0,14,0,12'&quot;"/>
+    <VerticalLayout width="222" name="mainLayout" bkcolor="#FFf5f5f5">
+		<Label name="titleLab" text="@str:IDS_TrayNotify_Title:1169" padding="15,0,0,0" width="222" height="35" textcolor="#FF353535" disabledtextcolor="#FFA7A6AA"  font="1"/>
+		<TrayNotifyListUI name="notify_list" padding="1,0,1,0" header="hidden" vscrollbar="true" itemlinecolor="#FFebebeb" itemlineheight="1" menu="false" itemselectedbkcolor="#FFE2E2E2" itemhotbkcolor="#FFE2E2E2" inset="0,0,0,0"/>
+		<HorizontalLayout inset="0,0,15,0" bordercolor="#FFDCDCDC" bordersize="0,1,0,0" height="34" width="222">
+			<Control />
+			<Button name="ignore_all_btn"  text="@str:IDS_Tray_Ignor_all:1345" width="65" height="34" textcolor="#FF23a323" align="right" textpadding="0,10,0,0"/>
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

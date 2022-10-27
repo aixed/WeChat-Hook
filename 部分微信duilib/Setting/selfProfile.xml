@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<selfProfile>
+		<SelfProfileView height="140" name="self_profile_view" width="349" bkimage="file='Setting\selfProfile_Round.png' corner='10,10,10,10'">
+			<HorizontalLayout name="selfProfileLayout"   height="140">
+				<HorizontalLayout height="50" width="50" padding="24,45,0,0">
+							<Container  width="50" height="50">
+								<HeadImgUI name="headImg"  width="50" height="50" mouse="false" align="center"/>
+								<Label  width="50" height="50" bkimage="Setting\head_image_round_cover.png"/>
+							</Container>
+				</HorizontalLayout>
+				<VerticalLayout height="50" padding="16,44,0,0">
+						<HorizontalLayout  height="28">
+							<EmotionText name="nickNameLab" fitTextSize="true" height="28"  font="@font:msyh_20" textcolor="#FF000000" align="left" endellipsis="true" minwidth="32" maxwidth="250" minheight="28" maxheight="28"/>
+						</HorizontalLayout>
+						<HorizontalLayout height="18" padding="0,4,0,0" >
+								<EmotionText  name="userNameLab" fitTextSize="true" height="18" font="@font:msyh_12" align="left" textcolor="#9E9E9E9E" endellipsis="true" minwidth="32" maxwidth="250" minheight="18"/>
+						</HorizontalLayout>		
+				</VerticalLayout>				
+			</HorizontalLayout>
+		</SelfProfileView>
+</selfProfile>

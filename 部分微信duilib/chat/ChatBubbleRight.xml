@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>
+	<HorizontalLayout>
+		<Label name="selectIcon" width="28" height="28" bkimage="chatroom\AddChat_Unselected_Btn.png" padding="12,12,-6,0" visible="false"/>
+		<Control />
+		<VerticalLayout name="chatLayout">
+			<mmLabel name="chatroomNickLab" visible = "false" text="" padding="4,0,4,0" height="16" font="10" textcolor="#FFB2B2B2" align="right"/>
+			<HorizontalLayout >
+				<EmotionText name="expiredLab" text="" fitTextSize="true" height="24" width="140" maxwidth="140" enabled="false" padding="0,0,10,0" textcolor="#FF313131" visible="false" font="2" align="right" />
+				<Control name="voip_red_dot" visible="false" width="7" height="7" bkimage="chat\voice_unplay_dot.png" align="center" padding="0,18,8,0" />
+				<ImageUI name="chatStatus" width="24" height="24" align="center" padding="0,0,10,0" visible="false" userdata="Common\single_flower.png  Chat\senderror_local_ico.png  Chat\senderror_ico.png" />
+
+				<VerticalLayout >
+					<HorizontalLayout >
+						<Control />
+						<BubbleFrame name="chatContent" height="34" padding="0,6,0,10" inset="10,2,4,8" menu="true" bkimage="@image:chatbubble_right_default" hotimage="@image:chatbubble_right_hover" pushedimage="@image:chatbubble_right_click" maskimage="@image:chatbubble_right_mask" expiredimage="chat\picture_overdue_right.png">
+							<Button name="chatEventBtn" menu="true" />
+						</BubbleFrame>
+					</HorizontalLayout>
+					<Container name="bottomContainer" padding="0,5,0,0" visible="false"></Container>
+				</VerticalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+		<HeadImgUI name="HeadIcon" menu="true" width="34" height="34" padding="5,6,30,10" borderround="1,1" />
+	</HorizontalLayout>
+</ChatItem>   

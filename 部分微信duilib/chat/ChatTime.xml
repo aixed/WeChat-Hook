@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>  	
+	 <ChatTime name="ChatTime" text="10:00" font="0" height="20" bkcolor="#FFDADADA" borderround="2,2" padding="0,5,0,9"  textcolor="#FFFFFFFF"/>	
+</ChatItem>  
+

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>  	
+	   <GifPicture name="content" align="center" bkimage="" minheight="36" minwidth ="22"  maxheight="100"  maxwidth="122" userdata="Common\loading.gif" bkimage="emotion\emoji_download_icon.png"/>	        	    	 	
+</ChatItem>   

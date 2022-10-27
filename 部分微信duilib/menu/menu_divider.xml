@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<HorizontalLayout height="1">
+	  <Control bkcolor="#FFededed"/>
+	</HorizontalLayout>
+</Window>

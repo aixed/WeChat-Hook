@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>  	
+	<VerticalLayout >
+		<EmotionText name="txt" parsetag="true" minwidth="8" minheight="17" maxwidth="340" textcolor="#00232323"  font="2"/>	
+		<Control name="transLine" padding="2,5,2,3" height="1" bkcolor="#ffeaeaea" visible="false"/>
+		<EmotionText name="transTxt" minwidth="25" minheight="17" maxwidth= "340" textcolor="#00232323" font="2" text="" visible="false"/>
+	</VerticalLayout>
+</ChatItem>

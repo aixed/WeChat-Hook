@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>   		
+	<VerticalLayout width="218" height="100">
+		<HorizontalLayout>		
+			<MMHttpImage name="appIcon" padding="12,12,0,0" width="50" height="50"/>	
+			<VerticalLayout >
+				<Label name="title"  padding="12,26,0,0" maxwidth="140" height="20" font="2"  endellipsis="true" textcolor="#FF000000"/>
+			</VerticalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout name="appTip" height="24"  bordersize="0,1,0,0" bordercolor="#fff7f7f7" bkcolor="#FFFDFDFD">
+			<Label padding="12,4,4,4"  height="16" width="16" bkimage="Chat\applet_icon.png" />
+			<Label name="pkgTypeName" font="10" padding="0,4,4,4" text="@str:IDS_WeChatApplet:192" height="16" width="200" textcolor="#ffb2b2b2" />
+		</HorizontalLayout>			
+	</VerticalLayout>		
+</ChatItem>   

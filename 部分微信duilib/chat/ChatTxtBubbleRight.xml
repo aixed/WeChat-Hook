@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>
+	<HorizontalLayout>
+		<Label name="selectIcon" width="28" height="28" bkimage="chatroom\AddChat_Unselected_Btn.png" padding="12,12,-6,0" visible="false"/>
+		<Control />
+		<VerticalLayout name="chatLayout">
+			<mmLabel name="chatroomNickLab" visible = "false" text="" padding="4,0,4,0" height="16" font="10" textcolor="#FFB2B2B2" align="right"/>
+			<HorizontalLayout>
+				<EmotionText name="expiredLab" text="" fitTextSize="true" height="24" width="140" maxwidth="140" enabled="false" padding="0,0,10,0" textcolor="#FF313131" visible="false" font="2" align="right"/>
+				<ImageUI name="chatStatus" width="24" height="24" align="center" padding="0,0,10,0" visible="false" userdata="Common\single_flower.png  chat\senderror_local_ico.png  chat\senderror_ico.png" />
+				<BubbleFrame name="chatContent" height="34" padding="0,6,0,10" inset="10,6,15,8" menu="true" bkimage="@image:chatbubble_right_default" hotimage="@image:chatbubble_right_hover" pushedimage="@image:chatbubble_right_click" maskimage="@image:chatbubble_right_mask" expiredimage="chat\picture_overdue_right.png">
+					<Button name="chatEventBtn" menu="true" />
+				</BubbleFrame>
+			</HorizontalLayout>
+			<HorizontalLayout name="brandLayout" height="18" padding="0,-7,0,10" bkimage="file='chat\texttranslate\text_translate_brand_bk.png' corner='4,4,4,4'" visible="false">
+				<Label name="brandIcon" height="16" width="16" padding="1,1,0,1"/>
+				<Label name="brandName" font="10" height="18" align="center" textcolor="#ffffffff" padding="0,0,4,0"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+		<HeadImgUI name="HeadIcon" menu="true" width="34" height="34" padding="5,6,30,10" borderround="1,1" />
+	</HorizontalLayout>
+</ChatItem>   

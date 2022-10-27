@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="84,84">
+	<Font name="微软雅黑" size="12" bold="false" italic="false" default="true"/>
+	<Font name="微软雅黑" size="14" bold="false" italic="false"/>
+	<Font name="微软雅黑" size="16" bold="false" italic="false"/>
+	
+	<VerticalLayout bkimage="file='main\toast_bg.png' corner='5,5,5,5'">
+	    <Control />
+		<HorizontalLayout name="iconLayout" height="50">
+			<Control />
+			<Label name="icon" width="22" height="22" visible="false"/>
+			<Control />
+		</HorizontalLayout>
+
+		<RelativeLayout name="loadingLayout" height="40" visible="false" padding="0,0,0,14">
+			<FrameAnimation width="40" height="40" layout_gravity="vcenter | hcenter" interval="50" animationList="Main\LoadingAni.xml" play="true" />
+		</RelativeLayout>
+
+		<HorizontalLayout height="20">
+			<Label name="content" text="" textcolor="#FFDDDDDD" align="center"/>
+		</HorizontalLayout>
+		<Control />
+	</VerticalLayout>
+</Window>

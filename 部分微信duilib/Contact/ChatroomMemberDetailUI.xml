@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+	<ChatroomMemberDetailUI>
+		<HorizontalLayout>
+			<VerticalLayout  bkcolor="#FFEFEFEF" >
+				<!---<VerticalLayout width="450" height="300" bkimage="file='border.png' corner='5,5,5,5'">-->
+				
+				<HorizontalLayout height="62" bordersize="0,0,0,1" bordercolor="#FFE7E7E7" >
+					<!-- <Control name="txtLeftCon"  width="70"/> -->
+					<!---<VerticalLayout name="panelTitle" height="50" >
+						<Control  />
+							<Button name="btnTitle"  height="20"  text="" textcolor="#FF434343" font="1" visible="false" textpadding="0,0,0,0" padding="0,0,0,0" align="center"/>
+							<Edit name="txtInTitle" height="20"  text="" textcolor="#FF434343" font="1" visible="true" textpadding="0,0,0,0" padding="0,0,0,0" align="center" maxchar="32" />
+						<Control  />
+					</VerticalLayout>
+					
+					<VerticalLayout name="panelTitle" height="50" >
+						<Control  />
+						<Edit name="txtInTitle" height="24" text="" textcolor="#FF434343" disabledtextcolor="#FF434343" font="1" visible="true" 
+							hotimage="file='contact\groupTitleHover.png' corner='5,10,5,10'" 
+							focusedimage="file='contact\groupTitleHover.png' corner='5,10,5,10'" 
+							textpadding="3,2,3,2" padding="0,0,0,0" align="left" maxchar="32" />
+						<Control  />
+					</VerticalLayout>
+					<Control  />
+					-->
+					<mmLabel name="txtTitle" font="12" text="" textcolor="#FF000000" textpadding="0,0,0,0" padding="30,24,0,0" align="left" maxwidth="400" endellipsis="true"/>
+					<!-- <Label name="txtMemberCnt" width="70" align="left"  padding="20,17,0,0"  textcolor="#FF979797" font="12"/> -->
+				</HorizontalLayout>
+					
+				<mmTileLayout name="panelMembers" groupchild="true" vscrollbar="true" itemsize="67,100" inset="74,16,74,0"   bkcolor="#FFEFEFEF">
+					
+				</mmTileLayout>
+				
+				<HorizontalLayout name="chatroom_btn_layout" padding="0,0,0,0" height="110" bkcolor="#FFEFEFEF">
+					<Control  />
+					<Button name="btnChatroomStartChat" text="@str:IDS_ChatRoom_StartChat:1004" width="138" height="36" padding="0,28,0,46" textcolor="#FFFFFFFF" font="2" valign="top" textpadding="0,0,0,0"
+					bkcolor="FF01AD19" hotimage="file='common\Common_Btn_ok_hover.png' corner='5,10,5,10'" pushedimage="file='common\Common_Btn_ok_click.png' corner='5,10,5,10'" />
+					<Control />
+				</HorizontalLayout>
+				<!---</VerticalLayout>-->
+			</VerticalLayout>
+		</HorizontalLayout>
+	</ChatroomMemberDetailUI>
+</Window>

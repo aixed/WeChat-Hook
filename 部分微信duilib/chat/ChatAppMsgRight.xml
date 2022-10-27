@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>
+	<HorizontalLayout>
+		<Picture name="blink_bg" bkimage="setting\blink_gb.gif" float="true"/>
+		<Label name="selectIcon" width="28" height="28" bkimage="chatroom\AddChat_Unselected_Btn.png" padding="12,12,-6,0" visible="false"/>
+		<Control />
+		<VerticalLayout name="chatLayout">
+			<mmLabel name="chatroomNickLab" visible="false" text="" padding="4,0,4,0" height="16" textcolor="#FFB2B2B2" align="right"/>
+			<HorizontalLayout >
+				<EmotionText name="expiredLab" text="" fitTextSize="true" height="24" width="140" maxwidth="140" padding="0,0,10,0" textcolor="#FF313131" visible="false" font="2" align="right"/>
+				<ImageUI name="chatStatus" width="24" height="24" align="center" padding="0,0,10,0" visible="false" userdata="Common\single_flower.png  chat\senderror_local_ico.png  chat\senderror_ico.png" />
+				<VerticalLayout>
+					<BubbleFrame name="chatContent" height="34" padding="0,6,0,10" inset="1,1,6,1" menu="true" bkimage="@image:chatbubble_right_light_default" hotimage="@image:chatbubble_right_light_hover" pushedimage="@image:chatbubble_right_light_click" maskimage="@image:chatbubble_right_mask" expiredimage="chat\picture_overdue_right.png" needapptipshow="true" apptipbkcolor="#FFFDFDFD" apptiphotcolor="#FFF2F2F2" apptiplinebkcolor="#fff7f7f7" apptiplinehotcolor="#FFE7E7E7">
+						<mmButton name="chatEventBtn" menu="true" />
+						<mmButton name="fileEventBtn" menu="true" visible="false" float="true" pos="160,16,0,0" width="40" height="40" />
+					</BubbleFrame>
+					<Container name="bottomContainer" visible="false"></Container>
+					<!--<HorizontalLayout name="appTip" width="70" padding="1,0,0,10" inset="8,0,8,0" height="28" bkimage="file='Chat\Chat_Remark_BG.png' corner='3,5,3,5'" visible="false">
+						<MMHttpImage name="appIcon" enabled="false" padding="4,6,0,6" height="16" width="16" bkcolor="#ffD9D9D9" visible="false"/>
+						<Label name="appName" padding="4,6,4,6" height="16" width="50" textcolor="#ffffffff" align="center"/>
+					</HorizontalLayout>-->
+				</VerticalLayout>
+			</HorizontalLayout>
+			<EmotionText name="remindLab" text="" padding="0,-4,0,4" height="18" width="220" textcolor="#FF313131" visible="false" font="10" align="center" />
+		</VerticalLayout>
+		<HeadImgUI name="HeadIcon" width="34" height="34" padding="5,6,30,10" menu="true" />
+	</HorizontalLayout>
+</ChatItem>  
+
+
+	
+	
+	

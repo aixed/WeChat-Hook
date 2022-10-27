@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <HorizontalLayout height="60" inset="12,13,12,13">
+    <HeadImgUI name="logo" width="34" height="34" mouse="false" recycle="true" accessibilityname="ContactListItem"/>
+    <Label name="no_notify_red_dot" width="10" height="10" visible="false" pos="39,6,0,0" float="true" bordersize="0" bkimage="Session\session_reddot.png" align="center"/>
+    <Label name="unread_count" font="10" pos="40,4,0,0" width="16" height="16" visible="false" float="true" bkimage="Session\Unread_BG.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,2"/>
+    <Label name="unread_count2" pos="36,6,0,0" width="23" height="16" visible="false" float="true" bkimage="Session\Unread_BG_02.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,1"/>
+
+    <HorizontalLayout padding="12,0,0,0">
+      <mmLabel name="nickname" bordersize="0" layout_gravity="left" font="2" textcolor="#FF000000" disabledtextcolor="#FF808080" endellipsis="true" selectedtextcolor="#FF000000"/>
+      <Label name="wxwork_icon" width="20" height="20" padding="0,9,2,0" bkimage="Session\wework_logo.png"/>
+      <mmLabel name="extendName" maxwidth="70" visible="false" width="0" font="0" textcolor="#FFEA9200" disabledtextcolor="#FF999999" padding="0,4,0,0" endellipsis="true" selectedtextcolor="#FF000000"/>
+    </HorizontalLayout>
+
+  </HorizontalLayout>
+</Window>

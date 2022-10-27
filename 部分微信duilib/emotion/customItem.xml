@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CustomListItem>
+   <RelativeLayout inset="0,0,0,0" >
+     <HorizontalLayout name="picture_layout" layout_gravity="hcenter" width="72" height="72" inset="6,6,6,6">
+	     <Picture name="picture" visble="true" stretch="true" needHighQuality="true" width="60" height="60" enabled="false" />	
+     </HorizontalLayout>
+   </RelativeLayout>
+</CustomListItem>

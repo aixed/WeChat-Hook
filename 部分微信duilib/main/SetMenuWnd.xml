@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="true" ?>
+<Window size="134,138" >
+	<Font name="微软雅黑" size="14" bold="false" italic="false" default="true" />
+	<Default 
+	name="VScrollBar" value="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;10&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\common_scrollbar.png' source='0,0,10,9' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\common_scrollbar.png' source='10,0,20,9' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\common_scrollbar.png' source='10,0,20,9' corner='0,4,0,4'&quot; bknormalimage=&quot;file='Main\common_scrollbar.png' source='0,12,1,13' corner='0,0,0,0'&quot;"/>
+	<VerticalLayout name="mainLayout"   bkimage="Main\Menu_back.png" >
+		<VerticalLayout name="buttonLayout" bkcolor="#B01B1E1D" groupchild="true">
+			<mmContainerButton name="finderLiveBtn" hotbkcolor="#0AFFFFFF" height="46" accessibilityname="视频号直播伴侣" visible="false" >
+				<Button height="46" text="@str:IDS_FIND_LIVE:4847" align="left|vcenter" textpadding="10,0,0,0" textcolor="FF8C8C8C" />
+				<Label name="liveRedDot" float="true" pos="110,14,0,0" width="8" height="8" bkimage="Session\RedDot.png" visible="false" />
+			</mmContainerButton>
+			<mmContainerButton name="backupBtnLayout" hotbkcolor="#0AFFFFFF" height="46" accessibilityname="迁移与备份">
+				<Button name="backupBtn" height="46" text="@str:IDS_MIGRATE_MAINWND_MENU_TITLE" align="left|vcenter" textpadding="10,0,0,0" textcolor="FF8C8C8C" />
+				<Label name="backupRedDot" float="true" pos="110,14,0,0" width="8" height="8" bkimage="Session\RedDot.png" visible="false" />
+			</mmContainerButton>
+			<Button name="feedBackBtn" hotbkcolor="#0AFFFFFF" height="46" text="@str:IDS_FeedBack_Title:1053" align="left|vcenter" textpadding="10,0,0,0" textcolor="FF8C8C8C" />
+			<mmContainerButton name="setBtn" hotbkcolor="#0AFFFFFF" height="46" accessibilityname="@str:IDS_Setting_Title:1055">
+				<Button height="46" text="@str:IDS_Setting_Title:1055" align="left|vcenter" textpadding="10,0,0,0" textcolor="FF8C8C8C" />
+				<Label name="updateRedDot" float="true" pos="45,14,0,0" width="8" height="8" bkimage="Session\RedDot.png"/>
+			</mmContainerButton>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

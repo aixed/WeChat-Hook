@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="550,470" caption="0,0,0,46" roundcorner="3,3"  bktrans="false">
+	<Font name="微软雅黑" size="14" bold="false"/> <!-- 0 -->
+	<Font name="微软雅黑" size="12" bold="false" underline="false"/> <!-- 1 -->
+	<Font name="微软雅黑" size="10" bold="flase"/> <!-- 2 -->
+	<Default
+	name="VScrollBar" value="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbminlen=&quot;20&quot; scrollbarsize=&quot;11&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_right_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_right_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_right_hover.png'  corner='0,4,0,4'&quot;"/>
+    
+	<VerticalLayout bkcolor="#FFF5F5F5">
+	
+	
+		<HorizontalLayout  height="36" groupchild="true"  accessibilityrole="toolbar">    <!-- title 设置及关闭button -->
+			<!--Label height="30" width="30" padding="15,15,5,15" bkimage="Setting\copyright_logo.png" /-->
+			<Label text="@str:IDS_Setting_Title:1055" padding="10,6,0,0" width="60" height="20" font="0" textcolor="#FF999999" align="left" />
+			<Control />
+			<Button name="minbtn" style="@style:normal_min_button"/>
+			<Button name="closebtn" style="@style:normal_close_button"/>
+		</HorizontalLayout>
+
+		<!-- <Include source="Main\GroupVoipStatusBar.xml" /> -->
+		
+		<HorizontalLayout name="mainContent" bkcolor="#FFF5F5F5" padding="0,0,0,0" visible="true" >  <!--  设置主内容 -->
+			
+			<Label width="1" float="true" pos="95,50,96,500"  bkcolor="#FFE3E3E3"/>  <!--此处为绝对位置-->
+
+			<VerticalLayout width="96" padding="0,40,0,0">
+				<TabList name="tab_btn_layout" height="600" vertical="true" itemselectedbkcolor="#00000000" itemhotbkcolor="#00000000" 
+					itemselectedimage="file='Setting\option_selected.png' corner='0,0,2,0'" itemfont="0" itemselectedtextcolor="FF1AAD19" itemalign="center"> <!--  optional button -->
+					<TabListLabelElement name="account_setting"	text="@str:IDS_SettingWnd_Account_Setting:1352" height="31" selected="true" />
+					<TabListLabelElement name="message_notification_setting" text="@str:IDS_Setting_MessageNotification" height="31"/>
+					<TabListLabelElement name="general_setting"	text="@str:IDS_Setting_General_Setting:3372" height="31"/>
+					<TabListLabelElement name="file_setting"	text="@str:IDS_Setting_SavePath_Set:3414" height="31"  />
+					<TabListLabelElement name="shortCutKey_setting"	text="@str:IDS_SettingWnd_ShortCut_Key:1354" height="31"/>
+					<!-- <Option name="backup_setting" text="@str:IDS_SettingWnd_Backup:1355" height="31"   selectedimage="file='Setting\option_selected.png' corner='0,0,2,0' " selectedtextcolor="#FF3DCE3D"/> -->
+					<TabListLabelElement name="other_setting" text="@str:IDS_About_Title:1332" height="31"/>				    
+				</TabList>
+				<Option name="settingUpdateRedDot" visible="false" float="true" pos="75,132,0,0" width="8" height="8" bkimage="Session\RedDot.png"/>
+				<Option name="settingWintestRedDot" visible="false" float="true" pos="75,132,0,0" width="8" height="8" bkimage="Session\RedDot.png"/>
+				<Option name="save_history_RedDot" visible="false" float="true" pos="75,36,0,0" width="8" height="8" bkimage="Session\RedDot.png"/>
+			</VerticalLayout>
+			<VerticalLayout>
+			
+				<VerticalLayout height="434">
+					<TabLayout name="tabs">						
+						<ColumnLayout padding="0,50,0,0" cross_axis_align="center" main_axis_align="start">  <!--  账号设置 -->
+							<Include source="Setting\selfProfile.xml" />
+							<RowLayout padding="0,34,0,0"  height="120">
+								<VerticalLayout  padding="77,0,0,0" height="90" width="wrap_content" >
+									<Label name="autoLoginSettingLabel" width="wrap_content" text="@str:IDS_Setting_AutoLoginSet" font="@font:msyh_14"  height="22"  textcolor="#FF000000" align="left" />
+								</VerticalLayout>
+								<VerticalLayout  padding="24,0,0,0"  height="120" width="wrap_content" >
+									<HorizontalLayout height="22">
+										<Label name="autoLoginStatusLabel"  width="wrap_content" font="@font:msyh_14"  height="22"  textcolor="#FF000000" align="left" />
+										<Button name="autoLoginDisableBtn" width="wrap_content" text="@str:IDS_Setting_AutoLoginDisableBtnTxt" padding="8,0,0,0" font="@font:msyh_14" height="22" textcolor="#ff576B95" align="left" hottextcolor="#7888AA"  pushedtextcolor="#4E6085"/>
+									</HorizontalLayout>
+									<VerticalLayout padding="0,8,0,0">
+										<Text name="autoLoginTipText"   font="@font:msyh_12" width="240"  textcolor="#9E9E9E9E" maxwidth="240"  text="@str:IDS_Setting_AutoLoginTip" visible="true"/>
+										<Text name="autoLoginStatusTipText"  height="wrap_content" font="@font:msyh_12" width="230" textcolor="#9E9E9E9E" maxwidth="230" text="@str:IDS_Setting_AutoLoginTip" />
+									</VerticalLayout>
+								</VerticalLayout>
+							</RowLayout>
+							<Button  text="@str:IDS_Main_LogoutTitle:1047" name="logoutbtn" height="32"  minwidth="110" style="@style:common_secondary_btn_black_style" align="center"/>
+						</ColumnLayout>
+						
+						<!-- 消息通知 -->
+						<VerticalLayout padding="0,50,0,0">
+							<Include source="Setting/MessageNotificationSetting/MessageNotificationSetting.xml" />
+						</VerticalLayout>
+
+						<HorizontalLayout padding="0,50,0,0">  <!-- 通用设置 -->
+							<Picture name="save_history_blink_gb" float="true" pos="0,104,480,124" bkimage="setting\blink_gb.gif" />
+							<Control name="generalSettingBlank" width="78"/>
+							<VerticalLayout>  
+							
+								<HorizontalLayout height="26" name="LangSettingLayout" >   <!-- 语言 -->
+									<Label name="langLabel" text="@str:IDS_Setting_LangSet:3283" font="0" width="48" height="25" padding="0,3,43,0" textcolor="#FF000000" align="left" />
+									<mmCombo name="changeLangBtn" width="132" height="25" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" itemalign="left" itemfont="0" textpadding="30,0,0,0" 
+										normalimage="file='Setting\Setting_Combox_Normal.png' corner='10,10,40,10'" hotimage="file='Setting\Setting_Combox_Hover.png' corner='10,10,40,10'" 
+										pushedimage="file='Setting\Setting_Combox_Click.png' corner='10,10,40,10'" combowndbkimage="file='Setting\Setting_Combox_List_BG.png' corner='10,10,10,10'" itemhotbkcolor="#FFF1F1F1" 
+										itemselectedbkcolor="#FFF1F1F1" >
+										<mmComboListContainerElement height="25" text="@str:IDS_Setting_Lang_Chinese_Simplified:1368" selected="true">
+											<Label name="imgLab" float="true" pos="5,5,0,0" height="18" width="18" bkimage="Setting\Setting_Combox_List_icon.png" visible="false"/>
+											<Label name="textLab" float="true" text="@str:IDS_Setting_Lang_Chinese_Simplified:1368" pos="30,0,0,0" height="25" width="132" font="0" textcolor="#FF000000"/>
+										</mmComboListContainerElement>
+										<mmComboListContainerElement height="25" text="@str:IDS_Setting_Lang_English:1370" >
+											<Label name="imgLab" float="true" pos="5,5,0,0" height="18" width="18" bkimage="Setting\Setting_Combox_List_icon.png" visible="false"/>
+											<Label name="textLab" float="true" text="@str:IDS_Setting_Lang_English:1370" pos="30,0,0,0" height="25" width="132" font="0" textcolor="#FF000000"/>
+										</mmComboListContainerElement>
+										<mmComboListContainerElement height="25" text="@str:IDS_Setting_Lang_Chinese_Tra:1369" >
+											<Label name="imgLab" float="true" pos="5,5,0,0" height="18" width="18" bkimage="Setting\Setting_Combox_List_icon.png" visible="false"/>
+											<Label name="textLab" float="true" text="@str:IDS_Setting_Lang_Chinese_Tra:1369" pos="30,0,0,0" height="25" width="132" font="0" textcolor="#FF000000"/>
+										</mmComboListContainerElement>
+									</mmCombo>
+								</HorizontalLayout>
+								
+								
+								<HorizontalLayout name="generalLayout" height="194" padding="0,20,0,0" >  <!--  通用 -->
+									<Label name="generalLabel" text="@str:IDS_Setting_General:3400" font="0" width="48" height="25" padding="0,0,43,0" textcolor="#FF000000" align="left"/>
+									<VerticalLayout name="generalOptionLayout">
+										<HorizontalLayout name="autoUpdateLay" height="22" padding="0,5,0,0">  <!-- 自动升级 -->
+											<Option name="autoUpdateOption" width="18" height="22" normalimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" hotimage="file='Setting\Setting_CheckBox_Hover.png' dest='0,0,18,18'" 
+												pushedimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" selectedimage="file='Setting\Setting_CheckBox_Click.png' dest='0,0,18,18'" 
+												disabledimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" textpadding="24,0,0,0"
+												text="@str:IDS_Setting_AutoUpdateDes:1272" font="0" textcolor="#FF000000" align="left"/>
+										</HorizontalLayout>
+										<Label name="ClosedAutoUpdateLabel" text="@str:IDS_Setting_Close_Auto_Update_Closed_Label" padding="2,1,0,0," font="0" height="20" textcolor="#FF888888" align="left"/>
+										<HorizontalLayout height="22" padding="0,5,0,0">  <!-- 自启动 -->
+											<Option name="autoRunOption" width="18" height="22" normalimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" hotimage="file='Setting\Setting_CheckBox_Hover.png' dest='0,0,18,18'" 
+												pushedimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" selectedimage="file='Setting\Setting_CheckBox_Click.png' dest='0,0,18,18'" 
+												disabledimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" textpadding="24,0,0,0"
+												text="@str:IDS_SettingWnd_Auto_Run:3303" font="0" textcolor="#FF000000" align="left"/>
+										</HorizontalLayout>
+										<HorizontalLayout height="22" padding="0,5,0,0">  <!-- 聊天记录 -->
+											<Option name="saveHistoryOption" width="18" height="22" normalimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" hotimage="file='Setting\Setting_CheckBox_Hover.png' dest='0,0,18,18'" 
+												pushedimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" selectedimage="file='Setting\Setting_CheckBox_Click.png' dest='0,0,18,18'" 
+												disabledimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" textpadding="24,0,0,0"
+												text="@str:IDS_Save_History:3314" font="0" textcolor="#FF000000" align="left"/>
+										</HorizontalLayout>
+										<HorizontalLayout height="22" padding="0,5,0,0">  <!-- DPI适配 -->
+											<Option name="DPIOption" width="18" height="22" normalimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" hotimage="file='Setting\Setting_CheckBox_Hover.png' dest='0,0,18,18'" 
+												pushedimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" selectedimage="file='Setting\Setting_CheckBox_Click.png' dest='0,0,18,18'" 
+												disabledimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" textpadding="24,0,0,0"
+												text="@str:IDS_DPI_SETTING:3611" font="0" textcolor="#FF000000" align="left"/>
+										</HorizontalLayout>
+										<HorizontalLayout name="UseBrowserLayout" height="26" padding="0,5,0,0">  <!-- 使用系统默认浏览器打开网站 -->
+											<Option name="useSysBrowserOption" width="18" height="22" normalimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" hotimage="file='Setting\Setting_CheckBox_Hover.png' dest='0,0,18,18'" 
+												pushedimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" selectedimage="file='Setting\Setting_CheckBox_Click.png' dest='0,0,18,18'" 
+												disabledimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" textpadding="24,0,0,0"
+												text="@str:IDS_Use_Sys_Browser_As_Default:3982" font="0" textcolor="#FF000000" align="left"/>
+										</HorizontalLayout>
+										<HorizontalLayout height="26" padding="0,5,0,0">  <!-- 聊天中的语音消息自动转成文字 -->
+											<Option name="voiceAutoTranOption" width="18" height="22" normalimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" hotimage="file='Setting\Setting_CheckBox_Hover.png' dest='0,0,18,18'" 
+												pushedimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" selectedimage="file='Setting\Setting_CheckBox_Click.png' dest='0,0,18,18'" 
+												disabledimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" textpadding="24,0,0,0"
+												text="@str:IDS_SETTING_VOICE_AUTO_TRANS:4359" font="0" textcolor="#FF000000" align="left"/>
+										</HorizontalLayout>
+									</VerticalLayout>
+								</HorizontalLayout>
+								
+								<HorizontalLayout height="wrap_content" padding="0,10,0,0">	<!--清空聊天记录-->
+									<Control name="oneKeyClearBlank" width="48" padding="0,0,43,0"/>
+									<Button name="oneKeyClearBtn" text="@str:IDS_OneKey_Clear:3315"  style="@style:common_secondary_btn_black_style"/>
+								</HorizontalLayout>								
+								<HorizontalLayout height="wrap_content" padding="0,12,0,0">	<!--清空聊天记录-->
+									<Control name="diskUsageBlank" width="48" padding="0,0,43,0"/>
+									<Button name="diskUsageBtn" text="@str:IDS_DiskUsage_Setting_Title"   style="@style:common_secondary_btn_black_style"/>
+								</HorizontalLayout>
+								
+								<Control />
+								
+							</VerticalLayout>
+						</HorizontalLayout>
+						
+						
+						<HorizontalLayout padding="0,50,0,0">
+							<Control name="fileSettingBlank" width="78"/>
+							<VerticalLayout>
+								<HorizontalLayout name="fileAutoDownloadLayout" height="25" padding="0,0,0,0" >  <!--  文件自动下载 -->
+									<Label name="fileAutoDownloadLabel"  text="@str:IDS_SETTING_AUTODOWNLOAD:4356" font="0" width="48" height="25" padding="0,3,14,0" textcolor="#FF000000" align="left" />
+									<HorizontalLayout height="22" padding="0,3,0,0" inset="0,0,0,0">
+										<Option name="fileAutoDownloadOption" width="350" height="22" 
+												normalimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" hotimage="file='Setting\Setting_CheckBox_Hover.png' dest='0,0,18,18'" 
+												pushedimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" selectedimage="file='Setting\Setting_CheckBox_Click.png' dest='0,0,18,18'" 
+												disabledimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" textpadding="22,0,0,0"
+												text="@str:IDS_Setting_Enable_File_Auto_download" font="0" textcolor="#FF000000" align="left"/>
+									</HorizontalLayout>
+								</HorizontalLayout >
+								<HorizontalLayout name="filemgr" height="wrap_content" padding="0,20,0,0" visible="true" >  <!-- 文件管理 -->
+									<Label   name="fileManageLabel" text="@str:IDS_Setting_SavePath_Set:3414" font="0" width="48" height="25" padding="0,3,14,0" textcolor="#FF000000" align="left"/>
+									<VerticalLayout height="wrap_content">
+										<VerticalLayout height="wrap_content" width="210" maxheight="70" vscrollbar="true">
+											<EmotionText  name="saveFolderPath" height="wrap_content" minheight="26" textpadding="5,5,5,5" accessibilityname="@str:IDS_Setting_Default_SavePath:3399" width="210" font="0" bkimage="file='common\Common_Btn_cancl_normal.png' corner='4,10,4,10'" singleSelectable="true"/>
+										</VerticalLayout>	
+										<Label text="@str:IDS_Setting_Default_SavePath:3399" padding="2,1,0,0," font="0" height="20" textcolor="#FF888888" align="left"/>
+										<HorizontalLayout height="32" padding="0,20,0,0,">
+											<Button name="changeFolderBtn" visible="true" text="@str:IDS_Setting_ChangeFolder:1139" minwidth="100"  style="@style:common_secondary_btn_black_style"/>
+											<Button name="openFolderBtn" visible="true" text="@str:IDS_Setting_OpenFolder:1140" minwidth="100"  padding="10,0,0,0" style="@style:common_secondary_btn_black_style"/>
+										</HorizontalLayout>
+									</VerticalLayout>
+								</HorizontalLayout>
+						    </VerticalLayout>
+						</HorizontalLayout>
+						
+						<HorizontalLayout padding="0,50,0,0">  <!--  快捷按键 -->
+							<Control name="hotkeySettingBlank" width="78" />
+							<VerticalLayout>
+							
+								<HorizontalLayout height="26" > <!-- 发送消息 -->
+									<Label name="sendMsgLabel" text="@str:IDS_Setting_SendMsg:1135" font="0" width="48" height="20" padding="0,3,43,0" textcolor="#FF000000" align="left"/>
+									<mmCombo name="setsendbtn"  width="132" height="25" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" itemalign="center" itemfont="0" textpadding="0,0,25,0" 
+										normalimage="file='Setting\Setting_Combox_Normal.png' corner='10,10,40,10'" hotimage="file='Setting\Setting_Combox_Hover.png' corner='10,10,40,10'"
+										pushedimage="file='Setting\Setting_Combox_Click.png' corner='10,10,40,10'" combowndbkimage="file='Setting\Setting_Combox_List_BG.png' corner='10,10,10,10'" 
+										itemhotbkcolor="#FFF1F1F1" itemselectedbkcolor="#FFF1F1F1" >
+										<mmComboListContainerElement height="25" text="Enter" >
+											<Label name="imgLab" float="true" pos="5,5,0,0" height="18" width="18" bkimage="Setting\Setting_Combox_List_icon.png" visible="false"/>
+											<Label name="textLab" float="true" text="Enter" pos="30,0,0,0" height="25" width="132" font="0" textcolor="#FF000000"/>
+										</mmComboListContainerElement>
+										<mmComboListContainerElement height="25" text="Ctrl + Enter" selected="true">
+											<Label name="imgLab" float="true" pos="5,5,0,0" height="18" width="18" bkimage="Setting\Setting_Combox_List_icon.png" visible="false"/>
+											<Label name="textLab" float="true" text="Ctrl + Enter" pos="30,0,0,0" height="25" width="132" font="0" textcolor="#FF000000" />
+										</mmComboListContainerElement>
+									</mmCombo>
+								</HorizontalLayout>
+
+								<HorizontalLayout height="26" padding="0,30,0,0"> <!-- 截取屏幕 -->
+									<Label name="snapShotLabel" text="@str:IDS_Setting_SnapShot:1136" font="0" width="48" height="18" padding="0,3,43,0" textcolor="#FF000000" align="left"/>
+									<Button name="screenshotbtn"  width="132" textcolor="#FF000000" align="center" font="0" normalimage="file='Setting\Setting_InputBox_Normal.png' corner='5,10,5,10'" hotimage="file='Setting\Setting_InputBox_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Setting_InputBox_Click.png' corner='5,10,5,10'" />
+									<Label name="snapShotConflictLabel" text="@str:IDS_Setting_HotKey_Conflict:3459" font="0" height="18" textcolor="#FF9A9A9A" padding="6,5,0,5" visible="false"/>
+								</HorizontalLayout>
+
+								<HorizontalLayout height="26" padding="0,30,0,0"> <!-- 打开主界面 -->
+									<Label name="openMainLabel" text="@str:IDS_Setting_OpenMain:1137" font="0" width="48" height="20" padding="0,3,43,0" textcolor="#FF000000" align="left"/>
+									<Button name="jumpmainbtn"  width="132" textcolor="#FF000000" align="center" font="0" normalimage="file='Setting\Setting_InputBox_Normal.png' corner='5,10,5,10'" hotimage="file='Setting\Setting_InputBox_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Setting_InputBox_Click.png' corner='5,10,5,10'" />
+									<Label name="openMainConflictLabel" text="@str:IDS_Setting_HotKey_Conflict:3459" font="0" height="18" textcolor="#FF9A9A9A" padding="6,5,0,5" visible="false"/>
+								</HorizontalLayout>
+								
+								<HorizontalLayout height="20" padding="0,30,0,0"> <!-- 热键冲突提醒 -->
+									<Label name="checkKeyConflictLabel" text="@str:IDS_Setting_Check_Shortcut_Key:3403" font="0" width="48" height="20" padding="0,0,43,0" textcolor="#FF000000" align="left"/>
+									<HorizontalLayout height="20">  
+										<Option name="notifyConflictOption" width="18" height="18" normalimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" hotimage="file='Setting\Setting_CheckBox_Hover.png' dest='0,0,18,18'" 
+												pushedimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" selectedimage="file='Setting\Setting_CheckBox_Click.png' dest='0,0,18,18'" 
+												disabledimage="file='Setting\Setting_CheckBox_Normal.png' dest='0,0,18,18'" textpadding="24,0,0,0"
+												text="@str:IDS_Setting_Shortcut_Clash_Notify:3404" font="0" textcolor="#FF000000" align="left"/>
+									</HorizontalLayout>
+								</HorizontalLayout>
+								
+								<HorizontalLayout height="32" padding="0,40,0,0">	<!-- 恢复设置 -->
+									<Control name="restoreHotkeyBlank" width="48" padding="0,0,44,0"/>
+									<Button name="restoreHotKey" text="@str:IDS_Setting_Restore_Shortcut_Key:3402" minwidth="132" style="@style:common_secondary_btn_black_style"/> 
+								</HorizontalLayout>
+								
+							</VerticalLayout>
+						</HorizontalLayout>
+						
+						<!--  聊天备份 -->
+<!-- 						<HorizontalLayout padding="0,50,0,0">  
+							<Control name="backupSettingBlank" width="78"/>
+							<VerticalLayout> -->
+								<!--  备份 -->
+							<!-- 	<HorizontalLayout height="26"> 
+									<Label name="backupLabel" text="@str:IDS_SettingWnd_Backup_Label:3413" font="0" width="48" height="20" padding="0,5,43,0" textcolor="#FF000000" align="left"/>
+									<Button name="backupBtn" text="@str:IDS_Backup_BackupBtnTxt:1304" width="130" font="0" normalimage="file='common\Common_Btn_cancl_normal.png' corner='4,10,4,10'" hotimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" pushedimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" />
+								</HorizontalLayout> -->
+								<!--  备份记录 -->
+						<!-- 		<HorizontalLayout height="20" padding="0,30,0,0"> 
+									<Label name="backupRecordLabel" text="@str:IDS_Setting_Backup_Record_Label:3405" font="0" width="48" height="20" padding="0,0,43,0" textcolor="#FF000000" align="left"/>
+									<VerticalLayout height="200">
+										<Label name="noRecordLab" text="@str:IDS_Backup_NoBackupRecord:1306" font="0" height="20" textcolor="#FF000000" align="left" visible="true"/>
+										<VerticalLayout  name="restoreInfoLayout" visible="false">
+											<Text name="lastBackupInfoLab" font="0" height="18" align="left" width="260"/>
+											<Button name="restoreBackupLab" text="@str:IDS_Setting_Backup_Restore:3406" height="26" width="130" font="0" textcolor="#FF000000" align="center" normalimage="file='common\Common_Btn_cancl_normal.png' corner='4,10,4,10'" hotimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" pushedimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'"  />
+										</VerticalLayout>
+									</VerticalLayout>
+								</HorizontalLayout>
+							</VerticalLayout>
+						</HorizontalLayout> -->
+						<!--  新版聊天备份 -->
+<!-- 						<HorizontalLayout padding="0,50,0,0">  
+							<Control width="78"/>
+							<VerticalLayout> -->
+								<!--  备份 -->
+							<!-- 	<HorizontalLayout height="36" padding="0,10,0,0">
+									<Label text="@str:IDS_BackupExt_BackupTitle:3654" padding="0,3,0,0" width="140" height="26" font="0" textcolor="#FF000000" align="left"/>					
+									<Button name="newBackupBtn" text="@str:IDS_BackupExt_BackupBtn:3661" padding="0,0,0,0" width="114" height="26" font="0" normalimage="file='common\Common_Btn_cancl_normal.png' corner='4,10,4,10'" hotimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" pushedimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" />	
+								</HorizontalLayout>	 -->
+								
+								<!--  恢复 -->
+							<!-- 	<HorizontalLayout height="36" padding="0,35,0,0">
+									<Label text="@str:IDS_BackupExt_RestoreTitle:3655" padding="0,3,0,0" font="0" width="140" height="26" textcolor="#FF000000" align="left"/>			
+									<Button name="newRestoreBtn" text="@str:IDS_BackupExt_RestoreBtn:3662" padding="0,0,0,0" width="114" height="26" font="0" normalimage="file='common\Common_Btn_cancl_normal.png' corner='4,10,4,10'" hotimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" pushedimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" />	
+								</HorizontalLayout>	 -->
+								
+								<!--  备份管理 -->
+								<!-- <HorizontalLayout height="36" padding="0,35,0,0">
+									<Label text="@str:IDS_BackupExt_ManageLabel:3725" padding="0,3,0,0" font="0" width="140" height="26" textcolor="#FF000000" align="left"/>			
+									<Button name="backupMgrBtn" text="@str:IDS_BackupExt_BackupManage:3675" padding="0,0,0,0" width="114" height="26" font="0" normalimage="file='common\Common_Btn_cancl_normal.png' corner='4,10,4,10'" hotimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" pushedimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" />	
+								</HorizontalLayout>	 -->
+								
+					<!-- 		</VerticalLayout>
+						</HorizontalLayout> -->
+						
+						<!--  不支持备份的提示 -->
+						<!-- <HorizontalLayout padding="0,50,0,0">  
+							<Control width="78"/>
+							<VerticalLayout>
+								<EmotionText name="notSupportBakTxt" text="@str:IDS_BackupExt_VersionNotSupport:3733" fitTextSize="true" maxwidth="380" align="left" font="0" textcolor="#FF000000" align="left"/>
+							</VerticalLayout>
+						</HorizontalLayout> -->
+						
+						<VerticalLayout padding="0,50,0,0">
+							<HorizontalLayout height="345">  <!--  关于微信 -->
+								<Control name="aboutSettingBlank" width="50"/>
+								<VerticalLayout>
+									<HorizontalLayout height="54"> <!-- 版本 -->
+										<Label name="updateLabel" text="@str:IDS_Setting_Update_Label:3407" font="0" width="48" height="20" padding="0,0,43,0" textcolor="#FF000000" align="left" />
+										<VerticalLayout>
+											<HorizontalLayout height="18">
+												<Label name="versionName" text="此内容动态加载" padding="0,0,0,0" font="0" height="18" textcolor="#FF000000" align="left"/>
+												<Label name="UpdateNewLab" text="new" padding="5,0,0,3" width="27" height="18" textcolor="#FFFFFFFF" bkimage="file='session\NotReading_BG.png' corner='9,5,9,5' " align="center"  font="1"/>
+											</HorizontalLayout>
+											<Button name="checkUpdateBtn" text="此内容动态加载" padding="0,4,0,0" width="82" style="@style:common_secondary_btn_black_style"/>
+										</VerticalLayout>
+									</HorizontalLayout>
+									<!-- 意见反馈 -->
+	<!-- 								<HorizontalLayout height="26" padding="0,30,0,0"> 
+										<Label name="feedbackLabel" text="@str:IDS_Setting_FeedBack_Label:3408" font="0" width="48" height="18" padding="0,5,43,0" textcolor="#FF000000" align="left" />
+										<Button name="feedbtn" text="@str:IDS_SettingWnd_Feedback:1357" width="82" height="26" font="0" textcolor="#FF000000" align="center" normalimage="file='common\Common_Btn_cancl_normal.png' corner='4,10,4,10'" hotimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" pushedimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" />
+									</HorizontalLayout> -->
+
+									<HorizontalLayout name="helpLayout" height="32" padding="0,30,0,0"> <!-- 查看帮助 -->
+										<Label name="helpLabel" text="@str:IDS_Setting_Help_Label:3410" font="0" width="48" height="18" padding="0,3,43,0" textcolor="#FF000000" align="left" />
+										<Button name="helpbtn" text="@str:IDS_Setting_Hep_Btn:3412" width="82" style="@style:common_secondary_btn_black_style"/>
+									</HorizontalLayout>
+									
+									<HorizontalLayout name="winTestLayout" height="78" padding="0,40,0,0" visible="true"> <!-- 内测邀请 -->
+										<Label name="winTestLabel" text="@str:IDS_Setting_Wintest_Invite:4144" font="0" width="100" height="20" padding="0,3,0,0" textcolor="#FF000000" align="left" />
+										<VerticalLayout padding="40,0,0,0">
+											<HorizontalLayout height="26">
+												<Button name="winTestBtn" text="@str:IDS_Setting_Wintest_ShowDetail:4143" minwidth="82" height="26" font="0" textcolor="#FF000000" align="center" normalimage="file='common\Common_Btn_cancl_normal.png' corner='4,10,4,10'" hotimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" pushedimage="file='common\Common_Btn_cancl_hover.png' corner='4,10,4,10'" />
+												<Label name="winTestNewLab"  padding="2,1,0,0" width="8" height="8" textcolor="#FFFFFFFF" bkimage="Session\RedDot.png"/>
+											</HorizontalLayout>
+											<VerticalLayout name ="winTestDetailLayout" padding="0,6,0,0"   visible="false">
+												<Button name="winTestDetailBtn"  text="@str:IDS_WinTest_ShowDetail:4146" width="82" height="22" font="1" textcolor="#FF3399FF" align="left" />
+												<Button name="winTestAboutBtn" padding="0,2,0,0"   text="@str:IDS_WinTest_About:4147" width="82" height="22" font="1" textcolor="#FF3399FF" align="left" />
+											</VerticalLayout>
+										</VerticalLayout>
+						
+									</HorizontalLayout>
+									<!-- 显示红版信息 -->
+									<Text name="red_version_info" visible="true" maxwidth="330" maxheight="100" padding="0,30,0,0" align="left" font="1" textcolor="#FF000000" />
+								</VerticalLayout>
+							</HorizontalLayout>
+							<!-- 版权所有 -->
+							<VerticalLayout name="copyrightLayout" height="48" width="455" padding="0,0,0,0">
+								<HorizontalLayout height="18">
+									<Control />
+									<Label name="copyRightLab" height="18" textcolor="#FF9A9A9A" align="center" font="1"/>
+									<Label name="companyLab" text="@str:IDS_About_PowerForTencent:1333" width="95" height="18" textcolor="#FF9A9A9A" align="center" font="1"/>
+									<Control />
+								</HorizontalLayout>
+								
+								<HorizontalLayout height="18">
+									<Control />
+									<Button name="serviceTermsBtn" text="@str:IDS_About_ServiceAgreement:1334" width="55" height="18" font="1" textcolor="#FF2C90FF" align="center"/>
+									<Label name="andLabel" text="@str:IDS_About_Window_And:3293" font="1" textcolor="#FF9A9A9A" align="center" visible="false"/>
+									<Button name="privacyPolicyBtn" text="@str:IDS_About_Window_PrivacyPolicy:3294" width="55" height="18" font="1" textcolor="#FF2C90FF" align="center" visible="false"/>
+									<Control />
+								</HorizontalLayout>
+							</VerticalLayout>
+						</VerticalLayout>
+						
+						
+						
+					</TabLayout>
+					
+				</VerticalLayout>
+				
+				
+				
+				
+				
+				<!--HorizontalLayout name="copyrightLayout" height="30" visible="false">   
+					<Control />
+					<Label name="copyRightLab" text="@str:IDS_About_CopyRightLine1:1335" width="175" height="20" textcolor="#FF9A9A9A" align="center" font="0"/>
+					<Label text="@str:IDS_About_CopyRightLine2:1336" width="105" height="20" textcolor="#FF9A9A9A" align="center" font="0"/>
+					<Label name="companyLab" text="@str:IDS_About_PowerForTencent:1333" width="90" height="20" textcolor="#FF9A9A9A" align="center" font="0"/>
+					<Button name="clauseBtn" text="@str:IDS_About_ServiceAgreement:1334" width="50" height="20" font="0" textcolor="#FF66B9FD" align="center"/>
+					<Control />
+				</HorizontalLayout-->
+				
+				<HorizontalLayout name="secureLayout" height="30" width="475" float="true" pos="1,380,0,0" visible="false">   <!--  电脑管家保护登录安全 --> 
+					<Control />
+					<Label height="16" width="16" bkimage="Login\secureLogo_gray.png" />
+					<Label name="secureLabel" height="18" text="@str:IDS_Setting_Secure_In_Work:3285" textcolor="#FF9A9A9A" padding="2,0,0,0" align="left" font="1"/>
+					<Control />
+				</HorizontalLayout>
+				
+				
+			</VerticalLayout>
+			
+			
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

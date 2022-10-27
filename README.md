@@ -26,12 +26,6 @@ Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 URL:https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
 
 
-# PC微信3.7.6.29接口
-https://www.showdoc.com.cn/aixed/8929096202824749
-
-# PC微信3.7.0.29接口
-https://www.showdoc.com.cn/aixed/8929096202824749
-
 </br>
 </br>
 </br>

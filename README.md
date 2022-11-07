@@ -1,11 +1,5 @@
-## 使用方法/How to use：
-下载msimg32.dll后将dll当道微信安装目录下。比如我这里是
 
-D:\Program Files (x86)\WeChat
-
-重启微信后使用json方式调用即可。
-
-# QQ群:644172025
+# 了解更多VXHook QQ群:644172025
 # QQ:364831018
 # PC微信3.7.6.44接口/New Current
 

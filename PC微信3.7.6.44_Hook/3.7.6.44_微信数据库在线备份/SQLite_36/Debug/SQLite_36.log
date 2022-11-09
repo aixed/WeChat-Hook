@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  backup.cpp
+  backup_ui.cpp
+  dllmain.cpp
+  patch.cpp
+  utility.cpp
+  wechat.cpp
+  正在生成代码...
+  SQLite_36.vcxproj -> D:\微信研究\3.7.6.44\WxSQLite3.7.6.44_在线备份查询数据库\Debug\SQLite_36.dll

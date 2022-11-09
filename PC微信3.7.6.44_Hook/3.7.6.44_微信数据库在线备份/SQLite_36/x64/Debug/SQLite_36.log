@@ -1,0 +1,42 @@
+﻿  pch.cpp
+  backup.cpp
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(37,75): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_open”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(38,96): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_backup_init”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(39,96): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_backup_step”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(40,111): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_backup_remaining”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(41,111): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_backup_pagecount”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(42,78): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_sleep”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(43,102): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_backup_finish”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(44,84): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_errcode”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(45,78): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_close”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(88,12): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(121,41): warning C4312: “类型强制转换”: 从“DWORD”转换到更大的“sqlite3 *”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(146,75): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“p_sqlite3_exec”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup.cpp(149,28): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“sqlite3 *”
+  backup_ui.cpp
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup_ui.cpp(18,62): warning C4311: “类型强制转换”: 从“HMODULE”到“DWORD”的指针截断
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup_ui.cpp(18,62): warning C4302: “类型强制转换”: 从“HMODULE”到“DWORD”截断
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup_ui.cpp(35,62): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“int *”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup_ui.cpp(92,15): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup_ui.cpp(186,12): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\backup_ui.cpp(270,12): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+  dllmain.cpp
+  patch.cpp
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\patch.cpp(8,98): warning C4312: “类型强制转换”: 从“unsigned long”转换到更大的“LPVOID”
+  utility.cpp
+  wechat.cpp
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(24,5): warning C4312: “类型强制转换”: 从“DWORD”转换到更大的“HMODULE”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(100,47): warning C4311: “类型强制转换”: 从“void (__cdecl *)(void)”到“DWORD”的指针截断
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(100,47): warning C4302: “类型强制转换”: 从“void (__cdecl *)(void)”到“DWORD”截断
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(101,61): warning C4312: “类型强制转换”: 从“DWORD”转换到更大的“LPVOID”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(125,12): error C2485: “naked”: 无法识别的扩展特性
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(128,2): error C4235: 使用了非标准扩展: 不支持在此结构上使用“__asm”关键字
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(131,3): error C2065: “pushad”: 未声明的标识符
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(134,3): error C2146: 语法错误: 缺少“;”(在标识符“lea”的前面)
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(134,3): error C2065: “lea”: 未声明的标识符
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(134,7): error C2146: 语法错误: 缺少“;”(在标识符“eax”的前面)
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(134,7): error C2065: “eax”: 未声明的标识符
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(134,17): error C2760: 语法错误:此处出现意外的“+”；应为“,”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(134,23): error C2059: 语法错误:“]”
+C:\Users\Administrator\Documents\Tencent Files\364831018\FileRecv\WxSQLite3.6.0.18\SQLite_36\wechat.cpp(159,55): warning C4312: “类型强制转换”: 从“int”转换到更大的“char *”
+  正在生成代码...

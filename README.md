@@ -1,27 +1,31 @@
 
-# 了解更多VXHook 
+# More PC WeChat Hook Technology
 
-## QQ:364831018
-## Telegram:@Aixed
-## TelegramGroup:https://t.me/PCWeChatReverse
-# PC微信3.7.6.44接口/New Current
+## QQ: 364831018
+## Telegram: @Aixed
+## TelegramGroup: https://t.me/PCWeChatReverse
 
-## 接口 使用文档/Docs：
+# New Current
+# PC微信3.7.6.44接口/PC WeChat 3.7.6.44 Interface 
+
+## 接口文档/Interface Docs：
 https://www.showdoc.com.cn/wechatproject
 
 
 
 
-# 历史版本/History
+# 历史版本下载
+# History wechat download
 
-## 微信下载地址/Download：
 Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 
-## 如何下载历史版本微信/How to download history wechat version
+## 如何下载历史版本微信
+## How to download history wechat version
 
-后面的 3.3.0.104 版本号输入你想要下载的版本号即可
+### 后面的 3.3.0.104 版本号输入你想要下载的版本号即可
+### Change the version number(3.3.0.104) for you want to download ver
 
-URL:https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
+### URL:https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
 
 
 </br>
@@ -44,17 +48,25 @@ download E5.8.exe install and bulid this *.e file.
 
 
 # 致谢 & 参考
+# Reference & Thanks
 
-提供了微信call寻找思路与教程：
+## 提供了微信call寻找思路与教程：
+## This project provided me with a tutorial
+
 https://github.com/hedada-hc/pc_wechat_hook
 
-数据库备份部分代码引用了 zmrbak 老师的代码，在此表示感谢：
+
+## 数据库备份部分代码引用了 zmrbak 老师的代码，在此表示感谢：
+## An example of database backup, the code by zmrbak
+
 https://github.com/zmrbak/PcWeChatHooK
 
-Web微信协议的部分根据这个视频思路写的，感谢乐易论坛的讲师 揰掵佲 做的教程:  
+## Web微信协议的部分根据这个视频思路写的，感谢乐易论坛的讲师 揰掵佲 做的教程:  
+## These videos helped me when I was doing the web WeChat protocol
+
 https://www.bilibili.com/video/BV1WJ411i7Bb?spm_id_from=333.337.search-card.all.click
 
-还有那些在我找call过程中给我提供思路、源码、偏移的所有人，诚挚感谢你们的支持与帮助！
+## 最后，还有那些在我找call过程中给我提供思路、源码、偏移的所有人，诚挚感谢你们的支持与帮助！
 
 # 致敬
 

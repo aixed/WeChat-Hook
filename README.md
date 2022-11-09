@@ -9,14 +9,12 @@
 </br>
 
 # New Current
-## PC微信3.7.6.44接口
-## PC WeChat 3.7.6.44 Interface 
+## PC微信3.7.6.44接口/PC WeChat 3.7.6.44 Interface 
 ## Download New WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 </br>
 </br>
 
-## 接口文档
-## Interface Docs：
+## 接口文档/Interface Docs：
 https://www.showdoc.com.cn/wechatproject
 </br>
 
@@ -27,26 +25,21 @@ https://www.showdoc.com.cn/wechatproject
 
 
 # History
-## PC微信3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23接口
-## PC wechat 3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23 interface some code
+## PC微信3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23接口/PC wechat 3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23 interface some code
 
 
-## 下载旧微信
-## Download history wechat
+## 下载旧微信/Download history wechat
 ## How to download history wechat version
 </br>
 
-### 修改版本号(3.3.0.104) 输入你想要下载的版本
-### Change the version number(3.3.0.104) for you want to download ver
+### 修改版本号(3.3.0.104) 输入你想要下载的版本/Change the version number(3.3.0.104) for you want to download ver
 
 ### URL:https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
 
 
 ## 如何使用/How to use
-How to start
 
-下载E语言5.8版本。打开编译即可。
-download E5.8.exe install and bulid this *.e file.
+下载E语言5.8版本。打开编译即可/download E5.8.exe install and bulid this *.e file.
 
 
 

@@ -1,4 +1,5 @@
 
+# 更多 PC微信Hook技术
 # More PC WeChat Hook Technology
 
 
@@ -8,8 +9,10 @@
 </br>
 
 # New Current
-# PC微信3.7.6.44接口
-# PC WeChat 3.7.6.44 Interface 
+## PC微信3.7.6.44接口
+## PC WeChat 3.7.6.44 Interface 
+## Download New WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
+</br>
 </br>
 
 ## 接口文档
@@ -18,32 +21,25 @@ https://www.showdoc.com.cn/wechatproject
 </br>
 
 
-
-# 历史版本下载
-# History wechat download
-
-Download WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
+</br>
+</br>
 </br>
 
-## 如何下载历史版本微信
+
+# History
+## PC微信3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23接口
+## PC wechat 3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23 interface some code
+
+
+## 下载旧微信
+## Download history wechat
 ## How to download history wechat version
 </br>
 
-### 后面的 3.3.0.104 版本号输入你想要下载的版本号即可
+### 修改版本号(3.3.0.104) 输入你想要下载的版本
 ### Change the version number(3.3.0.104) for you want to download ver
 
 ### URL:https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
-
-
-</br>
-</br>
-</br>
-
-
-
-
-## PC微信3.6.0.18接口/Support Vertion 3.6.0.18
-Support PC WeChat 3.6.0.18 Version
 
 
 ## 如何使用/How to use

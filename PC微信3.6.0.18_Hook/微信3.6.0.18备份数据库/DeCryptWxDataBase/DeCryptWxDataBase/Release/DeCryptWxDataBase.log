@@ -1,0 +1,34 @@
+﻿  aes.c
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(327,19): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(328,19): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(329,15): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(336,19): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(337,19): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(338,15): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(345,19): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(346,19): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(347,15): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(354,19): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(355,19): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(356,15): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+  pbkdf2_hmac.c
+  sha.c
+  dllmain.cpp
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(327,19): warning C4244: “=”: 从“DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(328,19): warning C4244: “=”: 从“DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(329,17): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(336,19): warning C4244: “=”: 从“DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(337,19): warning C4244: “=”: 从“DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(338,17): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(345,19): warning C4244: “=”: 从“DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(346,19): warning C4244: “=”: 从“DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(347,17): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(354,19): warning C4244: “=”: 从“DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(355,19): warning C4244: “=”: 从“DWORD”转换到“BYTE”，可能丢失数据
+C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\crypto\aes.c(356,17): warning C4244: “=”: 从“const DWORD”转换到“BYTE”，可能丢失数据
+    正在创建库 C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\Release\DeCryptWxDataBase.lib 和对象 C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\Release\DeCryptWxDataBase.exp
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  已完成代码的生成
+  All 27 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  DeCryptWxDataBase.vcxproj -> C:\Users\Administrator\Desktop\微信3.6.0.18备份数据库\DeCryptWxDataBase\DeCryptWxDataBase\Release\DeCryptWxDataBase.dll

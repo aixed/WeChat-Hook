@@ -39,7 +39,7 @@ https://www.showdoc.com.cn/wechatproject
 
 ## 如何使用/How to use
 
-下载E语言5.8版本。打开编译即可/download E5.8.exe install and bulid this *.e file.
+下载E语言5.93版本。打开编译即可/download E5.93.exe [development environment] install and bulid this *.e file.
 
 
 

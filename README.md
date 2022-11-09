@@ -2,6 +2,8 @@
 # 了解更多VXHook 
 
 ## QQ:364831018
+## Telegram:@Aixed
+## TelegramGroup:https://t.me/PCWeChatReverse
 # PC微信3.7.6.44接口/New Current
 
 ## 接口 使用文档/Docs：

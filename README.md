@@ -6,9 +6,11 @@
 ## TelegramGroup: https://t.me/PCWeChatReverse
 
 # New Current
-# PC微信3.7.6.44接口/PC WeChat 3.7.6.44 Interface 
+# PC微信3.7.6.44接口
+# PC WeChat 3.7.6.44 Interface 
 
-## 接口文档/Interface Docs：
+## 接口文档
+## Interface Docs：
 https://www.showdoc.com.cn/wechatproject
 
 

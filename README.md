@@ -9,7 +9,7 @@
 </br>
 
 # New Current
-## PC微信3.7.6.44接口/PC WeChat 3.7.6.44 Interface 
+## PC微信3.8.0.41接口/PC WeChat 3.8.0.41 Interface 
 ## Download New WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
 </br>
 </br>

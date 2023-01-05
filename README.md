@@ -14,6 +14,8 @@
 </br>
 </br>
 
+## Tutorial: https://www.youtube.com/channel/UCruIOA7hJdYZF0dkFKUFPvA
+
 ## 接口文档/Interface Docs：
 https://www.showdoc.com.cn/wechatproject
 </br>

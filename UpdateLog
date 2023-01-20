@@ -38,3 +38,449 @@ https://www.showdoc.com.cn/WeChatProject/9745604340432390
 2023-01-12 18:08:02 星期四
 1.增加通过fileid与aeskey下载图片的功能
 https://www.showdoc.com.cn/WeChatProject/9745105666381249
+
+2023-01-12 18:08:02 星期四
+1.增加一个OCR识别文本功能
+https://www.showdoc.com.cn/WeChatProject/9740515066744848
+
+2023-01-09 22:11:43 星期一
+1.增加一个获取通讯录联系人的接口
+https://www.showdoc.com.cn/WeChatProject/9730605278628502
+
+2022-12-27 17:55:31 星期二
+1.增加退出微信的事件通知
+
+2022-12-22 18:54:25 星期四
+1.增加一个获取未读消息总数的接口
+https://www.showdoc.com.cn/WeChatProject/9690385454945788
+
+2022-12-22 18:23:45 星期四
+1.增加一个根据收到的msg xml内容直接下载jpg图片的接口
+https://www.showdoc.com.cn/WeChatProject/9682774769136221
+
+2022-12-22 17:02:29 星期四
+1.增加一个获取收到的gif消息中gif的访问地址接口
+https://www.showdoc.com.cn/WeChatProject/9690133784680867
+
+2022-12-08 17:56:02 星期四
+1.增加了一个退还转账的接口
+https://www.showdoc.com.cn/WeChatProject/9652344490820665
+
+2022-12-07 00:36:01 星期三
+1.增加朋友权限设置功能
+https://www.showdoc.com.cn/WeChatProject/9644721002325179
+
+2022-12-06 23:09:57 星期二
+1.填坑。设置星标朋友和取消设置星标朋友
+https://www.showdoc.com.cn/WeChatProject/9078593012203121
+https://www.showdoc.com.cn/WeChatProject/9078594588816258
+
+2022-12-01 03:03:43 星期四
+1.接口加入随机模拟登录的硬件环境功能
+
+2022-12-01 02:20:50 星期四
+1.增加搜一搜视频号账号首页及下一页功能
+https://www.showdoc.com.cn/WeChatProject/9626209675753224
+https://www.showdoc.com.cn/WeChatProject/9626212316028585
+
+2022-11-30 23:44:59 星期三
+1.增加搜一搜 搜索视频号下一页信息功能
+https://www.showdoc.com.cn/WeChatProject/9626142308539334
+
+2022-11-28 14:24:06 星期一
+1.增加获取小程序支付二维码功能
+https://www.showdoc.com.cn/WeChatProject/9609640607811686
+
+2022-11-27 15:32:20 星期日
+1.增加搜一搜 搜索视频号首页信息
+https://www.showdoc.com.cn/WeChatProject/9606063640399261
+
+2022-11-27 15:19:07 星期日
+1.增加发送语音消息接口
+https://www.showdoc.com.cn/WeChatProject/9606012038140554
+
+2022-11-21 19:25:05 星期一
+1.增加清空聊天记录功能
+https://www.showdoc.com.cn/1967579757595791/9584482852044275
+
+2022-11-09 00:21:13 星期三
+1.增加代理设置功能
+见启动微信的接口
+
+2022-09-19 22:23:48 星期一
+1.增加搜一搜文章_按时间排序最近的
+https://www.showdoc.com.cn/WeChatProject/9364576702616526
+
+2022-09-19 20:48:30 星期一
+1.增加下载消息图片接口
+https://www.showdoc.com.cn/WeChatProject/9364507487384330
+2.屏蔽微信客户端自动更新已经改为内置功能
+
+2022-09-19 20:48:12 星期一
+1.增加获取消息内容接口
+https://www.showdoc.com.cn/WeChatProject/9364487555891575
+
+2022-09-18 23:53:21 星期日
+1.增加收藏消息功能(必须先有消息才能收藏)
+https://www.showdoc.com.cn/WeChatProject/9359684097762837
+
+2022-09-18 16:44:46 星期日
+1.增加添加收藏功能(没有消息也可以自定义内容来收藏)
+https://www.showdoc.com.cn/WeChatProject/9064601221101667
+
+2022-09-11 18:41:36 星期日
+1.增加批量获取联系人简明信息接口
+https://www.showdoc.com.cn/WeChatProject/9333452323089279
+
+2022-09-02 17:33:22 星期五
+1.增加二维码识别接口
+https://www.showdoc.com.cn/WeChatProject/9307727384165292
+
+2022-08-31 16:28:37 星期三
+1.增加获取A8Key接口
+https://www.showdoc.com.cn/WeChatProject/9296390851226166
+
+2022-08-27 16:02:18 星期六
+1.增加获取网页新地址
+https://www.showdoc.com.cn/WeChatProject/9282402750534317
+
+2022-08-26 14:47:23 星期五
+1.增加主动撤回消息
+https://www.showdoc.com.cn/WeChatProject/9276717940750694
+
+2022-08-18 02:53:25 星期四
+1.新增查询用户所属标签清单
+https://www.showdoc.com.cn/WeChatProject/9241846291057416
+
+2022-08-14 01:04:30 星期日
+1.新增搜一搜指定数据首页公众号
+https://www.showdoc.com.cn/WeChatProject/9225858728247733
+2.新增搜一搜指定数据首页全部
+https://www.showdoc.com.cn/WeChatProject/9225858006669384
+3.新增搜一搜默认主页内容
+https://www.showdoc.com.cn/WeChatProject/9185589250483265
+
+2022-08-12 00:55:40 星期五
+1.新增标为已读会话
+https://www.showdoc.com.cn/WeChatProject/9219474016553735
+
+2022-08-11 23:55:09 星期四
+1.新增获取指定好友朋友圈下一页内容
+https://www.showdoc.com.cn/WeChatProject/9219441908546224
+
+2022-08-11 15:49:01 星期四
+1.新增调用小程序云函数
+https://www.showdoc.com.cn/WeChatProject/9217003138808462
+
+2022-08-10 19:27:27 星期三
+1.新增结束微信方法
+https://www.showdoc.com.cn/WeChatProject/9214210657048561
+
+2022-08-04 15:44:03 星期四
+1.新增获取小程序授权
+https://www.showdoc.com.cn/WeChatProject/9181013942072000
+
+2022-07-30 13:40:55 星期六
+1.新增获取Up个人主页的下一页数据
+https://www.showdoc.com.cn/WeChatProject/9170919638265013
+
+2022-07-29 13:56:02 星期五
+1.新增发送位置消息
+https://www.showdoc.com.cn/WeChatProject/9167445492364225
+2.新增发送自定义消息
+https://www.showdoc.com.cn/WeChatProject/9167460676535402
+
+2022-07-29 13:23:41 星期五
+1.新增转发自定义XML消息
+https://www.showdoc.com.cn/WeChatProject/9167364405161045
+
+2022-07-27 16:55:16 星期三
+1.新增网络获取好友或群详细信息
+https://www.showdoc.com.cn/WeChatProject/9157629212860224
+2.新增网络获取群成员详细信息
+https://www.showdoc.com.cn/WeChatProject/9158592965427244
+
+2022-07-26 20:33:52 星期二
+1.新增视频号获取首页内容
+https://www.showdoc.com.cn/WeChatProject/9117869460547587
+2.视频号获取下一页内容
+https://www.showdoc.com.cn/WeChatProject/9117869889094451
+3.视频号评论视频
+https://www.showdoc.com.cn/WeChatProject/9064618513704707
+4.视频号点赞视频
+https://www.showdoc.com.cn/WeChatProject/9064622015067901
+5.视频号取消点赞视频
+https://www.showdoc.com.cn/WeChatProject/9155304051766874
+6.视频号Like视频
+https://www.showdoc.com.cn/WeChatProject/9117800449729830
+7.视频号取消Like视频
+https://www.showdoc.com.cn/WeChatProject/9155305102277892
+8.视频号Like评论
+https://www.showdoc.com.cn/WeChatProject/9117803478773791
+9.视频号取消Like评论
+https://www.showdoc.com.cn/WeChatProject/9155303058313683
+10.视频号关注Up主
+https://www.showdoc.com.cn/WeChatProject/9117860724497252
+11.视频号取关Up主
+https://www.showdoc.com.cn/WeChatProject/9117864704509220
+12.视频号获取Up主个人主页
+https://www.showdoc.com.cn/WeChatProject/9117808722604847
+13.获取指定好友的首页朋友圈
+https://www.showdoc.com.cn/WeChatProject/9155297161590672
+
+2022-07-26 20:15:30 星期二
+1.新增发表朋友圈
+https://www.showdoc.com.cn/WeChatProject/9137221496703083
+
+2022-07-25 15:25:21 星期一
+1.增加保存/移除到通讯录
+https://www.showdoc.com.cn/WeChatProject/9078597995448349
+https://www.showdoc.com.cn/WeChatProject/9063365712246544
+
+2022-07-15 17:10:45 星期五
+1.增加获取视频号消息的视频下载地址
+https://www.showdoc.com.cn/WeChatProject/9112113830164675
+
+2022-07-11 16:50:07 星期一
+1.新增创建标签/删除标签/重命名标签
+https://www.showdoc.com.cn/WeChatProject/9078585940900417
+https://www.showdoc.com.cn/WeChatProject/9078586560978544
+https://www.showdoc.com.cn/WeChatProject/9078586377107582
+
+2022-07-11 16:47:59 星期一
+1.新增转发任意消息
+https://www.showdoc.com.cn/WeChatProject/9090147365509163
+
+2022-07-08 21:56:03 星期五
+1.获取所有标签
+2.调整成员所属的标签
+https://www.showdoc.com.cn/WeChatProject/9078578438391917
+https://www.showdoc.com.cn/WeChatProject/9078583356534047
+
+2022-07-08 19:16:43 星期五
+1.新增获取小程序sessionid
+https://www.showdoc.com.cn/WeChatProject/8992807300995123
+
+2022-07-05 13:16:07 星期二
+1.新增任意时间段下载图片或文件
+https://www.showdoc.com.cn/WeChatProject/9065267899073432
+
+2022-07-05 10:08:46 星期二
+1.新增接受实时语音消息接口
+https://www.showdoc.com.cn/WeChatProject/9064220211271858
+
+2022-07-04 22:39:54 星期一
+1.增加再次启动微信接口
+https://www.showdoc.com.cn/WeChatProject/9063540299207309
+
+2022-07-04 21:41:03 星期一
+1.新增无痕清粉接口
+https://www.showdoc.com.cn/WeChatProject/9063410601712380
+
+2022-07-04 21:11:22 星期一
+1.新增微信聊天各项配置
+
+开启消息免打扰
+https://www.showdoc.com.cn/WeChatProject/9063347648143133
+
+关闭消息免打扰
+https://www.showdoc.com.cn/WeChatProject/9063348367251383
+
+显示群成员昵称
+https://www.showdoc.com.cn/WeChatProject/9063349491429947
+
+关闭显示群成员昵称
+https://www.showdoc.com.cn/WeChatProject/9063350057038457
+
+置顶聊天
+https://www.showdoc.com.cn/WeChatProject/9063350563096436
+
+取消置顶聊天
+https://www.showdoc.com.cn/WeChatProject/9063351366305816
+
+保存到通讯录
+https://www.showdoc.com.cn/WeChatProject/9063365453994960
+
+从通讯录移除
+https://www.showdoc.com.cn/WeChatProject/9063365712246544
+
+折叠该群聊
+https://www.showdoc.com.cn/WeChatProject/9063366035200767
+
+取消折叠该群聊
+https://www.showdoc.com.cn/WeChatProject/9063366996691400
+
+2022-06-28 11:28:52 星期二
+1.新增同意加入群聊接口
+https://www.showdoc.com.cn/WeChatProject/9032882631445023
+
+2022-06-26 15:53:38 星期日
+1.增加消息防撤回接口
+2.增加将撤回的消息发送到指定接口
+https://www.showdoc.com.cn/WeChatProject/9026395406199369
+https://www.showdoc.com.cn/WeChatProject/9026394176378170
+
+2022-06-26 14:49:05 星期日
+1.增加获取登陆二维码图片接口
+https://www.showdoc.com.cn/WeChatProject/9026367939952187
+
+2022-06-24 13:22:16 星期五
+1.邀请好友进群
+https://www.showdoc.com.cn/WeChatProject/9021493538921140
+
+2022-06-24 10:53:03 星期五
+1.新增添加好友进群
+https://www.showdoc.com.cn/WeChatProject/9020971162414036
+
+2022-06-24 10:50:20 星期五
+1.新增开关朋友圈评论功能
+https://www.showdoc.com.cn/WeChatProject/9020961696935450
+
+2022-06-24 09:50:59 星期五
+1.新增修改好友备注
+https://www.showdoc.com.cn/WeChatProject/9020497967635095
+
+2022-06-23 19:20:00 星期四
+1.新增群聊语音
+2.新增创建群聊
+3.新增查询群成员昵称
+4.新增查询群成员总数
+5.新增修改自己的群昵称
+6.新增获取当前聊天对象
+7.新增切换当前聊天对象
+
+2022-06-23 18:16:53 星期四
+1.新增好友语音聊天
+https://www.showdoc.com.cn/WeChatProject/9019318364312888
+
+2022-06-23 18:16:34 星期四
+1.新增好友视频聊天
+https://www.showdoc.com.cn/WeChatProject/9019318842372957
+
+2022-06-22 19:20:53 星期三
+1.新增朋友圈获取下一页数据接口
+https://www.showdoc.com.cn/1967579757595791/8929087905557074
+
+2022-06-21 20:41:47 星期二
+1.增加退出微信接口
+https://www.showdoc.com.cn/1967579757595791/9008665345790557
+
+2022-06-20 18:53:46 星期一
+1.新增退出群聊接口
+https://www.showdoc.com.cn/WeChatProject/9002651226705549
+
+2022-06-20 17:47:25 星期一
+1.增加发送文本提交json数据的支持
+https://www.showdoc.com.cn/WeChatProject/8929112442643628
+
+2022-06-20 16:21:33 星期一
+1.增加同意好友申请接口
+https://www.showdoc.com.cn/WeChatProject/8996001801759077
+
+2022-06-19 11:32:08 星期日
+1.增加获取好友和群聊清单
+https://www.showdoc.com.cn/1967579757595791/8995071288617868
+
+2022-06-18 23:59:12 星期六
+1.增加群聊修改备注名
+https://www.showdoc.com.cn/1967579757595791/8994766712410900
+
+2022-06-18 22:48:20 星期六
+1.增加修改群聊公告接口
+https://www.showdoc.com.cn/1967579757595791/8994689342748667
+
+2022-06-18 15:19:26 星期六
+1.增加修改群聊名称接口
+https://www.showdoc.com.cn/1967579757595791/8993745484621751
+
+2022-06-18 14:37:48 星期六
+1.增加群成员批量删除接口
+https://www.showdoc.com.cn/1967579757595791/8993612184500147
+
+2022-06-18 03:36:18 星期六
+1.增加关注公众号接口
+https://www.showdoc.com.cn/1967579757595791/8992808224793118
+
+2022-06-18 03:21:38 星期六
+1.增加朋友圈取消评论接口
+https://www.showdoc.com.cn/WeChatProject/8929092413429617
+
+2022-06-18 03:21:18 星期六
+1.增加朋友圈评论接口
+https://www.showdoc.com.cn/WeChatProject/8929091996936675
+
+2022-06-18 03:21:02 星期六
+1.增加朋友圈取消点赞接口
+https://www.showdoc.com.cn/WeChatProject/8929091706495732
+
+2022-06-18 03:20:35 星期六
+1.增加朋友圈点赞接口
+https://www.showdoc.com.cn/WeChatProject/8929089716176919
+
+2022-06-18 03:19:51 星期六
+1.新增获取朋友圈首页内容
+https://www.showdoc.com.cn/WeChatProject/8929083282065703
+
+2022-06-17 22:07:02 星期五
+1.新增实时消息自定义接收URL地址（完整URL地址）
+https://www.showdoc.com.cn/WeChatProject/8992619194450930
+
+2022-06-17 18:27:26 星期五
+1.新增实时消息自定义接收端口
+https://www.showdoc.com.cn/WeChatProject/8992192586710557
+
+2022-06-17 18:03:37 星期五
+1.新增查询微信登陆状态
+https://www.showdoc.com.cn/1967579757595791/8991915897471323
+
+2022-06-16 17:31:14 星期四
+1.新增数据库语句查询
+https://www.showdoc.com.cn/WeChatProject/8986208243971483
+
+2022-06-16 15:09:39 星期四
+1.新增获取数据库句柄和文件名
+https://www.showdoc.com.cn/1967579757595791/8984969039725273
+
+2022-06-16 00:49:15 星期四
+1.增加网络查询QQ/手机/微信号
+https://www.showdoc.com.cn/1967579757595791/8982367120882654
+
+2022-06-15 18:52:48 星期三
+1.新增删除好友功能
+https://www.showdoc.com.cn/1967579757595791/8981501348113066
+
+2022-06-15 18:32:29 星期三
+1.新增群聊发送艾特所有人消息（本人需要是群主）
+https://www.showdoc.com.cn/1967579757595791/8981408454846254
+
+2022-06-15 13:01:46 星期三
+1.新增获取实时消息
+https://www.showdoc.com.cn/1967579757595791/8929682707415526
+
+2022-06-14 01:50:33 星期二
+1.新增打开内置浏览器功能
+https://www.showdoc.com.cn/1967579757595791/8968098266210910
+
+2022-06-14 00:19:05 星期二
+1.新增获取小程序code
+https://www.showdoc.com.cn/1967579757595791/8968084332574571
+
+2022-06-13 16:19:12 星期一
+1.新增刷新登陆二维码
+https://www.showdoc.com.cn/WeChatProject/8966162223712985
+
+2022-06-12 22:17:21 星期日
+1.增加查询数据库密钥功能
+
+2022-06-12 18:36:36 星期日
+1.增加加好友功能,可以添加微信ID/微信号/v3的好友
+
+2022-06-03 21:05:26 星期五
+1.增加xml消息发送接口 可以发名片 音乐 文章 小程序等
+2.增加文本 图片 文件 视频 gif消息发送接口
+
+2022-06-03 18:23:10 星期五
+1.新增获取个人信息接口
+
+2022-05-01 20:44:21 星期日
+1.之前找的call没有很好的整理在一起。做了集成。将通讯方式改为http post。便于维护。

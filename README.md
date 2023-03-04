@@ -4,6 +4,7 @@
 
 
 ## QQ: 364831018
+## Q群:321212034
 ## Telegram: @Aixed
 ## TelegramGroup: https://t.me/PCWeChatReverse
 </br>

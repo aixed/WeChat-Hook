@@ -32,13 +32,11 @@ https://www.showdoc.com.cn/wechatproject
 ## PC wechat 3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23/3.7.6.44 interface some code
 
 
-## 下载旧微信/Download history wechat
-## How to download history wechat version
+## 下载微信/Download wechat
+## How to download wechat version
 </br>
+# https://www.123pan.com/s/hKl7Vv-G80bd.html
 
-### 修改版本号(3.3.0.104) 输入你想要下载的版本/Change the version number(3.3.0.104) for you want to download ver
-
-### URL:https://dldir1.qq.com/weixin/Windows/WeChat3.3.0.104.exe
 
 
 ## 如何使用/How to use

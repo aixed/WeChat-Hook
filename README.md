@@ -35,7 +35,7 @@ https://www.showdoc.com.cn/wechatproject
 ## 下载微信/Download wechat
 ## How to download wechat version
 </br>
-# https://www.123pan.com/s/hKl7Vv-G80bd.html
+https://www.123pan.com/s/hKl7Vv-G80bd.html
 
 
 

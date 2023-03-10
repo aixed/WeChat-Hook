@@ -20,12 +20,7 @@
 ## 接口文档/Interface Docs：
 https://www.showdoc.com.cn/wechatproject
 </br>
-
-
 </br>
-</br>
-</br>
-
 
 # History
 ## PC微信3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23/3.7.6.44接口
@@ -33,8 +28,7 @@ https://www.showdoc.com.cn/wechatproject
 
 
 ## 下载微信/Download wechat
-## How to download wechat version
-</br>
+## download wechat ↓
 https://www.123pan.com/s/hKl7Vv-G80bd.html
 </br>
 </br>

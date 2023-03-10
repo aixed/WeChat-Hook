@@ -11,7 +11,8 @@
 
 # New Current
 ## PC微信3.8.0.41接口/PC WeChat 3.8.0.41 Interface 
-## Download New WeChat(Select Windows platfrom): https://pc.weixin.qq.com/
+## Download New WeChat(Select version 3.8.0.41):
+https://www.123pan.com/s/hKl7Vv-G80bd.html
 </br>
 </br>
 
@@ -26,14 +27,7 @@ https://www.showdoc.com.cn/wechatproject
 ## PC微信3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23/3.7.6.44接口
 ## PC wechat 3.4.5.22/3.6.0.18/3.6.5.16/3.7.0.29/3.7.0.30/3.7.5.23/3.7.6.44 interface some code
 
-
-## 下载微信/Download wechat
-## download wechat ↓
-https://www.123pan.com/s/hKl7Vv-G80bd.html
-</br>
-</br>
-
-## 如何使用/How to use
+## 如何使用/Build
 
 下载E语言5.93版本。打开编译即可/download E5.93.exe [development environment] install and bulid this *.e file.
 ## Download Addr: 

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="910,640" sizebox="6,6,6,6" caption="310,0,0,60" mininfo="700,500" roundcorner="2,2" linkfontcolor="#FF0749d1" bktrans="false">
+	<Font name="微软雅黑" size="12" bold="false" italic="false" default="true" />
+	<Font name="微软雅黑" size="14" bold="true" italic="false" />
+	<Font name="微软雅黑" size="14" bold="false" italic="false" />
+	<Font name="微软雅黑" size="12" bold="true" italic="false" />
+	<Font name="微软雅黑" size="10" bold="false" italic="false" />
+	<Font name="微软雅黑" size="24" bold="false" italic="false" />
+	<!-- 5 -->
+	<Font name="微软雅黑" size="13" bold="false" italic="false" />
+	<Font name="微软雅黑" size="9" bold="true" italic="false" />
+	<Font name="微软雅黑" size="16" bold="true" italic="false" />
+	<Font name="微软雅黑" size="16" bold="false" italic="false" />
+	<Font name="微软雅黑" size="11" bold="false" italic="false" />
+	<!-- 10 -->
+	<Font name="微软雅黑" size="9" bold="false" italic="false" />
+	<Font name="微软雅黑" size="20" bold="false" italic="false" />
+	<Font name="微软雅黑" size="36" bold="false" italic="false" />
+	<Font name="微软雅黑" size="18" bold="false" italic="false" />
+	<Font name="微软雅黑" size="15" bold="false" italic="false" />
+	<!-- 15 -->
+	<Font name="微软雅黑" size="16" bold="false" italic="false" />
+	<Font name="微软雅黑" size="17" bold="false" italic="false" />
+	<Default
+	  name="VScrollBar" value="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;11&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_right_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_right_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_right_hover.png'  corner='0,4,0,4'&quot;"/>
+
+	<VerticalLayout name="bg">
+		<HorizontalLayout name="recordTmp" float="true" pos="50,200,270,280" bkcolor="#FFFFFFFF" width="220" height="80" bordersize="1" bordercolor="#ffd0d0d0">
+			<VerticalLayout width="220">
+				<mmLabel name="recordTitle"  padding="12,0,0,0" width="200" maxwidth="200"  height="32"  font="2" endellipsis="true" textcolor="#FF000000" textpadding="0,6,0,0" />
+
+				<mmLabel name="recordDesc1"  padding="12,0,0,0" width="200" maxwidth="200"  height="20"  font="0" endellipsis="true" textcolor="#ffb2b2b2" textpadding="0,0,0,0" />
+				<mmLabel name="recordDesc2"  padding="12,0,0,0" width="200" maxwidth="200"  height="20"  font="0" endellipsis="true" textcolor="#ffb2b2b2" textpadding="0,0,0,0" />
+			</VerticalLayout>
+		</HorizontalLayout>
+
+		<HorizontalLayout name="content_layout">
+			<!-- 最左边侧边栏 -->
+			<ColumnLayout name="left_layout" focusgroup="true" width="54" main_axis_align="start" cross_axis_align="center" bkcolor="@color:BG_0">
+				<!-- 头像 -->
+				<HeadImgUI name="user_icon" width="36" height="36" padding="0,36,0,0" />
+				<!-- 聊天 -->
+				<mmContainerButton style="@style:main_tab_chat_selected" tabfindchild="false" padding="0,15,0,0" name="session_btn" tooltip="@str:IDS_Main_ChatBtnToolTip:1277">
+					<Button name="totalUpdateCount" float="true" pos="29,8,0,0" width="16" height="16" font="4" bkimage="Session\Unread_BG.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,1" visible="false" />
+					<Button name="totalUpdateCount2" float="true" pos="24,8,0,0" width="22" height="16" font="4" bkimage="Session\Unread_BG_02.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,1" visible="false" />
+				</mmContainerButton>
+				<!-- 通讯录 -->
+				<mmContainerButton style="@style:main_tab_contact" tabfindchild="false" name="contact_btn" padding="0,-3,0,0" tooltip="@str:IDS_Main_ContactBtnToolTip:1278">
+					<Label name="contactRedDot" float="true" pos="33,10,0,0" width="8" visible="false" height="8" bkimage="Session\RedDot.png" />
+					<Label name="contact_unread_count" font="10" pos="28,7,0,0" width="16" visible="false" height="16" float="true" bkimage="Session\Unread_BG.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,2" />
+					<Label name="contact_unread_count2" pos="25,5,0,0" visible="false" width="23" height="16" float="true" bkimage="Session\Unread_BG_02.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,1" />
+				</mmContainerButton>
+				<!-- 收藏 -->
+				<mmContainerButton style="@style:main_tab_fav" tabfindchild="false" name="fav_btn" padding="0,-3,0,0" tooltip="@str:IDS_Main_FavBtnToolTip:3492"/>
+				<!-- 游戏 -->
+				<mmContainerButton tabfindchild="false" name="game_center_btn" visible="false" width="50" height="44" padding="0,-3,0,0" normalimage="Main\imgs\game_center_btn.png" hotimage="Main\imgs\game_center_btn_hover.png" pushedimage="Main\imgs\game_center_btn_click.png" tooltip="@str:IDS_Game_Center:4057">
+					<Label name="game_center_red_dot" float="true" pos="33,10,0,0" width="8" visible="false" height="8" bkimage="Session\RedDot.png" />
+				</mmContainerButton>
+				<!-- 微信文件 -->
+				<mmContainerButton name="filelistbtn" style="@style:main_tab_folder" padding="0,-3,0,0" tooltip="@str:IDS_FILEMGR_TITLE:4309" />
+				<!-- 朋友圈 -->
+				<mmContainerButton name="sns" style="@style:main_tab_sns" visible="false" tabfindchild="false" padding="0,-3,0,0" tooltip="@str:IDS_Sns_Sns:217">
+					<Button name="sns_unread" visible="false" float="true" pos="29,8,0,0" width="16" height="16" font="4" bkimage="Session\Unread_BG.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,1" />
+					<Button name="sns_unread2" visible="false" float="true" pos="24,8,0,0" width="22" height="16" font="4" bkimage="Session\Unread_BG_02.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,1" />
+				</mmContainerButton>
+
+				<!-- 根据窗口的高度按需显示icon，没在主界面上显示的icon，会在点击“moreTabBtnReddot”后显示 -->
+				<OverflowHiddenWrapper name="tab_overflow_hidden_layout" lastchild_overflow_indicator="true"  indicator_buffer_size="20" padding="0,0,0,10">
+					<ColumnLayout cross_axis_align="center">
+						<!-- 视频号 -->
+						<ReddotNumber name="finderFeedBtnReddot" smalldot="true" width="wrap_content" height="wrap_content" dotpadding="0,10,12,0">
+							<FinderFeedTabButton name="finderFeedBtn" visible="true" style="@style:main_tab_finder_live" padding="0,-3,0,0" tooltip="@str:IDS_FinderFeed" />
+						</ReddotNumber>
+
+						<!-- 看一看 -->
+						<ReddotNumber smalldot="false" dotpadding="0,4,4,0">
+							<mmContainerButton name="topstorybtn" style="@style:main_tab_news" padding="0,-3,0,0" tooltip="@str:IDS_TopStory:43  48" />
+						</ReddotNumber>
+
+						<!-- 搜一搜 -->
+						<mmContainerButton name="searchTabBtn" style="@style:main_tab_search" padding="0,-3,0,0" tooltip="@str:IDS_WEB_SEARCH_TITLE:4054" />
+
+						<!-- 更多 -->
+						<Reddot name="moreTabBtnReddot" smalldot="true" dotpadding="0,10,12,0">
+							<mmContainerButton name="moreTabBtn" style="@style:main_tab_more" padding="0,-3,0,0" tooltip="@str:IDS_Common_More" />
+						</Reddot>
+					</ColumnLayout>
+				</OverflowHiddenWrapper>
+
+				<!-- 中间留白 -->
+				<!-- <Control /> -->
+				<!-- 反馈 -->
+				<mmContainerButton style="@style:main_tab_report" tabfindchild="false" name="feedbtn" visible="false" padding="0,0,0,16" tooltip="@str:IDS_Setting_FeedBack_Label:3408" />
+				<!-- 小程序 -->
+				<mmContainerButton style="@style:main_tab_applet" name="appletPanelBtn" visible="true" tooltip="@str:IDS_Applet_Panel:4551" />
+				<!-- Handoff -->
+				<HorizontalLayout height="32" width="32" padding="0,10,0,0">
+					<HandoffBreathButton padding="3,8,3,0" style="@style:main_tab_handoff" name="handoffBtn" visible="false" tooltip="@str:IDS_Handoff_Handoff:4188" />
+					<MMHttpImage name="handoffIcon" float="true" pos="11,4,0,0" width="16" height="16" visible="false" mouse="false" />
+				</HorizontalLayout>
+				<!-- 设置 -->
+				<HorizontalLayout height="24" width="26" padding="0,16,0,16">
+					<mmContainerButton style="@style:main_tab_setting" name="settingbtn" tooltip="@str:IDS_Common_More:3711" />
+					<Label name="updateRedDot" float="true" pos="18,0,0,0" width="8" height="8" bkimage="Session\RedDot.png" />
+				</HorizontalLayout>
+			</ColumnLayout>
+
+			<!-- 左边通讯录、会话、收藏的列表 -->
+			<VerticalLayout name="middle_layout" width="250" inset="0,0,1,0" bordersize="0,0,1,0" bordercolor="0xFFD6D6D6"  bkimage="Main\imgs\Main_bk_center.png" >
+
+				<Control name="gc_blank_top" height="20" visible="false" bkcolor="#EDF4F4F4"/>
+
+				<HorizontalLayout name="search_input_layout" bkcolor="#FFF7F7F7"  height="62" bordersize="0,0,0,1" bordercolor="0xFFE9E9E9" inset="12,25,12,12">
+					<Container name="search_input_container" width="190" height="25">
+						<Label name="search_bar_bg"  bkimage="file='Main\imgs\ChatList_SeachBar_Input_BG.png' corner='6,5,4,5'" />
+						<RelativeLayout>
+							<UISearchEdit name="search_bar" height="25" width="150" bkcolor="#00FFFFFF" nativebkcolor="#FFF8F8F8" padding="20,0,0,0"
+											  textpadding="4,4,20,2" inset="4,5,4,1" multiline="false" autohscroll="true" textcolor="#FF000000" disabledtextcolor="#FFB2B2B2" hinttext="@str:IDS_Main_SearchContact:1040"/>
+							<Label name="search_icon" layout_gravity="left" bkimage="file='Main\imgs\Seachbar_Seach.png'" padding="4,6,0,0" width="16" height="16"/>
+							<Button name="btnCancelSearch" accessibilityname="@str:IDS_Clear:3355" layout_gravity="right" padding="0,4,4,0" visible="false" width="16" height="16" normalimage="Main\imgs\Seach_close_normal.png" hotimage="Main\imgs\search_close_hover.png" pushedimage="Main\imgs\search_close_hover.png"/>
+						</RelativeLayout>
+					</Container>
+					<Container  width="25" height="25"  padding="10,0,0,0">
+						<Button name="add_session_btn" width="25" height="25" normalimage="Main\imgs\ChatList_SeachBar_AddChat_Btn.png" hotimage="Main\imgs\ChatList_SeachBar_AddChat_Btn_Hover.png" pushedimage="Main\imgs\ChatList_SeachBar_AddChat_Btn_Click.png" tooltip="@str:IDS_Contact_StartChat:1113"/>
+						<Button name="search_contact_scene_btn" width="25" height="25" visible="false" normalimage="Main\imgs\icons_outlined_add_friends.png" hotimage="Main\imgs\icons_outlined_add_friends_hover.png" pushedimage="Main\imgs\icons_outlined_add_friends_click.png" tooltip="@str:IDS_Verify_Title" />
+
+					</Container>
+				</HorizontalLayout>
+
+				<HorizontalLayout name="fav_search_input_layout" bkcolor="#FFF7F7F7" height="66" inset="12,25,12,16" visible="false">
+					<Container height="25">
+						<Label name="fav_search_bar_bg" bkcolor="#0D000000" textpadding="24,0,0,0" bordersize="0,0,0,0" bordercolor="#19000000" textcolor="#FF828282"/>
+						<HorizontalLayout float="true" pos="20,0,0,0," height="25" width="183">
+							<UISearchEdit name="fav_search_bar" bkcolor="#00ffff00" autohscroll="true" nativebkcolor="#FFF7F7F7" inset="4,5,4,1" textpadding="4,4,4,2" textcolor="#FF000000" disabledtextcolor="#FFB2B2B2" hinttext="@str:IDS_Main_SearchContact:3501"/>
+						</HorizontalLayout>
+						<Label name="fav_search_icon" float="true" pos="4,6,0,0" bkimage="file='Main\imgs\Seachbar_Seach.png'" width="16" height="16"/>
+						<Button name="fav_search_cancel_btn" accessibilityname="@str:IDS_Clear:3355" visible="false"  float="true" pos="203,4,0,0"  width="16" height="16" normalimage="Main\imgs\Seach_close_normal.png" hotimage="Main\imgs\search_close_hover.png" pushedimage="Main\imgs\search_close_hover.png"/>
+					</Container>
+				</HorizontalLayout>
+
+				<HorizontalLayout name="contact_search_input_layout" bkcolor="#FFF7F7F7"  height="62" bordersize="0,0,0,1" bordercolor="0xFFE9E9E9" inset="12,25,12,12"  visible="false" >
+					<Container name="contact_search_input_container" width="190" height="25">
+						<Label name="contact_search_bar_bg"  bkimage="file='Main\imgs\ChatList_SeachBar_Input_BG.png' corner='6,5,4,5'" />
+						<RelativeLayout>
+							<UISearchEdit name="contact_search_bar" height="25" width="150" bkcolor="#00FFFFFF" nativebkcolor="#FFF8F8F8" padding="20,0,0,0"
+								textpadding="4,3,20,3" inset="4,3,4,3" multiline="false" autohscroll="true" textcolor="#FF000000" disabledtextcolor="#FFB2B2B2" hinttext="@str:IDS_SEARCH_CONTACT_SEARCH_MOBILE"/>
+							<Label name="contact_search_icon" layout_gravity="left" bkimage="file='Main\imgs\icons_outlined_search_friends.png'" padding="4,3,0,0" width="16" height="16"/>
+							<Button name="contact_btnCancelSearch" accessibilityname="@str:IDS_Clear:3355" layout_gravity="right" padding="0,4,4,0" visible="false" width="16" height="16" normalimage="Main\imgs\Seach_close_normal.png" hotimage="Main\imgs\search_close_hover.png" pushedimage="Main\imgs\search_close_hover.png"/>
+						</RelativeLayout>
+					</Container>
+					<Button name="contact_cancel_search_btn" width="25" height="25" padding="10,0,0,0"  text="@str:IDS_Common_Cancel" tooltip="@str:IDS_Common_Cancel"/>
+				</HorizontalLayout>
+
+				<FrameLayout >
+					<TabLayout name="tabs_layout" >
+						<Container>
+							<!-- 会话列表 -->
+							<VerticalLayout name="session_list_layout">
+								<HorizontalLayout name="sync_status_label" height="34" bkcolor="#ffededed" visible="false">
+									<ProgressFlower visible="true" width="16" height="16" padding="92,9,0,0" elapse="30" framewidth="16" frameheight="16" framecount="30" bkimage="Common\single_flower.png" />
+									<Label text="@str:IDS_SYNC_STATUS_LABEL" font="0" padding="3,7,0,0" height="19" />
+								</HorizontalLayout>
+								<SessionListUI name="session_list" shortcut="l" bkcolor="#EDF4F4F4" header="hidden" vscrollbar="true" menu="true" itemhotbkcolor="#14404040" itemdraghotbkcolor="#FFFFFFFF" showkeyboardhighlight="true" keyboardhighlightcolor="#33404040" itemselectedbkcolor="#00000000" itemcurtalkerbkcolor="#33404040" scrolltoplinecolor="#FFE0E0E0" accessibilityname="会话" vscrollbarstyle="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;7&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_hover.png'  corner='0,4,0,4'&quot;" acckey="39" acckeymodifier="alt"/>
+							</VerticalLayout>
+							<!-- 群盒子会话列表 -->
+							<VerticalLayout name="group_box_session_list_layout" visible="false" bkcolor="#ffF3F3F3" >
+								<mmContainerButton name="exit_group_box" width="wrap_content" height="wrap_content" padding="12,6,0,6" accessibilityname="@str:IDS_GroupBox_Nickname" acckey="37" acckeymodifier="alt">
+									<RowLayout cross_axis_align="center" width="wrap_content" height="25">
+										<Control width="12" height="24" bkimage="plugins\group_box\arrow_point_to_left.png" />
+										<Label padding="4,0,0,0" width="wrap_content" height="wrap_content" text="@str:IDS_GroupBox_Nickname" font="@font:msyh_14" />
+									</RowLayout>
+								</mmContainerButton>
+								<Container>
+									<SessionListUI name="group_box_session_list" bkcolor="#EDF4F4F4" header="hidden" vscrollbar="true" menu="true" itemhotbkcolor="#14404040" itemdraghotbkcolor="#FFFFFFFF" showkeyboardhighlight="true" keyboardhighlightcolor="#33404040" itemselectedbkcolor="#00000000" itemcurtalkerbkcolor="#33404040" scrolltoplinecolor="#FFE0E0E0" accessibilityname="@str:IDS_GroupBox_Nickname" vscrollbarstyle="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;7&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_hover.png'  corner='0,4,0,4'&quot;" />
+									<RowLayout name="empty_group_box_layout" visible="false" main_axis_align="center" cross_axis_align="center">
+										<Label width="wrap_content" height="wrap_content" padding="0,-23,0,0" text="@str:IDS_GroupBox_EmptyList" textcolor="@color:Text_2" font="@font:msyh_12" />
+									</RowLayout>
+								</Container>
+							</VerticalLayout>
+						</Container>
+
+						<!-- 联系人列表 -->
+						<ContactListUI name="contact_list" bkcolor="#EDF4F4F4" itemdisabledbkcolor="#00000000"  header="hidden" vscrollbar="true" menu="true"   itemhotbkcolor="#14404040" itemselectedbkcolor="#33404040"  accessibilityname="@str:IDS_Contacts:3300"
+							scrolltoplinecolor="#FFE0E0E0"  vscrollbarstyle="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;7&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_hover.png'  corner='0,4,0,4'&quot;"/>
+
+						<!-- 收藏列表 -->
+						<VerticalLayout bkcolor="#FFF7F7F7" >
+							<FavMidLayoutControlList name="fav_mid_layout_list" visible="true" vscrollbar="false" layout_gravity="hcenter | vcenter" itemhotbkcolor="0x00E6E5E4" itemselectedbkcolor="0x00E6E5E4" padding="0,0,0,0" vscrollbarstyle="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;7&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_hover.png'  corner='0,4,0,4'&quot;"/>
+							<RelativeLayout height="29">
+								<Label name="fav_size_info_label" text="已使用98.5MB,可使用1.07GB" align="center" layout_gravity="top" textcolor="#FF999999" font="6" height="14" padding="0,0,0,0"/>
+							</RelativeLayout>
+						</VerticalLayout>
+
+						<!--  为了统一gamecenter，添加个空的 -->
+						<Control />
+
+					</TabLayout>
+
+					<!-- 搜索列表 -->
+					<VerticalLayout name="shadow_Layout" visible="false">
+						<Control height="1" bkcolor="#FFE0E0E0" visible="false" />
+						<!--<SearchListUI name="search_layout" inset="0,0,0,1" padding="0,0,0,0" bkcolor="#FFEAEAEA"   visible="false" header="hidden" vscrollbar="true" itemhotimage="contact\Contacts_List_BG_Hover.png" itemselectedimage="contact\Contacts_List_BG_Click.png" itembkimage="file='contact\Contacts_List_BG.png' corner='3,3,3,18'" listbottomemptyheight="10" scrolltoplinecolor="#FFECECEC"  vscrollbarstyle="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;7&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_hover.png'  corner='0,4,0,4'&quot;"/>-->
+						<FTSSearchUI name="search_layout" accessibilityname="@str:IDS_FAV_SEARCH_RESULT:3780" inset="0,0,0,1" padding="0,0,0,0" bkcolor="#FFEAEAEA"   visible="false" header="hidden" vscrollbar="true" itemhotbkcolor="#FFEDEDED" itemselectedbkcolor="#FFD2D2D2" itembkcolor="#FFF7F7F7" listbottomemptyheight="10" scrolltoplinecolor="#FFECECEC"  vscrollbarstyle="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;7&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_hover.png'  corner='0,4,0,4'&quot;"/>
+					</VerticalLayout>
+
+					<!-- 搜索添加好友列表 -->
+					<VerticalLayout name="contact_search_shadow_Layout" visible="false">
+						<Control height="1" bkcolor="#FFE0E0E0" visible="false" />
+						<SearchContactSceneList name="search_contact_scene_list" accessibilityname="@str:IDS_FAV_SEARCH_RESULT:3780" inset="0,0,0,1" padding="0,0,0,0" bkcolor="#FFEAEAEA"  header="hidden" vscrollbar="false" itemhotbkcolor="#FFEDEDED" itemselectedbkcolor="#FFD2D2D2" itembkcolor="#FFF7F7F7" listbottomemptyheight="10" scrolltoplinecolor="#FFECECEC"  />
+
+					</VerticalLayout>
+
+					<VerticalLayout name="mid_cover" visible="false" width="249" bkcolor="#F2E2E2E2" bordersize="0,0,1,0" bordercolor="#FFE0E0E0">
+						<Label padding="0,26,0,0" height="20" textcolor="#ff000000" text="@str:IDS_ADD_FAV_RELEASE_MOUSE:3568" align="center"/>
+						<Control />
+					</VerticalLayout>
+
+					<HorizontalLayout height="24" name="loadingLayout" visible = "false">
+						<Control />
+						<HorizontalLayout width="120" height="24">
+							<ProgressFlower padding="5,5,5,0" width="14" height="14" elapse="20" framewidth="14" frameheight="14" framecount="30" bkimage="Common\loading_14.png"/>
+							<Label text="@str:IDS_Main_SyncingContact:1043" padding="0,5,0,0" textcolor="#FF959595" height="14" width="96" />
+						</HorizontalLayout>
+						<Control />
+					</HorizontalLayout>
+				</FrameLayout>
+
+				<Control name="gc_blank_bottom" height="20" visible="false" bkcolor="#EDF4F4F4"/>
+
+			</VerticalLayout>
+
+			<!-- 右边大区块，包括聊天界面、联系人详情、新的朋友、收藏列表 -->
+			<FrameLayout name="right_layout" bkcolor="#FFF5F5F5">
+
+				<!-- 订阅号三栏 -->
+				<BizLayout name="bizLayout" visible="false" accessibilityname="@str:IDS_Session_List_Name:4175"/>
+
+				<!-- 聊天列表 -->
+				<VerticalLayout name="chat_layout" visible="true">
+					<ExtendChatView name="extendChatView" />
+				</VerticalLayout>
+
+				<!-- 收藏内容区 -->
+				<VerticalLayout name="fav_content_layout" visible="false" bkcolor="#FFF7F7F7">
+					<TabLayout name="fav_list_tabs_layout" visible="false">
+
+						<!-- default -->
+						<VerticalLayout padding="0,25,0,0">
+							<Label padding="30,0,0,0" height="25" text="Default" textcolor="#FF000000" font="14"/>
+							<Control bkcolor="#FFE7E7E7" height="1" padding="0,11,0,0"/>
+							<Control />
+							<HorizontalLayout>
+								<Control />
+								<Control height="99" width="99" bkimage="plugins\Favorite\imgs\content\logo.png" layout_gravity="hcenter | vcenter"/>
+								<Control />
+							</HorizontalLayout>
+							<Control />
+						</VerticalLayout>
+
+						<!-- 全部收藏 -->
+						<VerticalLayout padding="0,26,0,0">
+							<Label padding="24,0,0,0" height="22" text="@str:IDS_FAV_ALL_FAV:3772" textcolor="#FF000000" font="17"/>
+							<Control bkcolor="#FFE7E7E7" height="1" padding="0,15,0,0"/>
+							<FavListUI name="all_fav_list" accessibilityname="@str:IDS_Snapshot_addFavorite:4124" header="hidden" showkeyboardhighlight="true" keyboardhighlightcolor="#ffff0000" vscrollbar="true" menu="true" bkcolor="#FFF7F7F7" scrolltoplinecolor="#FFECECEC" itembkcolor="#FFF7F7F7" itemhotbkcolor="#FFF7F7F7" itemselectedbkcolor="#FFF7F7F7" itempadding="0,2,0,2"/>
+						</VerticalLayout>
+
+						<!-- 链接、笔记、文件、音乐 -->
+						<VerticalLayout padding="0,26,0,0">
+							<Label name="sub_fav_list_Label" padding="24,0,0,0" height="22" textcolor="#FF000000" font="17" endellipsis="true" />
+							<Control bkcolor="#FFE7E7E7" height="1" padding="0,15,0,0"/>
+							<FavSubListUI name="sub_fav_list" accessibilityname="@str:IDS_Snapshot_addFavorite:4124" showkeyboardhighlight="true" keyboardhighlightcolor="#ffff0000" vscrollbar="true" bkcolor="#FFF7F7F7" scrolltoplinecolor="#FFECECEC" menu="true" itembkcolor="#FFF7F7F7" itemhotbkcolor="#FFF7F7F7" itemselectedbkcolor="#FFF7F7F7" />
+						</VerticalLayout>
+
+						<!-- 相册 -->
+						<VerticalLayout padding="0,26,0,0">
+							<Label padding="24,0,0,0" height="22" text="@str:IDS_FAV_PHOTO:3774" textcolor="#FF000000" font="17" />
+							<Control bkcolor="#FFE7E7E7" height="1" padding="0,15,0,0"/>
+							<FavPhotoListUI name="fav_photo_list" accessibilityname="@str:IDS_Snapshot_addFavorite:4124" showkeyboardhighlight="true" keyboardhighlightcolor="#ffff0000" vscrollbar="true" itemsize="100,100" inset="54,0,54,0" bkcolor="#FFF7F7F7" scrolltoplinecolor="#FFECECEC" autodividewidth="false" menu="true" itembkcolor="#FFF7F7F7" itemselectedbkcolor="#FFF7F7F7"/>
+						</VerticalLayout>
+
+					</TabLayout>
+
+					<!--收藏搜索结果-->
+					<VerticalLayout name="fav_search_result_layout" padding="0,26,0,0" visible="false">
+						<HorizontalLayout padding="24,0,24,0" height="22">
+							<Label name="fav_search_list_first_label" textcolor="#FF000000" font="14" endellipsis="true"/>
+							<Label name="fav_search_list_second_label" textcolor="#FF000000" font="14"/>
+						</HorizontalLayout>
+						<Control bkcolor="#FFE7E7E7" height="1" padding="0,15,0,0"/>
+						<HorizontalLayout name="fav_search_row_subtype_layout" padding="56,0,56,12" height="wrap_content" visible="false">
+							<Label text="@str:IDS_FAV_SEARCH_SCOPE_TIPS" width="60" height="16" padding="0,14,0,0" textcolor="#FF9E9E9E"/>
+							<FavSearchTopDisplayLayout name="fav_search_row_subtype_list" height="32" maxheight="96" vscrollbar="true"/>
+							<Button name="fav_search_row_subtype_expand_btn" text="@str:IDS_FAV_SEARCH_RESULT_TYPE_EXPAND" width="36" align="center" height="21" textcolor="#FF576B95" padding="8,11,2,0" textpadding="6,2,6,2" hotbkcolor="#0D000000" pushedbkcolor="#26000000"/>
+						</HorizontalLayout>
+						<VerticalLayout name="fav_search_result_empty_tip_layout" visible="false" bkcolor="#FFF7F7F7">
+							<Control />
+							<Label name="fav_search_result_empty_tip" text="@str:IDS_Fav_Search_Result_Empty:3549" visible="true" align="center" valign="center" textcolor="#ffb2b2b2" padding="0,0,0,0" font="17"/>
+							<Control />
+						</VerticalLayout>
+						<FavSearchListUI name="fav_search_result_list" vscrollbar="true" bkcolor="#FFF7F7F7" scrolltoplinecolor="#FFECECEC" menu="true" itembkcolor="#FFF7F7F7" itemhotbkcolor="#FFF7F7F7" itemselectedbkcolor="#FFF7F7F7" />
+					</VerticalLayout>
+
+					<RelativeLayout name="fav_multiselect_bottom_layout" height="128" visible="false" bkcolor="#FFF7F7F7">
+						<Control height="1" bkcolor="0D000000"/>
+						<HorizontalLayout height="100" width="225" layout_gravity="vcenter | hcenter">
+							<VerticalLayout width="74" padding="0,15,1,0">
+								<Button name="favMultiSelectForwardSingle" width="44" height="44" padding="15,0,15,0" normalimage="Share_btn\multi_select_single_send_default.png" hotimage="Share_btn\multi_select_single_send_hover_click.png" pushedimage="Share_btn\multi_select_single_send_hover_click.png" disabledimage="Share_btn\multi_select_single_send_disable.png"/>
+								<Text text="@str:IDS_MultiSelect_Forward_Single:3712" minheight="12" maxheight="36" maxwidth="88" align="center" font="10" padding="0,9,0,0"/>
+							</VerticalLayout>
+							<VerticalLayout width="74" padding="0,15,1,0">
+								<Button name="favMultiSelectEditTag" width="44" height="44" padding="15,0,15,0" normalimage="Chat\multiselect\multi_select_edit_tag_default.png" hotimage="Chat\multiselect\multi_select_edit_tag_hover.png" pushedimage="Chat\multiselect\multi_select_edit_tag_hover.png" disabledimage="Chat\multiselect\multi_select_edit_tag_disable.png"/>
+								<Text minheight="12" maxheight="36" maxwidth="88" text="@str:IDS_FAV_ADD_TAG:3531" align="center" font="10" padding="0,9,0,0"/>
+							</VerticalLayout>
+							<VerticalLayout width="74" padding="0,15,0,0">
+								<Button name="favMultiSelectDelete" width="44" height="44" padding="15,0,15,0" normalimage="Chat\multiselect\multi_select_delete_default.png" hotimage="Chat\multiselect\multi_select_delete_hover_click.png" pushedimage="Chat\multiselect\multi_select_delete_hover_click.png" disabledimage="Chat\multiselect\multi_select_delete_disable.png"/>
+								<Label height="12" text="@str:IDS_Menu_Delete:3323" align="center" font="10" padding="0,9,0,0"/>
+							</VerticalLayout>
+						</HorizontalLayout>
+						<Button name="closeFavMultiSelectBtn" width="14" height="14" layout_gravity="top | right" padding="14,9,9,0" normalimage="Chat\multiselect\multi_select_close_normal.png" hotimage="Chat\multiselect\multi_select_close_pushed.png" pushedimage="Chat\multiselect\multi_select_close_pushed.png"/>
+					</RelativeLayout>
+
+				</VerticalLayout>
+
+				<!-- 联系人详情 -->
+				<VerticalLayout name="contactprofile_layout" visible="false" padding="0,0,0,0">
+
+					<HorizontalLayout height="48" name="profile_top_layout" visible="false" padding="0,0,0,-48">
+						<Button name="fmessage_return_in_profile"  padding="20,15,0,0" width="28" height="28" normalimage="file='chatview\back_sub_panel.png' " pushedimage="file='chatview\back_sub_panel_active.png'"
+											hotimage="file='chatview\back_sub_panel_active.png' "/>
+						<Control />
+					</HorizontalLayout>
+
+					<RowLayout main_axis_align="center" name="contactcard_layout" padding="0,120,0,0">
+						<NewContactProfileUI name="new_contact_profile" height="wrap_content" width="360" />
+						<!--
+						<Include source="Main\contactProfile.xml" />
+						<Include source="Main\OpenIMContactProfile.xml" visible="false" />
+            -->
+					</RowLayout>
+				</VerticalLayout>
+
+				<!-- 新的朋友 -->
+				<FrameLayout name="fmessage_panel" visible="false">
+					<!-- 新的朋友二级菜单 -->
+					<VerticalLayout name="fmessage_sub_panel" visible="false"  >
+						<HorizontalLayout height="62" bordersize="0,0,0,1" bordercolor="#FFE7E7E7">
+							<Label text="@str:IDS_New_Friend:3335" height="30" font="14" endellipsis="true" align="left" padding="30,24,0,0"/>
+						</HorizontalLayout>
+						<FrameLayout>
+							<FMessageListUI name="fmessage_middle_list" accessibilityname="@str:IDS_New_Friend:3335" header="hidden" vscrollbar="true" menu="true" itembkcolor="#FFF5F5F5" itemhotbkcolor="#FFF5F5F5" itemselectedbkcolor="#FFF5F5F5"
+											  showkeyboardhighlight="true" keyboardhighlightcolor="#33404040"
+								/>
+							<!--<Control padding="50,0,50,0" height="1" bkcolor="#FFDFDFDF"/>-->
+						</FrameLayout>
+					</VerticalLayout>
+
+					<VerticalLayout name="fmessageprofile_layout" visible="false" padding="0,0,0,0">
+
+						<HorizontalLayout height="62" bordersize="0,0,0,1" bordercolor="#FFE7E7E7">
+							<Button name="fmessage_return" padding="20,15,0,0" width="28" height="28" normalimage="file='chatview\back_sub_panel.png' " pushedimage="file='chatview\back_sub_panel_active.png'"
+											  hotimage="file='chatview\back_sub_panel_active.png' "/>
+							<Control />
+						</HorizontalLayout>
+						<HorizontalLayout height="650" name="fmessagecontactcard_layout" padding="0,34,0,0">
+							<Control />
+							<Include source="Main\FMessageProfile.xml" />
+							<Control />
+						</HorizontalLayout>
+					</VerticalLayout>
+
+				</FrameLayout>
+
+				<Tile />
+				<HorizontalLayout name="chat_default_bg" bkimage="#FFEDEDED" >
+					<Control />
+					<VerticalLayout width="110">
+						<Control />
+						<Control height="110" bkimage="Main\imgs\no_chat_bg.png"/>
+						<Control />
+					</VerticalLayout>
+					<Control />
+				</HorizontalLayout>
+
+				<Control name="blankBg" visible="false" bkcolor="#FFF5F5F5"/>
+
+				<!-- 右上角按钮 -->
+				<HorizontalLayout name="system_layout"  accessibilityrole="toolbar" width="wrap_content" height="25" groupchild="true">
+					<Button name="topMenubtn" style="@style:pin_to_top_button"/>
+					<Button name="minbtn" style="@style:normal_min_button"/>
+					<Button name="maxbtn" style="@style:normal_max_button"/>
+					<Button name="restorebtn" style="@style:normal_restore_button" visible="false"/>
+					<Button name="closebtn" style="@style:normal_close_button"/>
+				</HorizontalLayout>
+
+			</FrameLayout>
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

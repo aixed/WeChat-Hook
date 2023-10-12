@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+    <HorizontalLayout height="60" bordersize="0,0,1,0" bkcolor="@color:BG_2">
+        <RowLayout main_axis_align="center">
+        <Control />
+            <Text name="desc" width="wrap_content" height="wrap_content" padding="20,20,20,0" maxwidth="210" align="center" mouse="false" text="No Result" style="@style:WINTextStyleThirdTitle" textcolor="@color:Text_2"  />
+        <Control />
+        
+        </RowLayout>
+    </HorizontalLayout>
+</Window>

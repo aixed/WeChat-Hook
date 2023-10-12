@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <HorizontalLayout height="60" inset="12,13,12,0">
+    <ImageButton name="contactManagementBtn" font="@font:msyh_14" borderround="2,2" bordersize="1" bordercolor="#ffd9d9d9" bkcolor="@color:white" imagepadding="0,0,10,0" image="@image:contact_management_btn" height="40" imageheight="12" imagewidth="16"  text="@str:IDS_Contact_Manager:4641" ></ImageButton>
+  </HorizontalLayout>
+</Window>

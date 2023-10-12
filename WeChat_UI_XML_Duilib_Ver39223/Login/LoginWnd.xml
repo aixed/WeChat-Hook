@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="280,380" caption="0,0,0,380" maxinfo="280,380" bktrans="true" roundcorner="4,4">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="16" bold="false"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Font name="微软雅黑" size="21" bold="false"/>
+	<Font name="微软雅黑" size="50" bold="false"/>
+	<VerticalLayout width="280" height="380" bkcolor="#FFFFFFFF">
+		<ColumnLayout>
+		<HorizontalLayout padding="0,0,0,0" height="30">
+			<Button name="titleLab" endellipsis="true" text="@str:IDS_Login_Title" align="left" enabled="false" padding="10,6,0,0"  height="20" textcolor="#FF999999" disabledtextcolor="#FFA7A6AA" font="2"/>
+			<Button name="feedbackBtn" visible="false" padding="10,0,0,0" width="35" height="26" normalimage="login\login_report_normal.png" hotimage="login\login_report_hover.png" pushedimage="login\login_report_click.png" />
+			<Button name="setBtn" padding="0,0,0,0" width="35" height="26" normalimage="login\proxy_Btn.png" hotimage="login\proxy_Btn_Hover.png" pushedimage="login\proxy_Btn_Click.png" tooltip="@str:IDS_Setting_Title:1055"/>
+			<Button name="closebtn" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" style="@style:normal_close_button"/>
+		</HorizontalLayout>
+		<!---login layout-->
+    <ColumnLayout main_axis_align="start" cross_axis_align="center" name="loginandwebviewLayout">
+    <TabLayout width="280" height="355" name="loginTab">
+      <ColumnLayout main_axis_align="start" cross_axis_align="center" name="loginLayout">
+        <TabLayout width="250" height="290" name="qrcodeTab">
+          <!--- 登录二维码 -->
+          <ColumnLayout main_axis_align="start" cross_axis_align="center"  height="290" visible = "false" padding="0,15,0,0">
+            <Label name="qrcodeTitle" text="@str:IDS_Login_Use_QRCode"  height="30" font="@font:msyh_17" textcolor="@color:Text_4" align="center" visible="false" />
+            <TextView name="loginErrorMsg" width="200" height="wrap_content" padding="0,10,0,0" maxline="2" ellipsistooltips="true" font="@font:msyh_14" textcolor="#FF999999" textalign="center" align="center" visible="false"/>
+            <ImageUI name="qrcodeLab" padding="0,16,0,0" needtabstop="true" accessibilityname="二维码" width="150" height="150" disabledtextcolor="#FFA7A6AA"/>
+            <HorizontalLayout width="202" height="202" name="refreshCover">
+              <Button pos="66,83,0,0" float="true" width="70" height="30" name="refreshBtn" text="@str:IDS_Login_Fresh:1023" textcolor="#FF424242 " normalimage="file='common\Common_Btn_cancl_normal.png' corner='8,10,8,10'" hotimage="file='common\Common_Btn_cancl_hover.png' corner='8,10,8,10'" pushedimage="file='common\Common_Btn_cancl_click.png' corner='8,10,8,10'"/>
+            </HorizontalLayout>
+          </ColumnLayout>
+          <!--- 登录菊花 -->
+          <ColumnLayout main_axis_align="start" cross_axis_align="center"  height="202" visible = "false" padding="0,27,0,0">
+            <Label  text="@str:IDS_Login_Use_QRCode"  height="30" font="@font:msyh_17" textcolor="@color:Text_4" align="center"/>
+            <ColumnLayout padding="0,16,0,0"  width="150" height="150" main_axis_align="center" cross_axis_align="center">
+              <ProgressFlower visible="true" width="150" height="150" elapse="50" framewidth="150" frameheight="150" framecount="12" bkimage="login\qrcode_loading.png"/>
+            </ColumnLayout>
+          </ColumnLayout>
+          <!--- 二维码获取失败 -->
+          <ColumnLayout main_axis_align="start" cross_axis_align="center" name="qrcodeErr"  height="290" visible="false">
+            <Label width="56" height="56" bkimage="login\network_err.png" padding="0,51,0,0"/>
+            <Label text="@str:IDS_Login_NetworkDisconnectTip"  font="@font:msyh_15" height="24"  padding="0,24,0,0" textcolor="#ff161616" align="center"/>
+            <Label text="@str:IDS_Login_NetworkErrTip" font="@font:msyh_12"  height="16" padding="0,8,0,0" visible="true" textcolor="#FF9E9E9E" align="center"/>
+          </ColumnLayout>
+          <!--- 初始化失败 -->
+          <ColumnLayout main_axis_align="start" cross_axis_align="center"  height="290" visible = "false">
+            <Label width="56" height="56" bkimage="login\newinit_err.png" padding="0,51,0,0"/>
+            <Label text="@str:IDS_Login_NewInitErrTip" font="@font:msyh_15" height="18" width="180" padding="0,24,0,0" textcolor="#ff161616" align="center"/>
+          </ColumnLayout>
+          <!--- 登录头像 -->
+          <ColumnLayout width="250" height="290" padding="0,24,0,0" visible = "false"  main_axis_align="start" cross_axis_align="center">
+            <Container padding="0,26,0,0"  width="80" height="80">
+						<MMHttpImage name="loginHeadImg"  width="80" height="80" highquality="true" borderround="6,6" />
+            </Container>
+              <TabLayout name="informationTab">
+                <!-- 用户名 -->
+                <ColumnLayout main_axis_align="start" cross_axis_align="center">
+                  <mmLabel name="nicknameLab" text="" padding="0,18,0,0" width="180" height="32" align="center" textcolor="#ff191919" font="@font:msyh_20" endellipsis="true"/>
+                  <Button name="quickLoginBtn" text="@str:IDS_Login_QuickLoginBtnTxt:1028" padding="0,58,0,0" width="180" style="@style:common_big_primary_btn_style"/>
+                  <Button name="autoLoginBtn" text="@str:IDS_Login_AutoLoginBtnTxt" padding="0,58,0,0" width="180" style="@style:common_big_primary_btn_style"/>
+                </ColumnLayout>
+                <!-- 扫描完成 -->
+                <ColumnLayout main_axis_align="start" cross_axis_align="center">
+                  <Label text="@str:IDS_Login_ScanQRCodeSuccessTip" align="center"  padding="0,24,0,0" textcolor="#ff07C160" width="200" font="@font:msyh_15"/>
+                  <Label text="@str:IDS_Login_ConfirmOnPhoneTip" padding="0,8,0,0" width="250" height="20" align="center" textpadding="0,0,0,0" textcolor="#ff999999" font="@font:msyh_14"/>
+                </ColumnLayout>
+                <!-- 等待手机确认 -->
+                <ColumnLayout main_axis_align="start" cross_axis_align="center">
+                  <Label padding="0,24,0,0" text="@str:IDS_Login_ConfirmOnPhoneTip"   width="250" height="30" align="center" textpadding="0,0,0,0" font="@font:msyh_17" textcolor="@color:Text_4"/>
+                  <TextView name="confirmOnPhoneDesc" width="200" height="wrap_content" padding="0,10,0,0" maxline="2" ellipsistooltips="true" font="@font:msyh_14" textcolor="#FF999999" textalign="center" align="center" visible="false"/>
+                </ColumnLayout>
+                <!-- 登陆中 -->
+                <ColumnLayout main_axis_align="start" cross_axis_align="center">
+                  <mmLabel name="loginingLab" text="@str:IDS_Login_Logingin:1032" font="@font:msyh_15" padding="0,24,0,0" width="150" height="20" align="center"  textcolor="#ff07C160" endellipsis="ture"/>
+                </ColumnLayout>
+              </TabLayout>	
+          </ColumnLayout>
+        </TabLayout>
+        <TabLayout  width="254" height="60" name="tipTab" >
+          <!--- 登录提示语 -->
+          <ColumnLayout cross_axis_align="center" padding="0,6,0,0">
+            <Label name="wechatTipLab" width="230" height="30" textcolor="#FF878787" align="center"  font="@font:msyh_14" visible="false"/>
+            <Button name="qrcodeWebFileBtn" width="230" height="20" textcolor="#FF436895" align="center" text="@str:IDS_Login_Only_Send_File" font="@font:msyh_14" visible="false" />
+          </ColumnLayout>
+          <!--- 返回二维码登录操作 -->
+          <HorizontalLayout padding="0,6,0,0" height="22">
+            <Button name="qrcodeBackBtn" height="22" textcolor="#FF436895" align="center" text="@str:IDS_Login_UseQRCodeLogin" font="@font:msyh_14"/>
+            <Control name="quickWebFileLine" padding="16,4,16,5" bkcolor="@color:FG_6" width="1" height="12" visible="false"/>
+            <Button name="quickLoginWebFileBtn" height="22" textcolor="#FF436895" align="left" text="@str:IDS_Login_Only_Send_File" font="@font:msyh_14" visible="false"/>
+          </HorizontalLayout>
+          <!--- 登录中菊花 -->
+          <HorizontalLayout name="loadingLayout" padding="0,6,0,0">
+            <Button name="cancelLoginBtn" height="22" textcolor="#FF436895" align="center" text="@str:IDS_Login_CancelAutoLoginBtnTxt" font="@font:msyh_14"/>
+          </HorizontalLayout>
+          <!--- 验证码失效 -->
+          <Label name="freshTxt" height="22" textcolor="#FF878787" align="center" text="@str:IDS_Login_QRCodeInvalidTip:1033" font="@font:msyh_14"/>
+          <!--- 获取失败 -->
+          <Button name="retryBtn" height="22" textcolor="#FF436895" valign="center" align="center" text="@str:IDS_Login_ReloadQRCodeTip" font="@font:msyh_14"/>
+          <!--- 空白无按钮状态 -->
+          <VerticalLayout height="30">
+          </VerticalLayout>
+        </TabLayout>	
+      </ColumnLayout>
+      <!---webview layout-->
+      <ColumnLayout name="captchaLayout" height="280" width="355" visible="false">
+        <CaptchaWebViewWnd name="captchawebview" height="280" width="355" />
+      </ColumnLayout>
+    </TabLayout>
+		</ColumnLayout>
+		<!---proxy layout-->
+		<VerticalLayout name="proxyLayout" padding="20,30,0,0" width="240" visible="false">
+			<Label name="proxyTipLab" height="30" textcolor="#FF000000" align="center" text="@str:IDS_Proxy_Tips:3997" font="1"/>
+			<HorizontalLayout name="proxyTipLayout" padding="0,26,0,0" width="240" height="26">
+				<Label name="useProxyLab" textcolor="#FF999999" width="70" align="left" text="@str:IDS_Proxy_Use_Tips:4010" font="2"/>
+				<Option name="closeProxyOption" padding="4,4,0,0" height="14" width="14" selectedimage="chat\check_selected.png" normalimage="chat\check_default.png"/>
+				<Label name="closeProxyLab" padding="10,0,0,0" width="50" align="left" text="@str:IDS_Proxy_Close:4009" font="2" textcolor="#FF8B8B8B" />
+				<Option name="openProxyOption" padding="10,4,0,0" height="14" width="14" selectedimage="chat\check_selected.png" normalimage="chat\check_default.png"/>
+				<Label name="openProxyLab" padding="10,0,0,0" width="60" align="left" text="@str:IDS_Proxy_Open:4008" font="2" textcolor="#FF8B8B8B" />
+			</HorizontalLayout>
+			<VerticalLayout padding="0,10,0,0" name="showProxyLayout" visible="false">
+				<HorizontalLayout name="ipAddrLayout" width="240" height="26">
+					<Label name="ipAddrLab" textcolor="#FF999999" width="64" align="bottom" text="@str:IDS_Proxy_Address:3998" font="2" />
+					<Edit name="ipAddrEdit" padding="6,0,0,0" focusselall="false" width="170" height="26" bkcolor="00FFFFFF" textpadding="4,0,4,0" textcolor="#FF000000" font="2" maxchar="30" nativebkcolor="#FFf5f5f5" />
+				</HorizontalLayout>
+				<Control height="1" bkcolor="#24000000" padding="72,0,10,0" />
+				<HorizontalLayout name="ipPortLayout" padding="0,10,0,0" width="240" height="26">
+					<Label name="ipPortLab" textcolor="#FF999999" width="64" align="bottom" text="@str:IDS_Proxy_Port:3999" font="2" />
+					<Edit name="ipPortEdit" padding="6,0,0,0" focusselall="false" numberonly="true" width="170" height="26" bkcolor="00FFFFFF" textpadding="4,0,4,0" textcolor="#FF000000" font="2" maxchar="10" nativebkcolor="#FFf5f5f5" />
+				</HorizontalLayout>
+				<Control height="1" bkcolor="#24000000" padding="72,0,10,0" />
+				<Button name="moreSetBtn" visible="true" padding="130,12,0,0" width="100" height="20" textcolor="#FF4395F5" align="right" text="@str:IDS_Proxy_MoreSet_Tips:4000" font="2"/>
+				<VerticalLayout name="accountLayout" padding="0,10,0,0" height="64" visible="false">
+					<HorizontalLayout name="userLayout" padding="0,0,0,0" width="240" height="26">
+						<Label name="userLab" width="64" textcolor="#FF999999" align="bottom" text="@str:IDS_Proxy_User:4001" font="2" />
+						<Edit name="userEdit" padding="6,0,0,0" focusselall="false" width="170" height="26" bkcolor="00FFFFFF" textpadding="4,0,4,0" textcolor="#FF000000" font="2" maxchar="30" nativebkcolor="#FFf5f5f5" />
+					</HorizontalLayout>
+					<Control height="1" bkcolor="#24000000" padding="72,0,10,0" />
+					<HorizontalLayout name="pwdLayout" padding="0,10,0,0" width="240" height="26">
+						<Label name="pwdLab" width="64" textcolor="#FF999999" align="bottom" text="@str:IDS_Proxy_Password:4002" font="2" />
+						<Edit name="pwdEdit" padding="6,0,0,0" focusselall="false" width="170" height="26" password="true" bkcolor="00FFFFFF" textpadding="4,0,4,0" textcolor="#FF000000" font="2" maxchar="30" nativebkcolor="#FFf5f5f5" />
+					</HorizontalLayout>
+					<Control height="1" bkcolor="#24000000" padding="72,0,10,0" />
+				</VerticalLayout>
+				<HorizontalLayout padding="51,24,0,0">
+					<Button name="proxyLinkBtn" text="@str:IDS_Proxy_Link:4003" width="138" height="36" align="center" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF" font="2" normalimage="file='common\Common_Btn_ok_normal.png' corner='5,10,5,10'" hotimage="file='common\Common_Btn_ok_hover.png' corner='5,10,5,10'" pushedimage="file='common\Common_Btn_ok_click.png' corner='5,10,5,10'" />
+					<ProgressFlower name="loadingLab" float="true" pos="12,6,0,0" width="24" height="24" visible="false" elapse="20" framewidth="24" frameheight="24" framecount="30" bkimage="Common\load_flower.png"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+		</VerticalLayout>
+		</ColumnLayout>
+	</VerticalLayout>
+	
+</Window>

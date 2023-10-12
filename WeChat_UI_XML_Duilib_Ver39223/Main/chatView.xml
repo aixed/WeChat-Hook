@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chatView>
+	<VerticalLayout name="chat_layout" visible="true">
+		<VerticalLayout name="chatTitleRoot" height="62" bordersize="0,0,0,1" bordercolor="#FFE7E7E7">
+			<!--用于将引用离屏绘制出来生成bitmap的容器，不会在界面绘制-->
+			<HorizontalLayout>
+			<Container name="quotePaintContainer" float="true" pos="0,0,330,66" visible="false" bkcolor="0xFFE8E8E8" width="wrap_content"></Container>
+			<ImageGridView name="imageGridForThumb" float="true" pos="0,0,250,250" visible="true" width="250" height="250" childpadding="2"/>
+			<HorizontalLayout name="title_left" padding="24,0,0,0">
+				<!--返回按钮-->
+				<Button name="back_sub_panel_btn" width="25" height="25" padding="0,18,4,0" normalimage="file='webView\buttons\back.png'" visible="false"/>
+				<VerticalLayout padding="0,12,0,0">
+					<VerticalLayout name="chat_title_layout" height="wrap_content">
+						<HorizontalLayout name="chatTitleLayout" height="24" padding="0,6,70,0">
+							<HeadImgUI name="entImg" width="20" height="20" enabled="false" visible="false" padding="0,5,4,0"/>
+							<RichButton name="talkerName" height="20" text="" font="14" textpadding="0,0,0,0" textcolor="#FF000000" disabledtextcolor="#FF808080" endellipsis="true" align="left"/>
+							<Button name="bizOrProfileLivingWhiteBtn" visible="false" width="85" padding="8,0,0,0" normalimage="Main/BizProfile/BizFinderLive/WhiteLivingBtn_Default.png" pushedimage="Main/BizProfile/BizFinderLive/WhiteLivingBtn_Click.png" hotimage="Main/BizProfile/BizFinderLive/WhiteLivingBtn_Hover.png"/>
+							<mmLabel name="talkerCount" visible="false" height="20" font="14" textcolor="#FF000000" align="left"/>
+							<Label name="weworkIcon" width="24" height="24" padding="0,1,0,0" bkimage="Chat\wework_title_logo.png"/>
+							<mmLabel name="enterpriseInfo" visible="false" padding="6,4,0,0" height="20" font="2" textcolor="#FFFF9F00" align="left"/>
+						</HorizontalLayout>			
+						<Label name="tipsText" height="16" font="4" visible="false" />
+						<Button name="chat_group_show_btn_t" keyboard="false" visible="false" float="true" pos="0,0,0,0" height="40" bkcolor="#00E7E7E7" />
+					</VerticalLayout>
+					<Control />
+				</VerticalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout name="chat_group_btn_layout" padding="0,26,0,0" width="60" height="28">
+				<Control />
+				<Reddot name="group_detail_reddot" dotvisible="false" smalldot="true" dotposition="righttop" height="wrap_content" width="wrap_content" padding="0,0,4,0">
+					<Button name="chat_group_show_btn" tooltip="@str:IDS_Chat_Detail_Info:4173" width="25" height="25" normalimage="chatview\chat_profile_show.png" hotimage="chatview\chat_profile_show_hover.png" pushedimage ="chatview\chat_profile_show_push.png" />
+				</Reddot>
+				<Button name="chat_group_detail_btn" tooltip="@str:IDS_Chat_Detail_Info:4173" padding="0,0,4,0" width="25" height="25" normalimage="chatview\chat_profile_show.png" hotimage="chatview\chat_profile_show_hover.png" pushedimage ="chatview\chat_profile_show_push.png" visible="false"/>
+			</HorizontalLayout>
+			</HorizontalLayout>
+			<ChatRoomBannerTileLayout name="chat_room_tip_bar" visible="false" height="wrap_content" padding="24,8,16,8"/>
+		</VerticalLayout>
+		<!--订阅号 和 企业号二级菜单 -->
+		<FrameLayout name="sub_panel" visible="false">
+			<HorizontalLayout name="noBizSession" visible="false">
+				<Control />
+				<VerticalLayout width="100">
+					<Control />
+					<Label height="40" font="2" text="@str:IDS_Biz_NoSession:3552" textcolor="#FFB2B2B2" align="top|center" />
+					<Control />
+				</VerticalLayout>
+				<Control />
+			</HorizontalLayout>
+			<VerticalLayout >
+				<RelativeLayout name="sub_panel_tab_btn_layout" height="30" padding="0,40,0,30">
+					<HorizontalLayout>
+						<Control />
+						<HorizontalLayout width="196" bkcolor="#FFE7E7E7">
+							<HorizontalLayout width="98">
+								<Option name="enterprise_msg_option" width="98" text="@str:IDS_Enterprise_Msg:3486" group="enterprise_option" textcolor="#FF2a2a2a" selectedbkcolor="#FFD1D1D1" selected="true" disabledtextcolor="#FFE7E7E7"/>
+								<Label name="msgUnread_count" visible="false" font="10" pos="80,0,0,0" width="16" height="16" float="true" bkimage="Session\Unread_BG.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,2"/>
+								<Label name="msgUnread_count2" visible="false" pos="74,0,0,0" width="23" height="16" float="true" bkimage="Session\Unread_BG_02.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,1"/>
+								<Label name="msg_red_dot" visible="false" width="10" height="10" pos="83,3,0,0" float="true" bordersize="0" bkimage="Session\session_reddot.png" align="center"/>
+							</HorizontalLayout>
+							<HorizontalLayout width="98">
+								<Option name="enterprise_app_option" width="98" text="@str:IDS_Enterprise_App:3487" group="enterprise_option" textcolor="#FF2a2a2a" selectedbkcolor="#FFD1D1D1"/>
+								<Label name="appUnread_count" font="10" visible="false" pos="80,0,0,0" width="16" height="16" float="true" bkimage="Session\Unread_BG.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,2"/>
+								<Label name="appUnread_count2" visible="false" pos="74,0,0,0" width="23" height="16" float="true" bkimage="Session\Unread_BG_02.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,1"/>
+								<Label name="app_red_dot" width="10" visible="false" height="10" pos="83,3,0,0" float="true" bordersize="0" bkimage="Session\session_reddot.png" align="center"/>
+							</HorizontalLayout>
+						</HorizontalLayout>
+						<Control />
+					</HorizontalLayout>
+					<Button name="start_bizchat_btn" visible="true" layout_gravity="right" padding="0,2,90,0" width="25" height="25" normalimage="Main\imgs\ChatList_SeachBar_AddChat_Btn.png" hotimage="Main\imgs\ChatList_SeachBar_AddChat_Btn_Hover.png" pushedimage="Main\imgs\ChatList_SeachBar_AddChat_Btn_Click.png" tooltip="@str:IDS_Enterprise_Start_Chat:3490"/>
+				</RelativeLayout>
+				<FrameLayout>
+					<SessionListUI name="session_middle_list" accessibilityname="@str:IDS_Session_List_Name:4175" header="hidden" vscrollbar="true" menu="true" itemhotbkcolor="#FFDCDCDC" itemselectedbkcolor="#FFC8C8C8" visible="true" />
+
+					<SessionListUI name="session_enterprise_msg_list" accessibilityname="@str:IDS_Session_List_Name:4175" header="hidden" vscrollbar="true" menu="true" itemhotbkcolor="#FFDCDCDC" itemselectedbkcolor="#FFC8C8C8" visible="false" />
+				</FrameLayout>
+				<!-- 企业号消息页面底部推广bar -->
+				<mmContainerButton name="biz_msg_bar" visible="false" height="50" bkcolor="@color:BG_3" hotbkcolor="@color:FG_6" bordercolor="@color:FG_5" bordersize="0,1,0,0">
+					<RowLayout cross_axis_align="center" main_axis_align="center">
+						<Control width="24" height="24" bkimage="Chat/wework_title_logo.png" />
+						<Label width="wrap_content" height="wrap_content" padding="8,0,0,0" text="@str:IDS_Biz_UseInWeWork" font="@font:msyh_14" textcolor="@color:FG_0" />
+					</RowLayout>
+				</mmContainerButton>
+			</VerticalLayout>
+
+		</FrameLayout>
+
+		<VerticalLayout name="chatContentLayout">
+			<HorizontalLayout name="chat_ifaddfriend_layout" height="60" bkcolor="#FFFFFFFF" bordersize="0,0,0,2" bordercolor="#FFE7E7E7" visible="false">
+				<HeadImgUI name="userImage" width="40" height="40" padding="10,10,10,10"/>
+				<Label name="strText" height="40" width="wrap_content" text="@str:IDS_Chat_Text_addFriend:124" textcolor="#FF616161" font ="2" padding="0,10,0,10" valign="center" />
+				<Control />
+				<Button name="friendAddBtn" width="70" height="26" text="@str:IDS_ChatRoom_AddBtnTxt:1189" font="2" textcolor="#FFFFFFFF" padding="0,17,20,17" align="center" bkimage="file='common\Common_Btn_ok_hover.png' corner='4,10,4,10'" />
+			</HorizontalLayout>
+
+
+			<RelativeLayout >
+				<RelativeLayout>
+					<ChatView header="hidden" shortcut="m" accessibilityname="消息" inset="0,0,0,0" name="chatlist" itemselectedbkcolor="#0" itemhotbkcolor="#0" vscrollbar="true" />
+					<FragmentContainer name="tipsBarContainer" height="49" width="wrap_content" layout_gravity="bottom|right">
+						<Fragment name="chatTipsBar" class="ChatTipsBar" />
+					</FragmentContainer>
+
+				</RelativeLayout>
+				<HorizontalLayout name="errInfoLayout" float="true" height="42" width="150" visible="false" bkimage="file='ChatView\error_remind_bg.png' corner='5,5,5,5'">
+					<Label name="errInfoTxt" textcolor="FFFFFFFF" align="center" font="2" />
+				</HorizontalLayout>
+				<HorizontalLayout name="chatTipBar" float="true" height="42" width="150" visible="false">
+					<Button name="chatTipText" textcolor="FF434343" align="center" bkimage="file='ChatView\newmessage_remind.png' corner='10,10,50,10'" textpadding="0,0,40,0" />
+					<Button name="chatTipCloseBtn" width="40" height="38" float="true" pos="107,2,0,0" normalimage="ChatView\newmessage_remind_close_normal.png" hotimage="ChatView\newmessage_remind_hover.png" pushedimage="ChatView\newmessage_remind_click.png" />
+				</HorizontalLayout>
+				<MMListUI name="chat_live_list" visible="false" header="hidden" vscrollbar="true" itemhotbkcolor="#FF393939" itemheight="50" maxheight="120" inset="0,0,0,1" bordersize="0,0,0,1" bordercolor="#FFE7E7E7"/>
+			</RelativeLayout>
+
+			<!--语音通话状态栏-->
+			<Include source="Main\VoipStatusBar.xml" />
+
+			<Include source="Main\GroupVoipStatusBar.xml" />
+
+			<HorizontalLayout name="chat_bottom_biz_menu" height="48" bordersize="0" bkcolor="#ffe7e5e5" padding="0,1,0,0" visible="false">
+				<HorizontalLayout name="biz_menu" childpadding="1" visible="false" height="48" bkcolor="#ffe7e5e5" bordersize="0,1,0,0" bordercolor="#ffe7e5e5" padding="0,1,-2,0" hscrollbar="true">
+
+				</HorizontalLayout>
+				<Button name="changeStatusBtn" width="46" align="right" bkcolor="#fffbfbfb" bordersize="1,0,0,0" padding="0,1,0,0" bordercolor="#ffe7e5e5" normalimage="file='ChatView\Open_Input.png' dest='10,11,35,36'" hotimage="file='ChatView\Open_Input_hover.png' dest='10,11,35,36'" pushedimage="file='ChatView\Open_Input_click.png' dest='10,11,35,36'" accessibilityname="@str:IDS_Edit_Input:4174"></Button>
+			</HorizontalLayout>
+			<VerticalLayout name="chat_bottom_layout" height="145" bkcolor="#FFF5F5F5" minheight="130" maxheight="500">
+				<Dragable height="3" name="chatDrag" bkcolor="#FFECECEC" vertical="true"/>
+
+				<!-- chatview bottom tab -->
+				<TabLayout name="chatBottomTabLayout">
+					<VerticalLayout>
+						<!-- tab1: richinput -->
+						<HorizontalLayout name="chat_tools" accessibilityrole="toolbar" height="34" groupchild="true">
+							<mmButton name="emotionBtn" tooltip="@str:IDS_Chat_EmotionBtnTxt:1068" padding="22,7,0,0" width="25" height="25" hovernotify="true" normalimage="ChatView\Emotion.png" hotimage="ChatView\Emotion_hover.png" pushedimage="ChatView\Emotion_click.png" />
+							<Button name="sendFileBtn" tooltip="@str:IDS_Chat_SendFileBtnTxt:1070" padding="8,7,0,0" width="25" height="25" normalimage="ChatView\SendFile.png" hotimage="ChatView\SendFile_hover.png" pushedimage="ChatView\SendFile_click.png"/>
+							<SnapShotBtn name="screenCaptureBtn" tooltip="@str:IDS_Chat_SnapShotBtnTxt:1069" padding="8,7,0,0" width="18" height="25" align="center" normalimage="ChatView\Screenshot.png" hotimage="ChatView\Screenshot_hover.png" pushedimage="ChatView\Screenshot_click.png" />
+							<Button name="screenCaptureConfigBtn" keyboard="false" tooltip="@str:IDS_Chat_SnapShotBtnTxt:1069" padding="0,7,0,0" width="6" height="25" normalimage="file='ChatView\Screenshot_Arrow.png' " hotimage="file='ChatView\Screenshot_Arrow_hover.png'" pushedimage="file='ChatView\Screenshot_Arrow_click.png' "/>
+							<Button name="fileManagerBtn" tooltip="@str:IDS_FTS_CHAT_MSG:4081" padding="8,7,0,0" width="25" height="25" normalimage="ChatView\FileManager.png" hotimage="ChatView\FileManager_hover.png" pushedimage="ChatView\FileManager_click.png"/>
+							<Control />
+							<Button name="callLiveBtn" tooltip="@str:IDS_Chat_Live_ToolTip:4500" padding="0,7,0,0" width="25" height="25" align="center" normalimage="ChatView\Live.png" hotimage="ChatView\Live_hover.png" pushedimage="ChatView\Live_click.png" visible="false"/>
+							<Button name="callVoipAudioBtn" tooltip="@str:IDS_Chat_Voice_Audio_ToolTip:3398" padding="0,7,0,0" width="25" height="25" align="center" normalimage="ChatView\AudioChat.png" hotimage="ChatView\AudioChat_hover.png" pushedimage="ChatView\AudioChat_click.png" visible="false"/>
+							<Button name="callVoipBtn" tooltip="@str:IDS_Chat_VoipBtnTxt:1071" padding="3,7,24,0" width="25" height="25" align="center" normalimage="ChatView\VideoChat.png" hotimage="ChatView\VideoChat_hover.png" pushedimage="ChatView\VideoChat_click.png" visible="false"/>
+							<Button name="groupVoipCallBtn" tooltip="@str:IDS_Chat_Voice_Audio_ToolTip:3398" padding="8,7,24,0" width="25" height="25" align="center" normalimage="ChatView\Group_Call.png" hotimage="ChatView\Group_Call_hover.png" pushedimage="ChatView\Group_Call_click.png" visible="true"/>
+
+							<!-- <Control name="biz_empty_space"/>  -->
+							<Button name="changeToBizMenuBtn" width="46" padding="0,0,0,0" align="right" visible="false" normalimage="file='ChatView\Close_Input.png' dest='10,7,35,32'" hotimage="file='ChatView\Close_Input_hover.png' dest='10,7,35,32'" pushedimage="file='ChatView\Close_Input_click.png' dest='10,7,35,32'" accessibilityname="服务"></Button>
+						</HorizontalLayout>
+						<HorizontalLayout>
+							<ChatRichInput name="input_richedit" accessibilityname="@str:IDS_Edit_Input:4174" menu="true" multiline="true" vscrollbar="true" autovscroll="true" enabled="true" wanttab="false" rich="true" readonly="false" wantreturn="true" wantctrlreturn="false" inset="28,4,20,4" font="2" />
+						</HorizontalLayout>
+						<HorizontalLayout name="send_tools" height="36" minheight="36" inset="30,0,30,0" padding="0,0,0,12">
+							<ColumnLayout main_axis_align="start" cross_axis_align="start" width="wrap_content">
+								<RowLayout main_axis_align="center" cross_axis_align="center" width="wrap_content" padding="0,0,0,5">
+									<Container name="quoteContainer" visible="false" bkcolor="0xFFE8E8E8" width="wrap_content"></Container>
+									<Button height="18" width="18" bkimage="chat\deleteQuote.png" padding="6,0,0,0" visible="false" name="quoteDelete" />
+								</RowLayout>
+							</ColumnLayout>
+							<Control name="chat_empty_space" minheight="10" minwidth="16"/>
+
+							<ColumnLayout cross_axis_align="end" main_axis_align="end" padding="0,0,0,0" width="wrap_content">
+								<SecondaryButton name="sendBtn" accessibilityname="sendBtn" text="@str:IDS_Chat_SendMsgBtnTxt:1072" />
+							</ColumnLayout>
+						</HorizontalLayout>
+					</VerticalLayout>
+					<!-- tab2: multi select menus -->
+					<RelativeLayout name="multiSelectMenu">
+						<HorizontalLayout height="100" width="wrap_content" layout_gravity="vcenter | hcenter">
+							<VerticalLayout width="74" padding="0,15,1,0">
+								<Button name="multiSelectForwardSingle" width="44" height="44" padding="15,0,15,0" normalimage="Share_btn\multi_select_single_send_default.png" hotimage="Share_btn\multi_select_single_send_hover_click.png" pushedimage="Share_btn\multi_select_single_send_hover_click.png" disabledimage="Share_btn\multi_select_single_send_disable.png"/>
+								<Text text="@str:IDS_MultiSelect_Forward_Single:3712" minheight="12" maxheight="36" maxwidth="88" align="center" font="10" padding="0,9,0,0"/>
+							</VerticalLayout>
+							<VerticalLayout width="74" padding="0,15,1,0">
+								<Button name="multiSelectForwardMerge" width="44" height="44" padding="15,0,15,0" normalimage="Share_btn\multi_select_merge_send_default.png" hotimage="Share_btn\multi_select_merge_send_hover_click.png" pushedimage="Share_btn\multi_select_merge_send_hover_click.png" disabledimage="Share_btn\multi_select_merge_send_disable.png"/>
+								<Text text="@str:IDS_MultiSelect_Forward_merge:3713" minheight="12" maxheight="36" maxwidth="88" align="center" font="10" padding="0,9,0,0"/>
+							</VerticalLayout>
+							<ColumnLayout name="forward_to_wxwork_layout" visible="false" width="74" padding="0,15,1,0" cross_axis_align="center">
+								<Button name="forward_to_wxwork" width="44" height="44" normalimage="plugins\wx_work_msg_forward\imgs\forward_to_wxwork.png" hotimage="plugins\wx_work_msg_forward\imgs\forward_to_wxwork_hover.png"
+								pushedimage="plugins\wx_work_msg_forward\imgs\forward_to_wxwork_hover.png"
+								disabledimage="Chat\multiselect\multi_select_add_fav_disable.png" />
+								<Text minheight="12" maxheight="36" maxwidth="66" width="wrap_content" text="@str:IDS_WxWorkForward_ForwardToWxWork" font="10" padding="0,9,0,0" align="center" />
+							</ColumnLayout>
+							<VerticalLayout width="74" padding="0,15,1,0">
+								<Button name="multiSelectAddFav" width="44" height="44" padding="15,0,15,0" normalimage="Chat\multiselect\multi_select_add_fav_default.png" hotimage="Chat\multiselect\multi_select_add_fav_hover_click.png" pushedimage="Chat\multiselect\multi_select_add_fav_hover_click.png" disabledimage="Chat\multiselect\multi_select_add_fav_disable.png"/>
+								<Text minheight="12" maxheight="36" maxwidth="88" text="@str:IDS_FAV_AddMenu:3531" align="center" font="10" padding="0,9,0,0"/>
+							</VerticalLayout>
+							<VerticalLayout width="74" padding="0,15,1,0">
+								<Button name="multiSelectSaveFile" width="44" height="44" padding="15,0,15,0" normalimage="Chat\multiselect\multi_select_save_default.png" hotimage="Chat\multiselect\multi_select_save_hover_click.png" pushedimage="Chat\multiselect\multi_select_save_hover_click.png" disabledimage="Chat\multiselect\multi_select_save_disable.png"/>
+								<Label height="12" text="@str:IDS_MultiSelect_SaveFile:4020" align="center" font="10" padding="0,9,0,0"/>
+							</VerticalLayout>
+							<VerticalLayout width="74" padding="0,15,0,0">
+								<Button name="multiSelectDelete" width="44" height="44" padding="15,0,15,0" normalimage="Chat\multiselect\multi_select_delete_default.png" hotimage="Chat\multiselect\multi_select_delete_hover_click.png" pushedimage="Chat\multiselect\multi_select_delete_hover_click.png" disabledimage="Chat\multiselect\multi_select_delete_disable.png"/>
+								<Label height="12" text="@str:IDS_Menu_Delete:3323" align="center" font="10" padding="0,9,0,0"/>
+							</VerticalLayout>
+						</HorizontalLayout>
+						<Button name="closeMultiSelectBtn" width="15" height="15" layout_gravity="top | right" padding="0,9,9,0" normalimage="Chat\multiselect\multi_select_close_normal.png" hotimage="Chat\multiselect\multi_select_close_pushed.png" pushedimage="Chat\multiselect\multi_select_close_pushed.png"/>
+					</RelativeLayout>
+          <!-- tab3: disable -->
+          <VerticalLayout>
+            <HorizontalLayout>
+              <RowLayout bkcolor="#FFF5F5F5" main_axis_align="center" cross_axis_align="center">
+                <Label name="disable_content_icon" width="15" height="15" align="center" padding="0,0,1,0" bkimage="chatroom\remain_record_disable.png"/>
+                <Label name="disable_content_cover" height="wrap_content" width="wrap_content" align="center" bkcolor="#FFF5F5F5" textcolor="#FF999999" fitTextSize="true"/>
+        		  </RowLayout>
+            </HorizontalLayout>
+          </VerticalLayout>
+				</TabLayout>
+			</VerticalLayout>
+			<Label name="nodifyBubble" float="true" textcolor="#FF000000" pos="0,0,0,0" bkimage="file='ChatView\info-bubble.png' corner='10,10,45,20'" align="center" valign="top" height="48" textpadding="0,-7,0,0" width="100" visible="false"/>
+
+		</VerticalLayout>
+		<Control name="drag_in_bg" float="true" visible="false" bkcolor="@color:FG_3" />
+	</VerticalLayout>
+</chatView>

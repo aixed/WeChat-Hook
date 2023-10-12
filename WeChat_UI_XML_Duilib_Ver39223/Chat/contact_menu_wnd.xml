@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window size="10,1">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true" />
+	<Default name="VScrollBar" value="scroll_auto_hidden=&quot;false&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;10&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\common_scrollbar.png' source='0,0,10,9' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\common_scrollbar.png' source='10,0,20,9' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\common_scrollbar.png' source='10,0,20,9' corner='0,4,0,4'&quot; bknormalimage=&quot;file='Main\common_scrollbar.png' source='0,12,1,13' corner='0,0,0,0'&quot;" />
+	<VerticalLayout name="root" bkcolor="#FFFFFFFF" vscrollbar="false">
+		<MMListUI width="165" height="162" header="hidden" name="menu" vscrollbar="true" itemhotbkcolor="#FFf3f3f3" itemselectedbkcolor="#FFececee" />
+	</VerticalLayout>
+</Window>

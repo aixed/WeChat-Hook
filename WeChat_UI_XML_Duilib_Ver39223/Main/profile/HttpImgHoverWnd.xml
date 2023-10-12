@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="296,370" caption="0,0,0,0" roundcorner="4,4">
+  <RelativeLayout>
+    <ImageUI name="desc_image" needtabstop="false" />
+  </RelativeLayout>
+</Window>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VoipLayout>
+	<!--语音通话状态栏-->
+	<HorizontalLayout name="voipChatLayout" height="45" bkcolor="#ffebecec" visible="false">
+		<VerticalLayout padding="10,0,0,0">
+			<Label name="voipTipLab" height="45"/>
+			<HorizontalLayout name="voipErrLayout" height="15" padding="0,-5,0,0" visible="false">
+				<Label width="12" height="12" padding="0,1,2,0" bkimage="plugins\voip\imgs\device_miss_tip.png"/>
+				<Label name="voipErrTip" text="" textcolor="FFAEAEAE" font="10" height="15"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+		<Label name="voipTimeLab" width="50" height="45" font="2" textcolor="#ff9d9d9d" text="00:00" padding="10,0,0,0"/>
+		<VolumeControlButton name="soundVolume" width="28" height="28" dropboxsize="28,76" handleSize="12,12" padding="0,9,0,0" trackSize="2,56" maxValue="255" handleImage="plugins\voip\imgs\SoundAdjust_handle.png" value="25"
+			dropboxlocation="top" trackBkColor="#4dffffff" trackValueColor="#ff00ff00" coverButton="true" dropboxRoundCorner="0,0" dropboxBkImage="file='plugins\voip\imgs\volume_drop_box_bg.png' corner='4,10,4,10'"
+			dropboxButtonNormalImage="plugins\voip\imgs\play_volume.png" dropboxButtonHotImage="plugins\voip\imgs\play_volume.png" dropboxButtonPushedImage="plugins\voip\imgs\play_volume.png"
+			normalimage="plugins\voip\imgs\play_volume.png" hotimage="plugins\voip\imgs\play_volume_active.png" pushedimage="plugins\voip\imgs\play_volume_active.png"
+			muteNormalImage="plugins\voip\imgs\play_volume_mute.png" muteHotImage="plugins\voip\imgs\play_volume_mute_active.png" mutePushedImage="plugins\voip\imgs\play_volume_mute_active.png"
+			dropboxButtonMuteNormalImage="plugins\voip\imgs\play_volume_mute.png" dropboxButtonMuteHotImage="plugins\voip\imgs\play_volume_mute.png" dropboxButtonMutePushedImage="plugins\voip\imgs\play_volume_mute.png"/>
+		<VolumeControlButton name="micVolume" width="28" height="28" padding="10,9,0,0"maxValue="255" value="25" normalimage="plugins\voip\imgs\mic_volume.png" tooltip="@str:IDS_Voip_Close_Mic:3468"
+			hotimage="plugins\voip\imgs\mic_volume_active.png" pushedimage="plugins\voip\imgs\mic_volume_active.png" needDropbox="false" muteNormalImage="plugins\voip\imgs\mic_volume_mute.png"
+			muteHotImage="plugins\voip\imgs\mic_volume_mute_active.png" mutePushedImage="plugins\voip\imgs\mic_volume_mute_active.png"/>
+		<VerticalLayout name="switchVoiceBtnLayout" width="45" height="45">
+			<Button name="voipSwitchVoiceBtn" width="28" height="28" normalimage="plugins\voip\imgs\switch_voice.png" hotimage="plugins\voip\imgs\switch_voice_active.png"  pushedimage="plugins\voip\imgs\switch_voice_active.png" padding="10,9,0,0"
+				tooltip="@str:IDS_Voip_AnswerInVoice:3430"/>
+			<Label width="45" height="15" textcolor="#ff000000" text="@str:IDS_Voip_AnswerInVoice:3430" font="11" align="center" visible="false"/>
+		</VerticalLayout>
+		<VerticalLayout name="acceptBtnLayout" width="45" height="45" padding="0,0,0,0">
+			<Button name="voipAcceptBtn" width="28" height="28" normalimage="plugins\voip\imgs\accept.png" hotimage="plugins\voip\imgs\accept_active.png"  pushedimage="plugins\voip\imgs\accept_active.png" padding="10,9,0,0"
+				tooltip="@str:IDS_Voip_InviteAcceptBtnTxt:1066"/>
+			<Label width="45" height="15" textcolor="#ff000000" text="@str:IDS_Voip_InviteAcceptBtnTxt:1066" font="11" align="center" visible="false"/>
+		</VerticalLayout>
+		<VerticalLayout name="rejectBtnLayout" width="45" height="45" padding="0,0,13,0">
+			<Button name="voipRejectBtn" width="28" height="28" normalimage="plugins\voip\imgs\refuse.png" hotimage="plugins\voip\imgs\refuse_active.png"  pushedimage="plugins\voip\imgs\refuse_active.png"  padding="10,9,0,0"
+				tooltip="@str:IDS_Voip_InviteRejectBtnTxt:1067"/>
+			<Label name="voipRejectLab" width="45" height="15" textcolor="#ff000000" text="@str:IDS_Voip_InviteRejectBtnTxt:1067" font="11" align="center" visible="false"/>
+		</VerticalLayout>
+	</HorizontalLayout>
+</VoipLayout>

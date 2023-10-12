@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<Font name="微软雅黑" size="12" />
+	<Font name="微软雅黑" size="8" />
+	<VerticalLayout>
+		<Include source="Main\chatView.xml" />
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+    <VerticalLayout>
+
+
+        <VerticalLayout name="profileLayout" height="62" bkcolor="#FFFFFFFF">
+            <Control />
+            <HorizontalLayout padding="20,0,0,0" height="62">
+                <VerticalLayout height="62">
+                    <Control />
+                    <HorizontalLayout height="24">
+                        <HeadImgUI name="smallBizHeadImg" enabled="false" borderroundcircle="true"  width="24" height="24" visible="false" />
+                        <mmLabel name="topTitleLab" font="2" height="24" padding="10,0,0,0" visible="false" endellipsis="true" matchparent="true" />
+                    </HorizontalLayout>
+                    <Control />
+                </VerticalLayout>
+              
+                <HorizontalLayout name="bizProfileShowMoreLayout" padding="0,30,0,0" width="80" height="62">
+                    <Control />
+                    <Button name="bizProfileShowMoreBtn" padding="0,1,4,0" tooltip="@str:IDS_Common_More:3711" width="25" height="25" normalimage="chatview\chat_profile_show.png" hotimage="chatview\chat_profile_show_hover.png" pushedimage="chatview\chat_profile_show_push.png" />
+                </HorizontalLayout>
+            </HorizontalLayout>
+            <Control />
+        </VerticalLayout>
+
+
+        <VerticalLayout name="infoLayout" visible="false" bkcolor="#FFF5F5F5">
+
+            <BizProfileTitleCtrl name="infoTitleCtrl" />
+            <VerticalLayout>
+                <Control />
+                <HorizontalLayout >
+                    <Control />
+                    <EmotionText matchparent="true" minwidth="280" maxwidth="360" name="infoTxt" font="2"  textcolor="#FFB3B3B3" align="center" padding="20,0,20,0" />
+                    <Control />
+                </HorizontalLayout>
+                <Control />
+            </VerticalLayout>
+        </VerticalLayout>
+
+        <VerticalLayout name="msgListLayout" bkcolor="#FFF5F5F5" padding="0,0,0,0">
+            <BizProfileMsgList name="bizMsgList" tabfindchild="false" childgourp="true" inset="0,0,0,2" padding="0,0,0,0" 
+            bkcolor="#FFF5F5F5" itemhotbkcolor="#000000" itemselectedbkcolor="#000000" visible="true" 
+            header="hidden" vscrollbar="true" listbottomemptyheight="10" scrolltoplinecolor="#FFECECEC" 
+             vscrollbarstyle="padding=&quot;0,190,0,0&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;7&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_hover.png'  corner='0,4,0,4'&quot;"/>
+        </VerticalLayout>
+
+    </VerticalLayout>
+</Window>

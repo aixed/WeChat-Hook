@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Fragment>
+	<HorizontalLayout name="chatTipsBar" width="wrap_content" bkimage="file='ChatView\tips_bar\tips.png' corner='50dp,1dp,50dp,1dp' scale='true'" inset="25,8,25,7">
+		<Container name="chatTipsContainer" width="wrap_content" height="32">
+			<HorizontalLayout width="wrap_content" height="32">
+				<Control name="icon" width="16" height="16" bkimage="ChatView\tips_bar\icon.png" padding="0,8,2,8"/>
+				<Control name="icon_up" width="16" height="16" bkimage="ChatView\tips_bar\icon_up.png" padding="0,8,2,8" visible="false"/>
+				<mmLabel name="chatTipsText" width="wrap_content" height="32" textcolor="#FF09BB07" align="center"/>
+			</HorizontalLayout>
+			<Button name="chatTipsBtn" width="wrap_content" height="32" textcolor="#FF09BB07" align="center" />
+		</Container>
+		<Control bkcolor="#ffe1e1e1" width="1" height="16" padding="0,8,0,8" visible="false"/>
+		<Button name="chatTipsCloseBtn" width="34" height="32" visible="false" normalimage="file='ChatView\newmessage_remind_close_normal.png' prestretch='true' prestretchsize='9,9' dest='12,12,21,21'" 
+			hotimage="file='ChatView\newmessage_remind_hover.png' scale='true' dest='12,12,21,21'" 
+			pushedimage="file='ChatView\newmessage_remind_hover.png' scale='true' dest='12,12,21,21'"/>
+	</HorizontalLayout>
+</Fragment>

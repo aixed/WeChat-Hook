@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<SessionListItemUI name="session_item" menu="true">
+		<HorizontalLayout height="64" inset="12,12,12,10">
+			<HeadImgUI name="logo" width="40" height="40" mouse="false" recycle="true"
+				borderround="2,2"
+				accessibilityname="SessionListItem" />
+			<VerticalLayout padding="10,0,0,0">
+				<HorizontalLayout height="24">
+					<HorizontalLayout name="nickNameLayout" height="24">
+						<TextView name="nickname" bordersize="0" height="24" font="2" align="top"
+							textcolor="#FF000000" selectedtextcolor="#FF000000"
+							detectemotion="false" detecturl="false" detecttag="false" maxline="1"
+							endellipsis="true"
+							wordbreak="false" estimate="control" />
+						<Control name="wxwork_icon"
+							bkimage="Session\wework_logo.png" width="20" height="20"
+							padding="0,2,2,0" />
+					</HorizontalLayout>
+					<TextView name="enterpriseName" minwidth="35"  bordersize="0"
+						height="24" font="0" textcolor="#FFEA9200" endellipsis="true"
+						visible="false" detecturl="false" detecttag="false" maxline="1"
+						wordbreak="false"  textpadding="0,2,0,0" />
+					<TextView name="time" width="52" text="11:23" bordersize="0"
+						textcolor="#FFB9B9B9" align="right" overridetextcolor="#FF999999" font="0" />
+				</HorizontalLayout>
+				<HorizontalLayout name="living_layout" padding="0,0,0,0" height="18" visible="false">
+					<Button name="bizfinderlive_reddot" width="12" height="12" padding="0,3,0,3"
+						bkimage="Main/BizProfile/BizFinderLive/RedDot.png" />
+					<TextView name="bizfinderlive_nickname" bordersize="0" align="top"
+						textcolor="#FF999999" endellipsis="true" padding="0,0,0,0"
+						selectedtextcolor="#FF999999" estimate="control" maxline="1" />
+				</HorizontalLayout>
+				<HorizontalLayout name="msg_layout" padding="0,0,0,0" height="18">
+					<TextView name="description" bordersize="0" align="top"
+						textcolor="#FF999999" endellipsis="true" padding="0,0,10,0"
+						detecturl="false" detecttag="false" maxline="1"
+						wordbreak="false" font="0" estimate="control" />
+					<Control name="voip_icon" width="16" height="16" padding="0,3,0,0"
+						visible="false"
+						bordersize="0" bkimage="plugins\voip\imgs\accept.png" />
+					<Control name="group_voip_icon" width="16" height="16" padding="0,3,0,0"
+						visible="false" bordersize="0" bkimage="Session\group_voip_icon.png" />
+					<Control name="unjoined_group_voip_icon" width="16" height="16"
+						padding="0,3,0,0"
+						visible="false" bordersize="0"
+						bkimage="Session\unjoined_group_voip_icon.png" />
+					<Control name="file_transfer" width="16" height="16" padding="0,0,0,0"
+						visible="false" bordersize="0" bkimage="Session\transfer_ing.png" />
+					<Control name="no_notify_bell" width="15" height="15" padding="3,3,0,0"
+						bordersize="0" bkimage="Session\ChatList_Mute_Icon.png" />
+				</HorizontalLayout>
+			</VerticalLayout>
+			<TextView name="unread_count" font="4" pos="40,4,0,0" width="16" height="16"
+				float="true"
+				bkcolor="#FFFA5151" textcolor="#FFFFFFFF" textalign="center" vtextalign="center"
+				textpadding="0,0,0,0" borderroundcircle="true" />
+			<Control name="no_notify_red_dot" width="10" height="10" pos="45,6,0,0" float="true"
+				bordersize="0" bkcolor="#FFFA5151" borderroundcircle="true" />
+		</HorizontalLayout>
+	</SessionListItemUI>
+</Window>

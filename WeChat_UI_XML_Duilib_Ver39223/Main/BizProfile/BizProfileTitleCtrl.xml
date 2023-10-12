@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Window>
+    <HorizontalLayout height="250" bkcolor="#FFFFFFFF">
+        <Control minwidth="24" />
+        <HorizontalLayout  minwidth="272" width="380" matchparent="true">
+            <VerticalLayout name="headImgLayout" padding="0,0,0,0" width="48" height="48">
+                <Container>
+                    <HeadImgUI name="bizHeadImg" borderroundcircle="true"  width="48" height="48" userdata="BizMsgItemInsideFocus"/>
+                    <Label name="defaultHeadImg" visible="false" bkimage="Main\BizProfile\avatar.png" />
+                </Container>
+            </VerticalLayout>
+            <VerticalLayout name="titleLayout" padding="16,0,0,0">
+                <HorizontalLayout height="26">
+                    <mmLabel name="titleLab" matchparent="true" font="9" height="28" endellipsis="true" />
+					<Button name="bizLivingRedBtn" width="53" height="18" visible="false" padding="3,4,4,0" bkimage="Main/BizProfile/BizFinderLive/RedLivingBtn.png" userdata="BizMsgItemInsideFocus"/>
+					<Label name="starIcon" width="16" height="16" padding="0,5,0,0" visible="false" bkimage="Main\BizProfile\star.png" />
+					<Button name="followBtn" bordercolor="#FFE7E7E7" bordersize="1" textcolor="#FF232323" height="24" width="80" padding="8,2,0,0" userdata="BizMsgItemInsideFocus"></Button>
+                </HorizontalLayout>
+                <VerticalLayout name="descLayout" padding="0,0,0,0">
+                    <HorizontalLayout>
+
+                        <Text name="descTxt" matchparent="true" font="2" height="50" padding="0,2,0,0" endellipsis="true" />
+                        <mmContainerButton name="showMoreBtn"  padding="7,2,0,0" bordersize="0" height="18"  width="80" align="left" userdata="BizMsgItemInsideFocus">
+                           <HorizontalLayout>
+                            <Label name="showMoreLab" font="2" text="@str:IDS_BIZPROFILE_ShowMore:4350" textcolor="#FF576B95" />
+                            <Label name="showMoreBk" bkimage="Main\BizProfile\down.png" width="11"  height="6" padding="3,7,0,0" />
+							</HorizontalLayout>
+                        </mmContainerButton>
+                    </HorizontalLayout>
+
+                    <HorizontalLayout name="collapsedLayout" height="20" visible="false">
+                        <mmContainerButton name="collapsedBtn" bordersize="0" font="2" height="20" textcolor="#FF576B95" width="80" align="left" padding="2,2,0,0" text="ShowMore" userdata="BizMsgItemInsideFocus">
+                                <HorizontalLayout>
+                            <Label name="collapsedLab" font="2" text="@str:IDS_BIZPROFILE_Fold:4351" textcolor="#FF576B95" />
+                                <Label name="collapsedBk" bkimage="Main\BizProfile\up.png" width="11" height="6" padding="3,7,0,0" />
+                            </HorizontalLayout>
+                        </mmContainerButton>
+                    </HorizontalLayout>
+                </VerticalLayout>
+
+                <HorizontalLayout padding="0,12,0,20"  >
+                    <Label name="articleCountLab" font="2" textcolor="#FFb4b4b4" width="96" height="18" />
+                    <Label name="subCountLab" font="2" textcolor="#FFb4b4b4" height="18" />
+                </HorizontalLayout>
+            </VerticalLayout>
+
+
+        </HorizontalLayout>
+        <Control minwidth="24" />
+    </HorizontalLayout>
+</Window>

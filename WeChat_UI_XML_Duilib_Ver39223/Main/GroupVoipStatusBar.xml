@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VoipLayout>
+	<!--语音通话状态栏-->
+	<HorizontalLayout name="groupVoipChatLayout" height="92" bkcolor="#ffebecec" visible="false">
+		<VerticalLayout padding="20,16,0,0">
+			<HorizontalLayout height="40">
+				<HeadImgUI name="groupVoipHostHead" width="40" height="40" padding="0,0,10,0" mouse="false"/>
+				<VerticalLayout >
+					<mmLabel name="groupVoipTipLab" height="13" text="xxxx邀请你多人语音聊天"/>
+					<HorizontalLayout name="groupVoipTalkersLayout">
+						<!-- talker room中其他人的头像 -->
+					</HorizontalLayout>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout name="groupVoipErrLayout" height="15" padding="0,10,0,0" visible="true">
+				<Label width="12" height="12" padding="0,1,2,0" bkimage="plugins\voip\imgs\device_miss_tip.png"/>
+				<Label name="groupVoipErrTip" text="" textcolor="FFAEAEAE" font="10" height="15" text="未检测到摄像头"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+		<VerticalLayout width="28" padding="10,0,0,0">
+			<Control />
+			<Button name="groupVoipAcceptBtn" width="28" height="28" normalimage="plugins\voip\imgs\accept.png" hotimage="plugins\voip\imgs\accept_active.png"  pushedimage="plugins\voip\imgs\accept_active.png" 
+				tooltip="@str:IDS_Voip_InviteAcceptBtnTxt:1066"/>
+			<Control />
+		</VerticalLayout>
+		<VerticalLayout width="28" padding="10,0,10,0">
+			<Control />
+			<Button name="groupVoipRejectBtn" width="28" height="28" normalimage="plugins\voip\imgs\refuse.png" hotimage="plugins\voip\imgs\refuse_active.png"  pushedimage="plugins\voip\imgs\refuse_active.png"  
+				tooltip="@str:IDS_Voip_InviteRejectBtnTxt:1067"/>
+			<Control />
+		</VerticalLayout>
+	</HorizontalLayout>
+</VoipLayout>

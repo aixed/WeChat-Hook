@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="250,60" roundcorner="2,2">
+	<Font name="微软雅黑" size="12" bold="false" italic="false" default="true" />
+	<VerticalLayout width="250" height="60" bkcolor="#ffECECEC">
+	    <HorizontalLayout width="250" height="60" inset="10,10,13,10" bkcolor="#88ECECEC">
+			<HeadImgUI name="logo" width="40" height="40" mouse="false" recycle="true" accessibilityname="SessionDragWnd"/>
+			<VerticalLayout padding="10,0,0,0">
+			<HorizontalLayout >
+				<mmLabel name="nickname" bordersize="0" textcolor="##FF000000 " endellipsis="true"  selectedtextcolor="#FF000000" smallFace="true"/>
+				<UIListLabel name="time" width="70" text="11:23" bordersize="0" textcolor="#FF000000" align="right"  selectedtextcolor="#FF000000"/>
+			</HorizontalLayout>
+			<HorizontalLayout >
+				<Label name="draftLabel" text="@str:IDS_Draft:3354" width="0" visible="false" textcolor="#FF000000" />
+				<Label name="atuser_text" text="@str:IDS_SOMEONE_AT_ME:1374" width="0" textcolor="#FF000000" />
+				<mmLabel name="description" bordersize="0" textcolor="#FF000000" endellipsis="true" padding="0,0,0,0" selectedtextcolor="#FF000000" />
+				<Label name="no_notify_bell" width="16" height="16" padding="0,3,0,0" bordersize="0" bkimage="Session\ChatList_Mute_Icon.png"/>
+			</HorizontalLayout>
+			</VerticalLayout>
+    	</HorizontalLayout>
+	</VerticalLayout >
+</Window>

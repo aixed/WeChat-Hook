@@ -1,0 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<HorizontalLayout height="60" bordersize="0,0,1,0"  >
+		<Label name="logo" width="34" height="34" mouse="false" padding="12,12,0,0" bkimage="main\search\web_search_entry_logo.png" accessibilityname="WebSearchWnd"/>
+		<VerticalLayout >
+			<mmLabel name="title" font="2" useSmallEmotion="true" maxwidth="175" highlighttextcolor="#ff19AD19" enablehighlight="true" maxheight="28" padding="12,7,20,0" 
+				bordersize="0" textcolor="#FF000000" endellipsis="true" selectedtextcolor="#FF000000" text="@str:IDS_WEB_SEARCH_TITLE_NEW"/>
+			<HorizontalLayout>
+				<Label name="desc" padding="12,0,0,0" useSmallEmotion="true" text="@str:IDS_WebSearch_Entry_Item_Desc:4056" maxheight="16" endellipsis="true" textcolor="#FFAFAFAF" />
+			</HorizontalLayout>
+		</VerticalLayout>
+
+		<VerticalLayout width="10" padding="5,0,8,0" >
+		<Control />
+		<Control bkimage="plugins\Search2.0\img\arr.png" height="24" width="10" />
+		<Control />
+		</VerticalLayout>
+	</HorizontalLayout>
+</Window>

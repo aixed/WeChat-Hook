@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window size="640,761" caption="0,0,0,46" roundcorner="2,2" mininfo="480,320" sizebox="4,4,4,4">
+	<Font name="微软雅黑" size="12" bold="false" />
+	<Font name="微软雅黑" size="12" bold="true" />
+	<Font name="微软雅黑" size="14" bold="true" />
+	<Font name="微软雅黑" size="14" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="false" underline="false" />
+	<Font name="微软雅黑" size="16" bold="false" />
+	<Default name="VScrollBar" value="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarpadding=&quot;5&quot; scrollbarsize=&quot;6&quot; scrollbarfloat=&quot;true&quot; button1normalimage=&quot;file='Main\scrollbar.png' source='0,0,6,1'&quot; button1hotimage=&quot;file='Main\scrollbar.png' source='6,0,12,1'&quot; button1pushedimage=&quot;file='Main\scrollbar.png' source='12,0,18,1'&quot; button2normalimage=&quot;file='Main\scrollbar.png' source='0,2,6,3'&quot; button2hotimage=&quot;file='Main\scrollbar.png' source='6,2,12,3'&quot; button2pushedimage=&quot;file='Main\scrollbar.png' source='12,2,18,3'&quot; thumbnormalimage=&quot;file='Main\scrollbar.png' source='0,3,6,19' corner='0,3,0,3'&quot; thumbhotimage=&quot;file='Main\scrollbar.png' source='6,3,12,19' corner='0,3,0,3'&quot; thumbpushedimage=&quot;file='Main\scrollbar.png' source='12,3,18,19' corner='0,3,0,3'&quot; bknormalimage=&quot;file='Main\scrollbar.png' source='0,1,6,2'&quot;" />
+	<VerticalLayout bkcolor="#FFFFFFFF" align="center">
+		<HorizontalLayout name="btnLayout" height="26" bkcolor="#FFFFFFFF">
+			<Label name="type_title" font="3" height="18" visible="false" textcolor="#FF999999" padding="10,6,0,0" width="150" />
+			<HorizontalLayout name="biz_layout" visible="false">
+				<Control />
+				<Label name="bizTitle" visible="false" endellipsis="true" font="3" textcolor="#FF727272" align="center" />
+				<Control />
+				<Button name="bizClosebtn" visible="false" align="right" style="@style:normal_close_button" />
+			</HorizontalLayout>
+			<HorizontalLayout name="system_layout" height="26">
+				<Control />
+				<Button name="minbtn" style="@style:normal_min_button" />
+				<Button name="maxbtn" style="@style:normal_max_button" />
+				<Button name="restorebtn" visible="false" style="@style:normal_restore_button" />
+				<Button name="closebtn" style="@style:normal_close_button" />
+			</HorizontalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout name="titleLayout" height="32" padding="0,7,0,0" bordersize="0,0,0,0">
+			<Control width="16" />
+			<Button name="btn_back" width="25" height="25" padding="0,0,16,0" normalimage="webView\buttons\back.png" style="@style:cover_btn_light_bg_style" disabledimage="webView\buttons\back_disable.png" tooltip="@str:IDS_Web_GoBack:4745" />
+      <Button name="btn_refresh" width="25" height="25" normalimage="webView\buttons\refresh.png" style="@style:cover_btn_light_bg_style" tooltip="@str:IDS_Login_Fresh:1023" />
+      <Button name="btn_open" width="25" height="25" padding="8,0,0,0" normalimage="webView\buttons\browser.png" style="@style:cover_btn_light_bg_style" tooltip="@str:WebView_OpenExternal:3290" />
+      <Control name="btn_divide" padding="16,5,16,5" width="1" height="15" bkcolor="#FFD8D8D8" />
+      <Button name="btn_copyLink" width="25" height="25" normalimage="webView\buttons\link.png" style="@style:cover_btn_light_bg_style" tooltip="@str:IDS_Common_Copy_Url:1377" />
+      <Button name="btn_font" width="25" height="25" padding="8,0,0,0" normalimage="webView\buttons\font.png" style="@style:cover_btn_light_bg_style" tooltip="@str:IDS_Common_FontSize:3763" visible="false" />
+      <Button name="btn_translate" visible="false" width="25" height="25" padding="8,0,0,0" normalimage="webView\buttons\translate_default.png" style="@style:cover_btn_light_bg_style" tooltip="@str:IDS_ImageTranslate_Tooltip:3531" />
+      <RowLayout main_axis_align="center" width="25" height="25" padding="8,0,0,0" name="translate_loading" cross_axis_align="center" visible="false">
+        <PictureArcLoading width="20" height="20" />
+      </RowLayout>
+			<Control />
+			<Button name="btn_farward" width="25" height="25" normalimage="webView\buttons\share.png" style="@style:cover_btn_light_bg_style" tooltip="@str:WebView_ForwardToFriend:3291" />
+			<Button name="btn_share_wxwork" padding="8,0,0,0" width="25" height="25" normalimage="webView\buttons\share_wxwork.png" style="@style:cover_btn_light_bg_style"  tooltip="@str:IDS_Share_AppMsg_To_WxWork" />
+			<Button name="btn_fav" width="25" height="25" padding="8,0,0,0" normalimage="webView\buttons\favorite.png" style="@style:cover_btn_light_bg_style" tooltip="@str:IDS_FAV_AddMenu:3531" />
+			<Button name="btn_addHandoff" width="25" height="25" padding="8,0,0,0" normalimage="webView\buttons\add_to_float.png" style="@style:cover_btn_light_bg_style" tooltip="@str:IDS_Handoff_FloatWindow:4323" />
+			<mmLabel name="title_label" visible="false" endellipsis="true" text="" font="5" textcolor="#FF727272" align="center" />
+			<Control width="16" />
+		</HorizontalLayout>
+    <Control name="progressBar"  height="2" width="1" bkcolor="#ff4ec520" visible="true" />
+		<HorizontalLayout name="contentLayout" bkcolor="#FFFF0000">
+			<Control width="4" bkcolor="#FFFFFFFF" />
+			<Control name="browserLayout" bkcolor="#FFFFFFFF" />
+			<Control width="4" bkcolor="#FFF6F6F6" />
+		</HorizontalLayout>
+		<Control height="4" bkcolor="#FFFFFFFF" />
+	</VerticalLayout>
+</Window>

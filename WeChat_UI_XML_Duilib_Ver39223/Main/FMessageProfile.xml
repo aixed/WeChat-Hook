@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FMessageProfile>
+	<FMessageProfileView width="370" padding="0,0,0,0" name="fmessageprofile_view">
+		<HorizontalLayout name="headLayout" height="94" width="370"  bordersize="0,0,0,1" bordercolor="#FFE7E7E7">
+			<VerticalLayout>
+				<HorizontalLayout height="32" width="300"   name="nicknameLayout" >
+					<EmotionText name="profileNicknameLab" textcolor="#FF000000"   text="" font="12" align="left"  minwidth="32" maxwidth="280" minheight="32" />
+					<Label name="sexLab" padding="5,6,0,0" width="18" height="18"  bkimage="Main\imgs\Man_Icon.png"/>
+				</HorizontalLayout>
+				<EmotionText name="profileSignatureLab" text="" padding="0,4,0,0" width="300" height="0" font="2" align="left" textcolor="#FF999999" visible="false" minwidth="25" minheight="15" maxwidth= "300" />
+			</VerticalLayout>
+			<HeadImgUI name="profileHeadBtn"  width="60" height="60" recycle="false" />
+		</HorizontalLayout>
+		
+		<VerticalLayout name="profileInfoLayout"  height="30" width="370" padding="0,32,0,0" bordersize="0,0,0,1" bordercolor="#FFE7E7E7">
+			<HorizontalLayout height="24" padding="0,0,0,10" name="regionLayout">
+				<Label name="regionLab" text="@str:IDS_Profile_Region:1151" padding="0,1,0,0" width="60" height="22" font="2" align="left" textcolor="#FF999999"/>
+				<EmotionText name="profileRegionLab" text="" padding="30,0,0,0" width="270" height="20" font="2" minwidth="25" maxwidth="270" minheight="20" textcolor="#FF000000"/>
+			</HorizontalLayout>
+			<HorizontalLayout height="24"  padding="0,0,0,10"  name="usernameLayout" >
+				<Label text="@str:IDS_Profile_WechatId:1150" padding="0,1,0,0" width="60" height="22" font="2" align="left" textcolor="#FF999999"/>
+				<EmotionText name="profileUsernameLab" text="" textpadding="0,0,5,0" padding="30,0,0,0" width="270" height="20" font="2" textcolor="#FF000000"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+
+		<VerticalLayout width="270" maxheight="240" visible="false" padding="0,0,0,0" name="detailLayout" vscrollbar="true">
+				<Label name="subTitle" text="@str:IDS_Enterprise_Info:4145" textcolor="FF999999" font="2" padding="0,0,0,10"/>
+		</VerticalLayout>
+
+		<VerticalLayout name="replyInfoLayout" width="370" maxheight="150" padding="0,32,0,0,"  borderround="5,5"   vscrollbar="true">
+		</VerticalLayout>
+		<HorizontalLayout height="28" padding="0,12,0,0">
+			<Control />
+			<Button name="replyBtn"  width="28" height="28" visible="true"	normalimage="Profile\chat_profile_chat_normal.png"  hotimage="Profile\chat_profile_chat_hover.png" pushedimage="Profile\chat_profile_chat_hover.png"  />
+		</HorizontalLayout>
+		<Button name="fmessageProfileSendBtn" text="@str:IDS_Profile_SendMsg:1152" padding="91,2,0,0" width="168" height="37" textcolor="#FFFFFFFF" font="2" valign="top" textpadding="0,-5,0,0" visible="false" 
+			normalimage="file='common\Common_Btn_ok_normal.png' corner='5,10,5,10'" hotimage="file='common\Common_Btn_ok_hover.png' corner='5,10,5,10'" pushedimage="file='common\Common_Btn_ok_click.png' corner='5,10,5,10'" />
+	</FMessageProfileView>
+</FMessageProfile>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window size="10,1">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<HorizontalLayout name="root" bkimage="file='menu\menu_bg.png' corner='4,10,4,10'" inset="1,1,1,1" bkcolor="#ff404040">
+		<MenuList header="hidden" name="menu" itemhotbkcolor="#FFE2E2E2" itemselectedbkcolor="#FF7D96AF">
+		</MenuList>
+	</HorizontalLayout>
+</Window>

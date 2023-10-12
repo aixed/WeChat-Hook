@@ -1,0 +1,23 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<HorizontalLayout height="60" bordersize="0,0,1,0"  >
+		<Label name="logo" width="36" height="36" mouse="false" padding="12,12,0,0" bkimage="main\search\add_friends.png" />
+		<ColumnLayout main_axis_align="center" width="wrap_content" >
+		<Control />
+			<HorizontalLayout>
+
+			<mmLabel name="title" font="2" useSmallEmotion="true" highlighttextcolor="#ff19AD19" enablehighlight="true" maxheight="28" padding="12,0,0,0" 
+				bordersize="0" textcolor="#FF000000" endellipsis="true" selectedtextcolor="#FF000000" width="wrap_content" />
+				<Label name="desc" visible="false" font="2" align="left" padding="0,1,0,0" useSmallEmotion="true" maxheight="28" endellipsis="true"  textcolor="@color:Text_4" />
+			</HorizontalLayout>
+		<Control />
+
+		</ColumnLayout>
+
+		<VerticalLayout width="10" padding="5,0,8,0" >
+		<Control />
+		<Control bkimage="plugins\Search2.0\img\arr.png" height="24" width="10" />
+		<Control />
+		</VerticalLayout>
+	</HorizontalLayout>
+</Window>

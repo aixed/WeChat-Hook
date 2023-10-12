@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+    <TabLayout name="subsribeTabLayout" >
+        <HorizontalLayout name="nativeListLayout" >
+            <VerticalLayout name="bizListLayout" width="200" minwidth="120" maxwidth="250">
+                <RowLayout main_axis_align="space_between" cross_axis_align="center" height="62" >
+                    <!--Label width=wrap_content 去掉，保证按钮不会被遮住-->
+                    <Label text="@str:IDS_Main_Subscribe:1041" font="2" padding="15,0,0,0"  width="60" align="top" textcolor="#FF999999" name="subscribe_title_label" height="wrap_content" endellipsis="true" />
+                    <RowLayout name="narrowLayout" height="62"   main_axis_align="end"  padding="0,0,11,0" cross_axis_align="start">
+                        <!-- <ImageButton name="openSubscribeAloneBtn" imagewidth="16" imageheight="16" imagepos="right" endellipsis="true" text="@str:IDS_Fts_OpenWnd_Alone:4105" width="wrap_content" height="wrap_content" textcolor="#FF999999" font="@font:msyh_12" align="center" padding="5,0,5,0" bkimage="plugins\Subscription\imgs\open_standalone_window.png" renderbkimagedefault="false" style="@style:subscription_text_btn_cover_btn_style" imagepadding="4,2,0,0" inset="4,0,4,0" tooltip="@str:IDS_Fts_OpenWnd_Alone:4105" textpadding="0,2,0,0"/> -->
+                        <Button name="changeReorderMode" width="16" height="16" endellipsis="true" align="center" bkimage="file='plugins\Subscription\imgs\to_disorder.png'" style="@style:subscription_cover_btn_style"  tooltip="@str:IDS_Subsribption_Disorder_Mode" padding="0,24,8,0" />
+                        <Button name="openSubscribeAloneMiniBtn" width="16" height="16" endellipsis="true" align="center" bkimage="file='plugins\Subscription\imgs\open_standalone_window.png'" style="@style:subscription_cover_btn_style" tooltip="@str:IDS_Fts_OpenWnd_Alone:4105" padding="0,24,4,0" />
+                    </RowLayout>
+                </RowLayout>
+
+                <BizProfileSessionList tabfindchild="true" name="sessionList" inset="0,0,0,2" padding="0,0,0,0" bkcolor="#FFF5F5F5" itemhotbkcolor="#FFECECEC" itemselectedbkcolor="#FFD4D4D4" visible="true" header="hidden" vscrollbar="true" listbottomemptyheight="10" scrolltoplinecolor="#FFECECEC" vscrollbarstyle="showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; scrollbarsize=&quot;7&quot; scrollbarfloat=&quot;true&quot; thumbnormalimage=&quot;file='Main\scrollbar_normal.png' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='Main\scrollbar_hover.png' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='Main\scrollbar_hover.png' corner='0,4,0,4'&quot;" />
+            </VerticalLayout>
+
+            <Dragable width="1" name="dragLine" bkcolor="#FFE5E5E5"></Dragable>
+
+
+            <HorizontalLayout name="bizRightLayout" minwidth="319">
+                <HorizontalLayout name="defaultLayout" bkimage="#FFEDEDED">
+                    <Control />
+                    <VerticalLayout width="110">
+                        <Control />
+                        <Control height="110" bkimage="Main\imgs\no_chat_bg.png" />
+                        <Control />
+                    </VerticalLayout>
+                    <Control />
+                </HorizontalLayout>
+
+                <VerticalLayout name="bizProfileLayout" visible="false">
+                    <BizProfile name="bizProfileInfo" />
+                </VerticalLayout>
+
+                <VerticalLayout name="chatLayout" visible="false">
+                    <ExtendChatView name="bizExtendChatView" visible="true" />
+                </VerticalLayout>
+            </HorizontalLayout>
+        </HorizontalLayout>
+        <VerticalLayout name="h5ListLayout">
+            <RowLayout main_axis_align="space_between" cross_axis_align="center" height="62">
+                <!--Label width=wrap_content 去掉，保证按钮不会被遮住-->
+                <Label text="@str:IDS_Subsribption_Disorder_Title"  font="@font:msyh_20"  width="wrap_content" padding="24,8,0,0" align="left" textcolor="#FF000000" height="wrap_content" endellipsis="true" />
+                <RowLayout name="narrowLayout" height="62" main_axis_align="end" cross_axis_align="end"  width="wrap_content" >
+                    <Button name="ReLoadTemplate" width="24" height="24" visible="false" endellipsis="true" align="center" bkimage="file='plugins\Subscription\imgs\to_list.png'" style="@style:subscription_cover_btn_style" inset="4,0,4,0" tooltip="重载debug模板" padding="0,0,12,10" />
+                    <Button name="changeListMode" width="24" height="24"  endellipsis="true" align="center" bkimage="file='plugins\Subscription\imgs\to_list.png'" style="@style:subscription_cover_btn_style" inset="4,0,4,0" tooltip="@str:IDS_Subsribption_List_Mode" padding="0,0,24,10" />
+                    <Button name="openSubscribeAloneMiniBtn2" width="24" height="24" visible="false" endellipsis="true" align="center" bkimage="file='plugins\Subscription\imgs\open_standalone_window.png'" style="@style:subscription_cover_btn_style" inset="4,0,4,0" tooltip="@str:IDS_Fts_OpenWnd_Alone:4105" padding="0,0,4,10" />
+                </RowLayout>
+            </RowLayout>
+            <Control  bkcolor="@color:FG_6" height="1" />
+            <CefWebView name="subsribeReorderWebview" hostwndmode="true" padding="0,0,2,2" />
+        </VerticalLayout>
+
+    </TabLayout>
+</Window>

@@ -5,9 +5,6 @@
 
 ## QQ: 364831018
 
-## Telegram: @Aixed
-## TelegramGroup: https://t.me/PCWeChatReverse
-</br>
 
 # New Current
 ## PC微信3.9.10.16接口/PC WeChat 3.9.10.16 Interface 

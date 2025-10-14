@@ -4,6 +4,7 @@
 
 
 ## QQ: 364831018
+## Telegram：@thexed
 
 
 # New Current

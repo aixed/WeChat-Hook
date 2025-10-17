@@ -5,7 +5,7 @@
 
 ## QQ: 364831018
 ## Telegram：@Aixed
-
+## Telegram Group: t.me/WeChat_Hook
 
 # New Current
 ## PC微信3.9.10.16接口/PC WeChat 3.9.10.16 Interface 

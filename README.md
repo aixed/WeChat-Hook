@@ -2,8 +2,6 @@
 # 更多 PC微信Hook技术
 # More PC WeChat Hook Technology
 
-
-## QQ: 364831018
 ## Telegram：@Aixed
 ## Telegram Group: t.me/WeChat_Hook
 

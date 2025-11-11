@@ -152,9 +152,9 @@ def calc_oid(objectId):
     standard_result = base64.b64encode(test_data, altchars=b"-_").decode('ascii')
     return standard_result
 
-def calc_nid(full_string):
+def calc_nid(objectNonceId):
     end_pos = [0]
-    low, high = string_to_int64_complete(full_string, end_pos, 10)
+    low, high = string_to_int64_complete(objectNonceId, end_pos, 10)
     hex_low = format(low, '08X')
     hex_high = format(high, '08X')
     hex_full = hex_high + hex_low
@@ -163,6 +163,6 @@ def calc_nid(full_string):
     return ret
 
 if __name__ == "__main__":
-    full_string = "349154408427976371x_15_140_59_32_1714276789860291"
-    ret = calc_nid(full_string)
+    objectNonceId = "349154408427976371x_15_140_59_32_1714276789860291"
+    ret = calc_nid(objectNonceId)
     print("oid:", ret)

@@ -3,7 +3,7 @@
 # More PC WeChat Hook Technology
 
 ## Telegram：@Aixed
-## Telegram Group: t.me/WeChat_Hook
+## Telegram Group: <url>t.me/WeChat_Hook</url>
 
 # New Current
 ## PC微信3.9.10.16接口/PC WeChat 3.9.10.16 Interface 

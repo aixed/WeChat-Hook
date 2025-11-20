@@ -4,8 +4,8 @@
 ## 支持PC微信3.6.0.18版本
 Support PC WeChat 3.6.0.18 Version
 
-# qq群:927825838
-qq group number：927825838
+# qq群:642467404
+qq group number：642467404
 
 
 # 微信下载地址：

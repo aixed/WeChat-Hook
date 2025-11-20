@@ -1,0 +1,8 @@
+5FF61D13 | 56                | push esi                                         | esi:L"C:\\Users\\Administrator\\AppData\\Roaming\\Tencent\\WeChat\\XPlugin\\Info\\\\plugin_command_info"
+5FF61D14 | 57                | push edi                                         | file handle
+5FF61D15 | 68 64E1A161       | push wechatwin.61A1E164                          | 61A1E164:"open fd[%p], %ws"
+5FF61D1A | 6A 4C             | push 0x4C                                        |
+5FF61D1C | 68 309E9D61       | push wechatwin.619D9E30                          | 619D9E30:"open"
+5FF61D21 | 50                | push eax                                         | eax:"MemoryFile_Win32.cpp"
+5FF61D22 | 6A 01             | push 0x1                                         |
+5FF61D24 | E8 170D0000       | call 0x5FF62A40                                  |

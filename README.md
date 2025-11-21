@@ -12,8 +12,13 @@
 
 ## Demo example && Tutorial: https://www.youtube.com/channel/UCruIOA7hJdYZF0dkFKUFPvA
 
-## 接口文档/Interface Docs：
+## PC微信Hook 接口文档/Interface Docs：
 https://www.showdoc.com.cn/wechatproject
+</br>
+</br>
+
+## PC微信协议 接口文档/Interface Docs：
+[https://www.showdoc.com.cn/wechatproject](https://www.showdoc.com.cn/2598846742080801/11559013239983821)
 </br>
 </br>
 

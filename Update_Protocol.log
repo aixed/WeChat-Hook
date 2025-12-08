@@ -5,3 +5,8 @@ mmpgeta8key
 qrconnect_authorize
 qrconnect_authorize_confirm
 scan_qrcode_event_report_cgi
+
+新增获取小程序code接口
+js-login
+
+

@@ -1,3 +1,7 @@
+2025-12-31 21:16:56 新年快乐
+增加CDN下载接口
+https://www.showdoc.com.cn/2598846742080801/11559060625860923
+
 2025-12-22 22:24:12
 发送app(xml) 类消息
 https://www.showdoc.com.cn/2598846742080801/11559060625791609
@@ -19,6 +23,7 @@ scan_qrcode_event_report_cgi
 
 新增获取小程序code接口
 js-login
+
 
 
 

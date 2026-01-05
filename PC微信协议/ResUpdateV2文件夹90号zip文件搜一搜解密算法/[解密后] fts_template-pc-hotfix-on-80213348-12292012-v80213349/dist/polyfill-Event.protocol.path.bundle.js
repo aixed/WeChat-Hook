@@ -1,0 +1,1 @@
+(self.webpackChunkweixin_search=self.webpackChunkweixin_search||[]).push([["polyfill-Event.protocol.path"],{602987:function(){Object.defineProperty(Event.prototype,"path",{get:function(){for(var e=[],n=this.target;n;)e.push(n),n=n.parentElement;return -1===e.indexOf(window)&&-1===e.indexOf(document)&&e.push(document),-1===e.indexOf(window)&&e.push(window),e}})}}]);

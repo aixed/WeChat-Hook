@@ -6,7 +6,7 @@
 ## Telegram Group: https://t.me/WeChat_Hook
 
 # New Current
-## PC微信4.1.5.30接口/PC WeChat 4.1.5.30 Interface 
+## PC微信4.1.5.30 接口/PC WeChat 4.1.5.30 Interface 
 </br>
 </br>
 

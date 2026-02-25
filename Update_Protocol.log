@@ -1,3 +1,7 @@
+2026-02-25 22:30:21
+获取 reqUrl 参数参数 preload_id
+https://www.showdoc.com.cn/2598846742080801/11559060626627330
+
 2026-02-22 17:32:51
 增加mmpcgettagjump 接口
 获取 微信小店商品详情接口
@@ -54,6 +58,7 @@ scan_qrcode_event_report_cgi
 
 新增获取小程序code接口
 js-login
+
 
 
 

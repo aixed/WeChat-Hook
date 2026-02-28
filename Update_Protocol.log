@@ -1,3 +1,6 @@
+2026-02-28 15:12:05
+修复了协议挂代理长时间之后会关闭http通讯的问题
+
 2026-02-25 22:30:21
 获取 reqUrl 参数参数 preload_id
 https://www.showdoc.com.cn/2598846742080801/11559060626627330
@@ -58,6 +61,7 @@ scan_qrcode_event_report_cgi
 
 新增获取小程序code接口
 js-login
+
 
 
 

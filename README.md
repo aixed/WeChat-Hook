@@ -16,7 +16,7 @@
 4.1.9.30 版本
 https://www.showdoc.com.cn/PCWeixin41530/11559060626558382
 
-3.9.10.16 版本
+3.9.10.16 版本 C++ 重构版
 https://www.showdoc.com.cn/wechatproject
 </br>
 </br>

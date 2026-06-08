@@ -6,14 +6,14 @@
 ## Telegram Group: https://t.me/WeChat_Hook
 
 # New Current
-## PC微信4.1.8 接口/PC WeChat 4.1.8 Interface 
+## PC微信4.1.10 接口/PC WeChat 4.1.10 Interface 
 </br>
 </br>
 
 ## Demo example && Tutorial: https://www.youtube.com/channel/UCruIOA7hJdYZF0dkFKUFPvA
 
 ## PC微信Hook 接口文档/Interface Docs：
-4.1.9.30 版本
+4.1.10.27 版本
 https://www.showdoc.com.cn/PCWeixin41530/11559060626558382
 
 3.9.10.16 版本 C++ 重构版

@@ -11,9 +11,27 @@ Windows 微信 Hook DLL，当前版本以 `version.dll` 代理方式加载，在
 - 当前 main 分支已移除 VMP 保护、远程授权校验、PB/NetSceneSendPB、CDN、WcProbe/CCD/NtQuery 相关 Hook 安装与处理代码。
 
 ## 使用方式
- 将生成后的version.dll 放微信目录下,我这里是
- C:\Program Files\Tencent\Weixin
- 
+
+1. 编译或从 Release 下载生成后的 `version.dll`。
+2. 将 `version.dll` 放到微信安装目录下，我这里是：
+
+```text
+C:\Program Files\Tencent\Weixin
+```
+
+3. 启动微信。DLL 加载后会自动启动 HTTP 服务，默认端口是 `30001`。
+4. 使用 Postman 或其他 HTTP 客户端调用接口，默认基地址：
+
+```text
+http://127.0.0.1:30001
+```
+
+5. Postman 可直接导入接口集合：
+
+```text
+postman/WeChat-Hook.postman_collection.json
+```
+
 ## 项目结构
 
 - `dllmain.cpp`：DLL 入口，解析启动参数，加载真实系统 `version.dll`，只在微信主进程初始化。

@@ -1,0 +1,244 @@
+{
+  "info": {
+    "_postman_id": "c8a88b0b-33cf-4f52-8f3f-411027000001",
+    "name": "WeChat-Hook 4.1.10.27",
+    "description": "WeChat-Hook HTTP API collection. Default target WeChat version: 4.1.10.27.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:30001",
+      "type": "string"
+    },
+    {
+      "key": "wxid",
+      "value": "wxid_xxx",
+      "type": "string"
+    },
+    {
+      "key": "image_path",
+      "value": "C:\\\\path\\\\image.jpg",
+      "type": "string"
+    },
+    {
+      "key": "pic_src_path",
+      "value": "C:\\\\path\\\\source.dat",
+      "type": "string"
+    },
+    {
+      "key": "pic_dst_path",
+      "value": "C:\\\\path\\\\output.jpg",
+      "type": "string"
+    },
+    {
+      "key": "db_name",
+      "value": "MicroMsg.db",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "SendTextMsg",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"wxidorgid\": \"{{wxid}}\",\n  \"msg\": \"hello\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/SendTextMsg",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "SendTextMsg"
+          ]
+        },
+        "description": "发送文本消息。"
+      }
+    },
+    {
+      "name": "SendImgMsg",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"wxidorgid\": \"{{wxid}}\",\n  \"path\": \"{{image_path}}\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/SendImgMsg",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "SendImgMsg"
+          ]
+        },
+        "description": "发送本地图片消息。"
+      }
+    },
+    {
+      "name": "ForwardXMLMsg",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"to_wxid\": \"{{wxid}}\",\n  \"content\": \"<msg>...</msg>\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/ForwardXMLMsg",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "ForwardXMLMsg"
+          ]
+        },
+        "description": "转发 XML 消息。"
+      }
+    },
+    {
+      "name": "Decode_Pic",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"src_path\": \"{{pic_src_path}}\",\n  \"dst_path\": \"{{pic_dst_path}}\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/Decode_Pic",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "Decode_Pic"
+          ]
+        },
+        "description": "解码微信图片缓存文件。"
+      }
+    },
+    {
+      "name": "GetSelfProfile",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{}"
+        },
+        "url": {
+          "raw": "{{base_url}}/GetSelfProfile",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "GetSelfProfile"
+          ]
+        },
+        "description": "获取当前登录账号资料。"
+      }
+    },
+    {
+      "name": "QueryDB execute",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"optDbName\": \"{{db_name}}\",\n  \"SQL\": \"SELECT * FROM ChatRoom LIMIT 10\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/QueryDB/execute",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "QueryDB",
+            "execute"
+          ]
+        },
+        "description": "执行微信 SQLite 数据库查询。"
+      }
+    },
+    {
+      "name": "QueryDB GetAllDBName",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{}"
+        },
+        "url": {
+          "raw": "{{base_url}}/QueryDB/GetAllDBName",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "QueryDB",
+            "GetAllDBName"
+          ]
+        },
+        "description": "获取当前可访问的数据库列表。"
+      }
+    },
+    {
+      "name": "QueryDB status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/QueryDB/status",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "QueryDB",
+            "status"
+          ]
+        },
+        "description": "查询登录状态和 Weixin.dll 模块地址。"
+      }
+    }
+  ]
+}

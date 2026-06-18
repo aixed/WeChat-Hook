@@ -10,6 +10,10 @@ Windows 微信 Hook DLL，当前版本以 `version.dll` 代理方式加载，在
 - 默认监听地址：`0.0.0.0:30001`
 - 当前 main 分支已移除 VMP 保护、远程授权校验、PB/NetSceneSendPB、CDN、WcProbe/CCD/NtQuery 相关 Hook 安装与处理代码。
 
+## 使用方式
+ 将生成后的version.dll 放微信目录下,我这里是
+ C:\Program Files\Tencent\Weixin
+ 
 ## 项目结构
 
 - `dllmain.cpp`：DLL 入口，解析启动参数，加载真实系统 `version.dll`，只在微信主进程初始化。

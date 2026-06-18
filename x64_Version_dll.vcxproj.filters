@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\http">
+      <UniqueIdentifier>{138d2d82-2712-4d27-8188-48d8f04723e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\http">
+      <UniqueIdentifier>{977432d0-4f3f-47af-b5f9-da7a1b43e281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\interface">
+      <UniqueIdentifier>{96979d62-5a61-4673-b279-2c69df293637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\interface">
+      <UniqueIdentifier>{7d641e14-10d1-487f-843e-ab80c63b69b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Func">
+      <UniqueIdentifier>{2c71715a-6d8c-45e3-a283-e431401fc591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Func">
+      <UniqueIdentifier>{d04f45f6-eeec-4a70-a2f9-291a322c273d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Hook">
+      <UniqueIdentifier>{2659d587-f00a-4c39-a61d-e3899ebf299e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Hook">
+      <UniqueIdentifier>{81c501d9-5d83-4de8-9e76-4ce15500b113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\MinHook">
+      <UniqueIdentifier>{33bd61c4-b1a3-4e55-a4b3-b9d0368ae93c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\MinHook\hde">
+      <UniqueIdentifier>{46d381c0-b802-4e78-93dc-3ec05a959e14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\http_send">
+      <UniqueIdentifier>{c6178c75-44b4-4075-a3ca-82504bfcd502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\http_send">
+      <UniqueIdentifier>{f2a7ea75-60cd-4b2f-a44e-1853f8ba9fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\config_load">
+      <UniqueIdentifier>{62b27d6f-80fe-47f1-b6cd-41cbe94e8046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\config_load">
+      <UniqueIdentifier>{a0b2bd26-018b-48e8-822c-1d49bce9dc0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\global_pars">
+      <UniqueIdentifier>{c74eee22-67da-44cd-8da9-6881ad6312ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\global_pars">
+      <UniqueIdentifier>{90569d09-1717-4bf0-957d-4b09360e2f60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\xdb">
+      <UniqueIdentifier>{7b0ee681-4443-4500-aa8b-9444de27c97a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\xdb">
+      <UniqueIdentifier>{b7a0d441-ed0e-424e-bfb4-b31a09c7d0ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http_server.h">
+      <Filter>头文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\httplib.h">
+      <Filter>头文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http_routes.h">
+      <Filter>头文件\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http_post.h">
+      <Filter>头文件\http_send</Filter>
+    </ClInclude>
+    <ClInclude Include="include\global.h">
+      <Filter>头文件\global_pars</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GetSelfProfile.h">
+      <Filter>头文件\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Hook_Method.h">
+      <Filter>头文件\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tools.h">
+      <Filter>头文件\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hook_xlog.h">
+      <Filter>头文件\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wx_send_xml.h">
+      <Filter>头文件\Func</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ForwardXMLMsg.h">
+      <Filter>头文件\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wx_send.h">
+      <Filter>头文件\Func</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SendImageMsg.h">
+      <Filter>头文件\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="xdb\db_mgr.h">
+      <Filter>头文件\xdb</Filter>
+    </ClInclude>
+    <ClInclude Include="xdb\sqlite3.h">
+      <Filter>头文件\xdb</Filter>
+    </ClInclude>
+    <ClInclude Include="xdb\SundaySearch.h">
+      <Filter>头文件\xdb</Filter>
+    </ClInclude>
+    <ClInclude Include="xdb\xwechat_offsets.h">
+      <Filter>头文件\xdb</Filter>
+    </ClInclude>
+    <ClInclude Include="include\QueryDB.h">
+      <Filter>头文件\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\inline_weixin_dll_load.h">
+      <Filter>头文件\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\version_proxy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hideself.h">
+      <Filter>头文件\Func</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wx_ini_reader.h">
+      <Filter>头文件\config_load</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HookManager.h">
+      <Filter>头文件\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SendTextMsg.h">
+      <Filter>头文件\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\requests.h">
+      <Filter>头文件\Func</Filter>
+    </ClInclude>
+    <ClInclude Include="include\httplib_core.h">
+      <Filter>头文件\Func</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lz4.h">
+      <Filter>头文件\Func</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http_server.cpp">
+      <Filter>源文件\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http_routes.cpp">
+      <Filter>源文件\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SendTextMsg.cpp">
+      <Filter>源文件\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\buffer.c">
+      <Filter>源文件\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hook.c">
+      <Filter>源文件\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\trampoline.c">
+      <Filter>源文件\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde64.c">
+      <Filter>源文件\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http_post.cpp">
+      <Filter>源文件\http_send</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GetSelfProfile.cpp">
+      <Filter>源文件\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hook_Method.cpp">
+      <Filter>源文件\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tools.cpp">
+      <Filter>源文件\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\global.cpp">
+      <Filter>源文件\global_pars</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hook_xlog.cpp">
+      <Filter>源文件\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wx_send_xml.cpp">
+      <Filter>源文件\Func</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ForwardXMLMsg.cpp">
+      <Filter>源文件\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wx_send.cpp">
+      <Filter>源文件\Func</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SendImageMsg.cpp">
+      <Filter>源文件\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="xdb\db_mgr.cpp">
+      <Filter>源文件\xdb</Filter>
+    </ClCompile>
+    <ClCompile Include="xdb\SundaySearch.cpp">
+      <Filter>源文件\xdb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\QueryDB.cpp">
+      <Filter>源文件\interface</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inline_weixin_dll_load.cpp">
+      <Filter>源文件\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version_proxy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hideself.cpp">
+      <Filter>源文件\Func</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wx_ini_reader.cpp">
+      <Filter>源文件\config_load</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HookManager.cpp">
+      <Filter>源文件\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="src\requests.cpp">
+      <Filter>源文件\Func</Filter>
+    </ClCompile>
+    <ClCompile Include="src\httplib_core.cpp">
+      <Filter>源文件\Func</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lz4.c">
+      <Filter>源文件\Func</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="version.def">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\cpuid.asm">
+      <Filter>源文件\Hook</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

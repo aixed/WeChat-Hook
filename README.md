@@ -2,6 +2,8 @@
 
 Windows 微信 Hook DLL，当前版本以 `version.dll` 代理方式加载，在微信主进程中启动本地 HTTP 服务，提供消息发送、XML 转发、图片解码、个人资料读取和数据库查询接口。
 
+## 交流群
+- https://t.me/WeChat_Hook
 ## 版本说明
 
 - 目标微信版本：`4.1.10.27`

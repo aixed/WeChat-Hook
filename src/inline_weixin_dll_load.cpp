@@ -165,67 +165,6 @@ FnWcProbe g_Original = nullptr;
 
 
 
-void  __fastcall Hook_CCD_Get(void* out_buffer, uint32_t* out_len, void* input_param)
-{
-    if (input_param)
-    {
-        uint64_t* pValue = reinterpret_cast<uint64_t*>(input_param);
-
-        uint64_t original = *pValue;
-
-        //exchange to 0000000100000088
-        *pValue = 0x0000000100000088;
-
-    }
-
-
-    g_Original(out_buffer, out_len, input_param);
-
-}
-
-
-bool InstallCCDGetHook(uintptr_t hWcProbe)
-{
-    uintptr_t target = hWcProbe + 0x1DF6A0;
-
-
-
-    if (MH_CreateHook(
-        (LPVOID)target,
-        &Hook_CCD_Get,
-        reinterpret_cast<LPVOID*>(&g_Original)
-    ) != MH_OK)
-    {
-        return false;
-    }
-
-    // enable Hook
-    if (MH_EnableHook((LPVOID)target) != MH_OK)
-    {
-        return false;
-    }
-
-    return true;
-}
-
-void Evt_Load_WcProbe()
-{
-
-	HMODULE g_hWcProbeDll = nullptr;
-    g_hWcProbeDll = GetModuleHandleW(L"wcprobe.dll");
-
-    if (!g_hWcProbeDll)
-    {
-        return;
-    }
-
-
-    //Hook 强制全量ccd
-    InstallCCDGetHook((uintptr_t)g_hWcProbeDll);
-
-
-
-}
 
 
 void Evt_WeixinLoad()
@@ -266,9 +205,6 @@ void Evt_WeixinLoad()
     Hook_Call(WeixinDll_Offset(0x108678), 5, hook::MyCallHandler_xLog);
 #endif
     
-
-    Evt_Load_WcProbe();
-     
 
     
     //取回调URL

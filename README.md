@@ -17,7 +17,8 @@ Windows 微信 Hook DLL，当前版本以 `version.dll` 代理方式加载，在
 ## 交流群
 - https://t.me/WeChat_Hook
 
-## QQ364831018
+## QQ 364831018
+
 ## 版本说明
 
 - 目标微信版本：`4.1.10.27`

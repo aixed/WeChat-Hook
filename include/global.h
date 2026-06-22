@@ -6,6 +6,8 @@
 // 前向声明，不需要完整类型
 class HttpServer;
 
+
+
 extern int g_receive_type;
 extern int g_StartPort;
 extern int g_MsgSendPort;

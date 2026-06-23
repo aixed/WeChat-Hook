@@ -4,7 +4,7 @@ Windows 微信 Hook DLL，当前版本以 `version.dll` 代理方式加载，在
 
 ### Hook 3.9.10.16 接口文档
 - E语言版 https://www.showdoc.com.cn/WeChatProject/8929480485871668
-- C++版 https://www.showdoc.com.cn/2598853379229303/11559060627222881
+- C++版 https://www.showdoc.com.cn/wechatHook391016/11559060627222816
 
 ### Hook 4.1.10.27 接口文档
 - https://www.showdoc.com.cn/PCWeixinHook/11559060626558382

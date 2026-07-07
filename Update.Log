@@ -1,3 +1,9 @@
+2026-07-07
+SendImgMsg_NoSrc 支持
+支持传入路径直发了
+新增 SendFileMsg_NoSrc 接口 用于无源转发文件
+https://www.showdoc.com.cn/wechatHook391016/11559060627278712
+
 2026-06-18
 C++版 修复@群成员 显示 @所有人的问题
 

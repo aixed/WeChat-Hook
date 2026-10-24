@@ -1,3 +1,4 @@
+#define WIN32_LEAN_AND_MEAN   // 避免 windows.h 引入 winsock.h，防止与 sqlite3.h 的 winsock2.h 冲突
 #include <cstdint>
 #include <cstdio>
 #include <string>
@@ -17,6 +18,7 @@
 #include "wx_ini_reader.h"
 #include "inline_weixin_dll_load.h"
 #include "hook_xlog.h"
+#include "db_mgr.h"
 
 
 
@@ -66,6 +68,30 @@ DWORD WINAPI AfterLoginInitThread(LPVOID)
     while (g_IsLogin != 1)
     {
         Sleep(300);
+    }
+
+    return 0;
+}
+
+// 登录监控线程：微信只在登录成功后才会打开数据库（MicroMsg.db 等），
+// 因此扫描到任意数据库句柄即视为已登录，置 g_IsLogin = 1
+DWORD WINAPI LoginMonitorThread(LPVOID)
+{
+    xmgr::DatabaseMgr& g_dbMgr = xmgr::DatabaseMgr::getInstance();
+
+    while (g_LoginMonitorRunning)
+    {
+        if (g_IsLogin == 1)
+            break;
+
+        // 未登录时扫描不到任何句柄；已登录时能扫到并填充 m_dbs
+        if (!g_dbMgr.searchDatabases().empty())
+        {
+            g_IsLogin = 1;
+            break;
+        }
+
+        Sleep(1000);
     }
 
     return 0;
@@ -208,7 +234,13 @@ void Evt_WeixinLoad()
 
     
     //取回调URL
-    GetWxRecvUrl();         
+    GetWxRecvUrl();
+
+    // 启动登录监控线程：登录成功后置 g_IsLogin = 1
+    if (!g_hLoginMonitor)
+    {
+        g_hLoginMonitor = CreateThread(nullptr, 0, LoginMonitorThread, nullptr, 0, nullptr);
+    }
 }
 
 

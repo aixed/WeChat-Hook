@@ -61,7 +61,8 @@ namespace xmgr {
 		int rc = m_sqlite3Rountines->prepare((LPVOID)db, sql.c_str(), -1, &stmt, 0);
 		if (rc != SQLITE_OK) {
 			rdata["status"] = rc;
-			rdata["desc"] = format_string("execute %s failed", "sqlite3_prepare");
+			const char* szErr = m_sqlite3Rountines->errmsg(db);
+			rdata["desc"] = format_string("execute sqlite3_prepare failed: %s (rc=%d)", szErr ? szErr : "unknown", rc);
 			return rdata;
 		}
 		nlohmann::ordered_json items = nlohmann::ordered_json::array();
@@ -184,10 +185,8 @@ namespace xmgr {
 
 	const std::map<std::string, LPVOID>& DatabaseMgr::searchDatabases() {
 		std::lock_guard<std::mutex> lg(m_searchDbMtx);
-		if (!g_IsLogin) {
-			m_dbs.clear();
-			return m_dbs;
-		}
+		// 数据库句柄只在登录成功后才会被微信打开，扫描结果本身就是登录信号，
+		// 不再依赖 g_IsLogin 门禁（登录检测由 LoginMonitorThread 完成）
 		for (auto& it : m_dbs) {
 			if (IsBadReadPtr(it.second, sizeof(LPVOID)) || m_sqlite3Rountines->errcode(it.second) == SQLITE_MISUSE) {
 				m_dbs.clear();

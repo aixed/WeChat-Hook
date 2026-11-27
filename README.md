@@ -21,7 +21,8 @@ https://github.com/aixed/wechat_control
 ## 交流群
 - https://t.me/WeChat_Hook
 
-## QQ 364831018
+## QQ: 364831018
+## WeChat: theaixed
 
 ## 版本说明
 
